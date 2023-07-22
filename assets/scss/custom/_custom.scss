@@ -1,0 +1,12 @@
+body {
+    @include typo('body', 16);
+    background-color: map-get($colors, brand-1);
+
+    main {
+        padding-top: 8.1rem;
+        min-height: 100vh;
+        background: map-get($colors, white);
+    }
+}
+
+@import './header.scss';
