@@ -1,7 +1,7 @@
 <?php include('../function.php'); ?>
 <?php include('../components/header.php'); ?>
 
-	<main class="page_about page">
+	<main class="page_about">
 		<div class="container">
 			<h1>品牌故事</h1>
 			<div>

@@ -6,7 +6,9 @@ body {
         padding-top: 8.1rem;
         min-height: 100vh;
         background: map-get($colors, white);
+        animation: fadeInUp .3s both;
     }
 }
 
 @import './header.scss';
+@import './footer.scss';

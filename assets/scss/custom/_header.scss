@@ -3,10 +3,12 @@
     top: 0;
     left: 0;
     width: 100%;
+    z-index: 100;
     position: fixed;
     padding: 2.4rem 0;
     background-color: map-get($colors, white);
     border-bottom: 1px solid map-get($colors, brown-line);
+    animation: fadeInDown .3s .3s both;
 
     img {
         @include size(17rem, auto);

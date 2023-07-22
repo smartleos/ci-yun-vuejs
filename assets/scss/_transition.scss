@@ -1,44 +1,35 @@
-.page {
-    &-enter {
-        &-from {
-            opacity: 0;
-        }
-
-        &-active {
-            transition: opacity .4s;
-        }
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
     }
-
-    &-leave {
-        &-to {
-            opacity: 0;
-        }
-
-        &-active {
-            transition: opacity .2s;
-        }
+    
+    100% {
+        opacity: 1;
     }
 }
 
-.list {
-    &-enter {
-        &-from {
-            opacity: 0;
-        }
-
-        &-active {
-            transition: opacity 0.5s;
-        }
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
     }
+    
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 
-    // &-leave {
-    //     &-to {
-    //         opacity: 0;
-    //     }
-    //     &-active {
-    //         transition: opacity 0.5s;
-    //     }
-    // }
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 @keyframes scrollLine {

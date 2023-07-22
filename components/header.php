@@ -40,7 +40,7 @@
                 </a>
             </div>
             <div class="col-1-2-mobile col-7-13-tablet header__membcart">
-                <a href="" class="header__member">
+                <a href="/member/account" class="header__member">
                     <?php get_svg('person_outline') ?>
                     <span>會員</span>
                 </a>
@@ -52,22 +52,22 @@
             <div class="header__nav">
                 <ul>
                     <li>
-                        <a href="">關於慈雲</a>
+                        <a href="/about">關於慈雲</a>
                     </li>
                     <li>
-                        <a href="">關於慈雲</a>
+                        <a href="/about">關於慈雲</a>
                     </li>
                     <li>
-                        <a href="">關於慈雲</a>
+                        <a href="/about">關於慈雲</a>
                     </li>
                     <li>
-                        <a href="">關於慈雲</a>
+                        <a href="/about">關於慈雲</a>
                     </li>
                     <li>
-                        <a href="">關於慈雲</a>
+                        <a href="/about">關於慈雲</a>
                     </li>
                     <li>
-                        <a href="">關於慈雲</a>
+                        <a href="/about">關於慈雲</a>
                     </li>
                 </ul>
             </div>

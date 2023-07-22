@@ -1,6 +1,6 @@
 <?php include('function.php'); ?>
+<?php include('components/header.php'); ?>
 <main>
-    <?php include('components/header.php'); ?>
 	<h1>TEST</h1>
-    <?php include('components/footer.php'); ?>
 </main>
+<?php include('components/footer.php'); ?>
