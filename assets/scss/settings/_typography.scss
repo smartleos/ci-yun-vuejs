@@ -103,6 +103,11 @@ $font-family-body:
             // body.language-en &, &.-en {
             //     font-family: map-get($font-family, en);
             // }
+        } @else if $type == 14 {
+            font-size: 1.4rem;
+            font-weight: $font-weight-normal;
+            font-family: $font-family-body;
+
         } @else {
             @error '#{$type}:沒有這個type';
         }
