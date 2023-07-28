@@ -1,0 +1,14 @@
+.title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    > svg {
+        @include size(9rem, auto);
+        margin-bottom: 2rem;
+    }
+
+    > h3 {
+        @include typo('head', 1);
+    }
+}

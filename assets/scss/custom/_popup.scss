@@ -1,0 +1,41 @@
+.popup {
+    @include size(100vw, 100vh);
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 12rem;
+    padding-bottom: 12rem;
+    overflow: scroll;
+    z-index: 999;
+    opacity: 0;
+    transform: translateY(4.8rem);
+    transition: opacity .3s ease-in-out, transform .3s ease-in-out;
+
+    &.-active {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .grid {
+        > figure {
+            position: relative;
+    
+            > svg {
+                @include size(2.4rem, auto);
+        
+                position: absolute;
+                top: 2.4rem;
+                right: 2.4rem;
+                cursor: pointer;
+            }
+
+            > img {
+                @include size(100%, auto);
+            }
+        }
+    }
+}

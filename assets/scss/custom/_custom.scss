@@ -5,11 +5,16 @@ body {
     main {
         padding-top: 8.1rem;
         min-height: 100vh;
-        background: map-get($colors, white);
-        animation: fadeInUp .3s both;
+        animation: none;
+        background: transparent;
     }
 }
 
+@import './button.scss';
 @import './header.scss';
 @import './footer.scss';
 @import './dev.scss';
+@import './index.scss';
+@import './bg.scss';
+@import './popup.scss';
+@import './components/components.scss';

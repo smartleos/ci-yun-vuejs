@@ -1,0 +1,116 @@
+.information-card {
+    @include size(100%, auto);
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.6rem;
+
+    &.-small {
+        > p {
+            display: none;
+        }
+
+        > h4 {
+            text-align: center;
+        }
+    }
+
+    > figure {
+        @include size(100%, auto);
+        @include aspect(0.5);
+
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+
+        > img {
+            @include size(100%);
+
+            position: absolute;
+            object-fit: cover;
+        }
+    }
+
+    &-row {
+        @include size(100%, auto);
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        > span {
+            padding: 0.4rem 1.2rem;
+            background-color: map-get($colors, red);
+            border-radius: .4rem;
+            color: map-get($colors, white);
+        }
+
+        > p {
+            @include typo('body', 16);
+
+            color: map-get($colors, red);
+        }
+    }
+
+    > h4 {
+        @include typo('head', 2);
+        @include size(100%, auto);
+    }
+
+    > p {
+        @include typo('body', 16);
+
+        display: flex;
+        flex-direction: column;
+        color: map-get($colors, brand-1);
+    }
+
+    > hr {
+        @include size(100%, auto);
+
+        border-top: 1px solid map-get($colors, red);
+        margin: 0;
+    }
+
+    &-btn {
+        display: flex;
+        align-items: center;
+        gap: 1.2rem;
+        cursor: pointer;
+        color: map-get($colors, brand-1);
+        transition: color .3s ease-in-out;
+
+        @include media-breakpoint-up(medium) {
+            &:hover {
+                color: map-get($colors, brand-2);
+
+                > span {
+                    color: map-get($colors, brand-2);
+                    border-color: map-get($colors, brand-2);
+                }
+            }
+        }
+
+        > span {
+            @include size(2.4rem);
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            border: 1px solid map-get($colors, brand-1);
+            transition: color .3s ease-in-out, border-color .3s ease-in-out;
+
+            > svg {
+                @include size(1em, auto);
+            }
+        }
+
+        > p {
+            @include typo('body', 16);
+        }
+    }
+}

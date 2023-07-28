@@ -33,47 +33,46 @@
 <body>
     <header class="header">
         <div class="container">
-        <div class="grid">
-            <div class="col-2-4-mobile col-1-6-tablet header__logo">
-                <a href="<?php site_url() ?>" title="回到首頁">
-                    <img src="<?php image_dir() ?>logo.svg" alt="慈雲寶塔">
-                </a>
+            <div class="grid">
+                <div class="col-2-4-mobile col-1-6-tablet header__logo">
+                    <a href="<?php site_url() ?>" title="回到首頁">
+                        <img src="<?php image_dir() ?>logo.svg" alt="慈雲寶塔">
+                    </a>
+                </div>
+                <div class="col-1-2-mobile col-7-13-tablet header__membcart">
+                    <a href="/member/account" class="header__member">
+                        <?php get_svg('person_outline') ?>
+                        <span>會員</span>
+                    </a>
+                    <a href="" class="header__cart">
+                        <?php get_svg('shopping_cart') ?>
+                        <span>購物車</span>
+                    </a>
+                </div>
+                <div class="header__nav">
+                    <ul>
+                        <li>
+                            <a href="/about">關於慈雲</a>
+                        </li>
+                        <li>
+                            <a href="/about">關於慈雲</a>
+                        </li>
+                        <li>
+                            <a href="/about">關於慈雲</a>
+                        </li>
+                        <li>
+                            <a href="/about">關於慈雲</a>
+                        </li>
+                        <li>
+                            <a href="/about">關於慈雲</a>
+                        </li>
+                        <li>
+                            <a href="/about">關於慈雲</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div class="col-1-2-mobile col-7-13-tablet header__membcart">
-                <a href="/member/account" class="header__member">
-                    <?php get_svg('person_outline') ?>
-                    <span>會員</span>
-                </a>
-                <a href="" class="header__cart">
-                    <?php get_svg('shopping_cart') ?>
-                    <span>購物車</span>
-                </a>
-            </div>
-            <div class="header__nav">
-                <ul>
-                    <li>
-                        <a href="/about">關於慈雲</a>
-                    </li>
-                    <li>
-                        <a href="/about">關於慈雲</a>
-                    </li>
-                    <li>
-                        <a href="/about">關於慈雲</a>
-                    </li>
-                    <li>
-                        <a href="/about">關於慈雲</a>
-                    </li>
-                    <li>
-                        <a href="/about">關於慈雲</a>
-                    </li>
-                    <li>
-                        <a href="/about">關於慈雲</a>
-                    </li>
-                </ul>
-            </div>
-		</div>
         </div>
-
     </header>
 
     

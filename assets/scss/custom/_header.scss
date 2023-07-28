@@ -11,18 +11,18 @@
     border-bottom: 1px solid map-get($colors, brown-line);
     animation: fadeInDown .3s .3s both;
 
-    img {
-        @include size(17rem, auto);
-
-        @include media-breakpoint-down(tablet) {
-            @include size(12rem, auto);
-        }
-    }
-
     &__logo {
         @include media-breakpoint-down(tablet) {
             order: 2;
             margin: 0 auto;
+        }
+
+        > img {
+            @include size(17rem, auto);
+    
+            @include media-breakpoint-down(tablet) {
+                @include size(12rem, auto);
+            }
         }
     }
 
