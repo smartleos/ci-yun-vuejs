@@ -1,0 +1,112 @@
+.page-products {
+    @include size(100vw, auto);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 8.2rem;
+    padding-bottom: 23.2rem;
+
+    &__top {
+        @include size(100vw, 31.6vw);
+
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        margin-bottom: 9.2rem;
+        overflow: hidden;
+
+        > figure {
+            @include size(200vw);
+
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            border-radius: 50%;
+            overflow: hidden;
+
+            > img {
+                @include size(100vw, auto);
+
+                position: absolute;
+                bottom: 0;
+            }
+        }
+
+        > h2 {
+            @include typo('display', 2);
+
+            color: map-get($colors, white);
+            z-index: 1;
+            margin-bottom: 6rem;
+        }
+    }
+
+    &__select {
+        position: relative;
+        display: flex;
+        align-items: center;
+        margin-bottom: 10rem;
+        
+        > select {
+            @include typo('body', 16);
+            
+            border: 1px solid map-get($colors, brand-1);
+            border-radius: 3rem;
+            padding: 0.4rem 3.2rem 0.4rem 2rem;
+            cursor: pointer;
+        }
+
+        > svg {
+            @include size(1.2rem, auto);
+
+            position: absolute;
+            right: 1rem;
+        }
+    }
+
+    &__products {
+        display: flex;
+        flex-direction: column;
+        gap: 10rem;
+
+        &-section {
+            display: none;
+            flex-direction: column;
+            align-items: center;
+            gap: 6rem;
+
+            &.-show {
+                display: flex;
+            }
+
+            &-list {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 8rem 4rem;
+            }
+
+            &-btn {
+                display: flex;
+                align-items: center;
+                color: map-get($colors, brand-1);
+                gap: 1.2rem;
+
+                > span {
+                    @include size(2.4rem);
+
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border: 1px solid map-get($colors, brand-1);
+                    border-radius: 50%;
+
+                    > svg {
+                        @include size(1rem, auto);
+                    }
+                }
+            }
+        }
+    }
+}

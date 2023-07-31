@@ -5,7 +5,7 @@ console.log("%c ✦  Made By ES design studio ✦ ", "background:#C89862;padding
 $(function() {
     console.log('HTML Ready')
 
-    esNotification('success', 'Success', 'This is a success message')
+    // esNotification('success', 'Success', 'This is a success message')
 
     $('.footer__back').on('click', function() {
         window.scrollTo({
@@ -78,12 +78,39 @@ $(function() {
         $('.announcement-card__btn').each(function() {
             $(this).on('click', function() {
                 const url = $(this).attr('data-url')
-
                 createPopup(url)
             })
         })
-    } else {
-        return
     }
     // ------------- index -------------
+
+    // ------------- products -------------
+    if ($('.page-products').length) {
+        $('select[name="products_categories"]').on('change', function() {
+            switch ($(this).val()) {
+                case 'all':
+                    $('[data-category]').each(function() {
+                        $(this).addClass('-show')
+                    })
+                    break;
+                case '精緻代拜組':
+                    $('[data-category]').each(function() {
+                        $(this).removeClass('-show')
+                        if ($(this).attr('data-category') === '精緻代拜組') {
+                            $(this).addClass('-show')
+                        }
+                    })
+                    break;
+                case '精緻代拜組2':
+                    $('[data-category]').each(function() {
+                        $(this).removeClass('-show')
+                        if ($(this).attr('data-category') === '精緻代拜組2') {
+                            $(this).addClass('-show')
+                        }
+                    })
+                    break;
+            }
+        })
+    }
+    // ------------- products -------------
 });
