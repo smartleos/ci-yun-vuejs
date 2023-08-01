@@ -3,13 +3,6 @@
 <style>
     <?php include('assets/scss/main.css'); ?>
 </style>
-<link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
-/>
-<link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
-<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-<script src="https://cdn.plyr.io/3.7.8/plyr.js"></script>
 <?php include('components/bg.php'); ?>
 <main class="page-index">
 	<div class="page-index__kv">

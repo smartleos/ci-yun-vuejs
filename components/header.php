@@ -17,7 +17,10 @@
 
 	<!-- <link rel="icon" href="/favicon.svg" type="image/svg+xml"> -->
 	<link rel="apple-touch-icon" href="/apple-touch-icon.png">
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://cdn.plyr.io/3.7.8/plyr.js"></script>
 	<?php
 		//引入編譯後的 css
 		$dir = '/assets/css/';
