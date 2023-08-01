@@ -24,169 +24,71 @@
                 <div class="page-products-categories__products-section-list">
                     <div class="page-products-categories__products-section-list-card">
                         <?php
-                            $img_url="testimg/08.jpeg";
-                            $category="精緻代拜組";
-                            $promote="限時特價";
-                            $title="對年第二、第三年精緻代拜組";
-                            $original_price="5,000";
-                            $price="4,000";
-                            $description="我們積極期望能與各界不同高手領域的設計師、工程師合作，我們能提供多元不同層面的技術支援。";
                             include ("../../components/products/card.php");
                         ?>
                     </div>
                     <div class="page-products-categories__products-section-list-card">
                         <?php
-                            $img_url="testimg/08.jpeg";
-                            $category="精緻代拜組";
-                            $promote="限時特價";
-                            $title="對年第二、第三年精緻代拜組";
-                            $original_price="5,000";
-                            $price="4,000";
-                            $description="我們積極期望能與各界不同高手領域的設計師、工程師合作，我們能提供多元不同層面的技術支援。";
                             include ("../../components/products/card.php");
                         ?>
                     </div>
                     <div class="page-products-categories__products-section-list-card">
                         <?php
-                            $img_url="testimg/08.jpeg";
-                            $category="精緻代拜組";
-                            $promote="限時特價";
-                            $title="對年第二、第三年精緻代拜組";
-                            $original_price="5,000";
-                            $price="4,000";
-                            $description="我們積極期望能與各界不同高手領域的設計師、工程師合作，我們能提供多元不同層面的技術支援。";
                             include ("../../components/products/card.php");
                         ?>
                     </div>
                     <div class="page-products-categories__products-section-list-card">
                         <?php
-                            $img_url="testimg/08.jpeg";
-                            $category="精緻代拜組";
-                            $promote="限時特價";
-                            $title="對年第二、第三年精緻代拜組";
-                            $original_price="5,000";
-                            $price="4,000";
-                            $description="我們積極期望能與各界不同高手領域的設計師、工程師合作，我們能提供多元不同層面的技術支援。";
                             include ("../../components/products/card.php");
                         ?>
                     </div>
                     <div class="page-products-categories__products-section-list-card">
                         <?php
-                            $img_url="testimg/08.jpeg";
-                            $category="精緻代拜組";
-                            $promote="限時特價";
-                            $title="對年第二、第三年精緻代拜組";
-                            $original_price="5,000";
-                            $price="4,000";
-                            $description="我們積極期望能與各界不同高手領域的設計師、工程師合作，我們能提供多元不同層面的技術支援。";
                             include ("../../components/products/card.php");
                         ?>
                     </div>
                     <div class="page-products-categories__products-section-list-card">
                         <?php
-                            $img_url="testimg/08.jpeg";
-                            $category="精緻代拜組";
-                            $promote="限時特價";
-                            $title="對年第二、第三年精緻代拜組";
-                            $original_price="5,000";
-                            $price="4,000";
-                            $description="我們積極期望能與各界不同高手領域的設計師、工程師合作，我們能提供多元不同層面的技術支援。";
                             include ("../../components/products/card.php");
                         ?>
                     </div>
                     <div class="page-products-categories__products-section-list-card">
                         <?php
-                            $img_url="testimg/08.jpeg";
-                            $category="精緻代拜組";
-                            $promote="限時特價";
-                            $title="對年第二、第三年精緻代拜組";
-                            $original_price="5,000";
-                            $price="4,000";
-                            $description="我們積極期望能與各界不同高手領域的設計師、工程師合作，我們能提供多元不同層面的技術支援。";
                             include ("../../components/products/card.php");
                         ?>
                     </div>
                     <div class="page-products-categories__products-section-list-card">
                         <?php
-                            $img_url="testimg/08.jpeg";
-                            $category="精緻代拜組";
-                            $promote="限時特價";
-                            $title="對年第二、第三年精緻代拜組";
-                            $original_price="5,000";
-                            $price="4,000";
-                            $description="我們積極期望能與各界不同高手領域的設計師、工程師合作，我們能提供多元不同層面的技術支援。";
                             include ("../../components/products/card.php");
                         ?>
                     </div>
                     <div class="page-products-categories__products-section-list-card">
                         <?php
-                            $img_url="testimg/08.jpeg";
-                            $category="精緻代拜組";
-                            $promote="限時特價";
-                            $title="對年第二、第三年精緻代拜組";
-                            $original_price="5,000";
-                            $price="4,000";
-                            $description="我們積極期望能與各界不同高手領域的設計師、工程師合作，我們能提供多元不同層面的技術支援。";
                             include ("../../components/products/card.php");
                         ?>
                     </div>
                     <div class="page-products-categories__products-section-list-card">
                         <?php
-                            $img_url="testimg/08.jpeg";
-                            $category="精緻代拜組";
-                            $promote="限時特價";
-                            $title="對年第二、第三年精緻代拜組";
-                            $original_price="5,000";
-                            $price="4,000";
-                            $description="我們積極期望能與各界不同高手領域的設計師、工程師合作，我們能提供多元不同層面的技術支援。";
                             include ("../../components/products/card.php");
                         ?>
                     </div>
                     <div class="page-products-categories__products-section-list-card">
                         <?php
-                            $img_url="testimg/08.jpeg";
-                            $category="精緻代拜組";
-                            $promote="限時特價";
-                            $title="對年第二、第三年精緻代拜組";
-                            $original_price="5,000";
-                            $price="4,000";
-                            $description="我們積極期望能與各界不同高手領域的設計師、工程師合作，我們能提供多元不同層面的技術支援。";
                             include ("../../components/products/card.php");
                         ?>
                     </div>
                     <div class="page-products-categories__products-section-list-card">
                         <?php
-                            $img_url="testimg/08.jpeg";
-                            $category="精緻代拜組";
-                            $promote="限時特價";
-                            $title="對年第二、第三年精緻代拜組";
-                            $original_price="5,000";
-                            $price="4,000";
-                            $description="我們積極期望能與各界不同高手領域的設計師、工程師合作，我們能提供多元不同層面的技術支援。";
                             include ("../../components/products/card.php");
                         ?>
                     </div>
                     <div class="page-products-categories__products-section-list-card">
                         <?php
-                            $img_url="testimg/08.jpeg";
-                            $category="精緻代拜組";
-                            $promote="限時特價";
-                            $title="對年第二、第三年精緻代拜組";
-                            $original_price="5,000";
-                            $price="4,000";
-                            $description="我們積極期望能與各界不同高手領域的設計師、工程師合作，我們能提供多元不同層面的技術支援。";
                             include ("../../components/products/card.php");
                         ?>
                     </div>
                     <div class="page-products-categories__products-section-list-card">
                         <?php
-                            $img_url="testimg/08.jpeg";
-                            $category="精緻代拜組";
-                            $promote="限時特價";
-                            $title="對年第二、第三年精緻代拜組";
-                            $original_price="5,000";
-                            $price="4,000";
-                            $description="我們積極期望能與各界不同高手領域的設計師、工程師合作，我們能提供多元不同層面的技術支援。";
                             include ("../../components/products/card.php");
                         ?>
                     </div>

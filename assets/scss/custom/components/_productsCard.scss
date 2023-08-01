@@ -50,13 +50,9 @@
             align-items: center;
             background-color: map-get($colors, promote);
             color: map-get($colors, red);
-            display: none;
+            display: flex;
             border-radius: 5rem;
             font-weight: bold;
-
-            &.-show {
-                display: flex;
-            }
         }
     }
 
@@ -73,11 +69,7 @@
 
             color: map-get($colors, gray-1);
             text-decoration: line-through;
-            display: none;
-
-            &.-show {
-                display: flex;
-            }
+            display: flex;
         }
 
         &-now {
