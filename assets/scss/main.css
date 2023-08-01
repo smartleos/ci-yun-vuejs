@@ -10970,6 +10970,11 @@ body main {
     color: #ffffff;
   }
 }
+.button.-head {
+  font-size: 2rem;
+  font-weight: 700;
+  font-family: "Noto Sans TC", "Helvetica Neue", "Helvetica", -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+}
 @media (min-width: 1024px) {
   .button:hover {
     background-color: #9A7412;
@@ -11666,6 +11671,301 @@ body main {
   gap: 8rem 4rem;
 }
 
+.products-single {
+  width: 100vw;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 11.8rem;
+  padding-bottom: 23.2rem;
+}
+.products-single__swiper {
+  overflow: hidden;
+}
+.products-single__swiper-wrapper > figure {
+  width: 100%;
+  height: auto;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+.products-single__swiper-wrapper > figure::before {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+.products-single__swiper-wrapper > figure > img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.products-single__swiper-bottom {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 3.2rem;
+}
+.products-single__swiper-bottom > span {
+  width: 4rem;
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #9A7412;
+  border-radius: 50%;
+  color: #9A7412;
+  cursor: pointer;
+}
+.products-single__swiper-bottom > span > svg {
+  width: 1.8rem;
+  height: auto;
+}
+.products-single__swiper-bottom-pagination {
+  display: flex;
+  justify-content: center;
+}
+.products-single__swiper-bottom-pagination > span {
+  width: 1.6rem;
+  height: 1.6rem;
+  border: 1px solid #9A7412;
+  border-radius: 50%;
+  background-color: transparent;
+  opacity: 1;
+}
+.products-single__swiper-bottom-pagination > span.swiper-pagination-bullet-active {
+  background-color: #9A7412;
+}
+.products-single__information {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+.products-single__information-tags {
+  display: flex;
+  justify-content: space-between;
+}
+.products-single__information-tags-category {
+  font-size: 1.8rem;
+  font-weight: 700;
+  font-family: "Noto Sans TC", "Helvetica Neue", "Helvetica", -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #9A7412;
+  color: #ffffff;
+  padding: 0.4rem 1.2rem;
+  border-radius: 0.4rem;
+}
+.products-single__information-tags-promote {
+  font-size: 1.8rem;
+  font-weight: 700;
+  font-family: "Noto Sans TC", "Helvetica Neue", "Helvetica", -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+  padding: 0.4rem 1.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #FFB5A5;
+  color: #C93B3B;
+  border-radius: 5rem;
+  font-weight: bold;
+}
+.products-single__information-specification {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+.products-single__information-specification > h3 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  font-family: "Noto Sans TC", "Helvetica Neue", "Helvetica", -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+}
+.products-single__information-specification > p {
+  line-height: 1.6;
+  font-size: 1.6rem;
+  font-weight: 400;
+  font-family: "Noto Sans TC", "Helvetica Neue", "Helvetica", -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+  color: #9A7412;
+}
+.products-single__information > hr {
+  border-top: 1px solid #9A7412;
+  margin: 0;
+}
+.products-single__information-payment {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+.products-single__information-payment > h3 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  font-family: "Noto Sans TC", "Helvetica Neue", "Helvetica", -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+}
+.products-single__information-payment > p {
+  line-height: 1.6;
+  font-size: 1.6rem;
+  font-weight: 400;
+  font-family: "Noto Sans TC", "Helvetica Neue", "Helvetica", -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+  color: #9A7412;
+}
+.products-single__information-price {
+  display: flex;
+  flex-direction: column;
+}
+.products-single__information-price-original {
+  line-height: 1.6;
+  font-size: 1.6rem;
+  font-weight: 400;
+  font-family: "Noto Sans TC", "Helvetica Neue", "Helvetica", -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+  color: #A4A4A4;
+  text-decoration: line-through;
+}
+.products-single__information-price-now {
+  font-size: 3.6rem;
+  font-weight: 700;
+  font-family: "Noto Sans TC", "Helvetica Neue", "Helvetica", -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+  color: #C93B3B;
+}
+.products-single__information-btns {
+  display: flex;
+  gap: 1.6rem;
+}
+.products-single__description {
+  margin-top: 8.2rem;
+}
+.products-single__description-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2.8rem;
+}
+.products-single__description-wrapper > span {
+  font-weight: bold;
+}
+.products-single__description-wrapper-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+.products-single__description-wrapper-text > h2 {
+  font-size: 3.6rem;
+  font-weight: 700;
+  font-family: "Noto Sans TC", "Helvetica Neue", "Helvetica", -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+  color: #9A7412;
+}
+.products-single__description-wrapper-text > h3 {
+  font-size: 2.8rem;
+  line-height: 1.6;
+  font-weight: 700;
+  font-family: "Noto Sans TC", "Helvetica Neue", "Helvetica", -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+  color: #9A7412;
+}
+.products-single__description-wrapper-text > p {
+  line-height: 1.6;
+  font-size: 1.6rem;
+  font-weight: 400;
+  font-family: "Noto Sans TC", "Helvetica Neue", "Helvetica", -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+  color: #9A7412;
+  white-space: pre-line;
+}
+.products-single__description-wrapper-text > p > a {
+  color: #C93B3B;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.products-single__description-wrapper-quote {
+  position: relative;
+  display: flex;
+  padding: 1.6rem 2rem;
+  gap: 1rem;
+}
+.products-single__description-wrapper-quote::before {
+  line-height: 1.6;
+  font-size: 1.6rem;
+  font-weight: 400;
+  font-family: "Noto Sans TC", "Helvetica Neue", "Helvetica", -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+  width: 0.2rem;
+  height: 100%;
+  content: "";
+  background-color: #C93B3B;
+}
+.products-single__description-wrapper > ol {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  color: #9A7412;
+  counter-reset: item;
+}
+.products-single__description-wrapper > ol > li {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  counter-increment: item;
+}
+.products-single__description-wrapper > ol > li::before {
+  line-height: 1.6;
+  font-size: 1.6rem;
+  font-weight: 400;
+  font-family: "Noto Sans TC", "Helvetica Neue", "Helvetica", -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+  content: "0" counter(item);
+  color: #C93B3B;
+}
+.products-single__description-wrapper > ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  color: #9A7412;
+}
+.products-single__description-wrapper > ul > li {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+.products-single__description-wrapper > ul > li::before {
+  width: 0.4rem;
+  height: 0.4rem;
+  content: "";
+  display: block;
+  border-radius: 50%;
+  margin-left: 1.2rem;
+  background-color: #C93B3B;
+}
+.products-single__description > figure {
+  padding: 3.2rem 0;
+}
+.products-single__description-video {
+  width: 100%;
+  height: auto;
+  padding: 1.6rem 0;
+}
+.products-single__description-video .plyr__control--overlaid {
+  background: rgba(255, 255, 255, 0.6) !important;
+}
+.products-single__description-video .plyr__control:hover {
+  background: rgba(255, 255, 255, 0.6) !important;
+}
+.products-single__description-video .plyr--full-ui input[type=range] {
+  color: rgba(255, 255, 255, 0.6) !important;
+}
+.products-single__recommend {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6rem;
+  padding: 3.2rem 0;
+}
+.products-single__recommend-swiper {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
 .bg {
   width: 100vw;
   height: calc(100vh + 8.2rem);
@@ -12003,12 +12303,9 @@ body main {
   align-items: center;
   background-color: #FFB5A5;
   color: #C93B3B;
-  display: none;
+  display: flex;
   border-radius: 5rem;
   font-weight: bold;
-}
-.products-card__row-promote.-show {
-  display: flex;
 }
 .products-card > h4 {
   font-size: 2.4rem;
@@ -12027,9 +12324,6 @@ body main {
   font-family: "Noto Sans TC", "Helvetica Neue", "Helvetica", -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
   color: #A4A4A4;
   text-decoration: line-through;
-  display: none;
-}
-.products-card__price-original.-show {
   display: flex;
 }
 .products-card__price-now {

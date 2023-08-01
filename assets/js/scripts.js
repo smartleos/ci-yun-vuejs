@@ -122,4 +122,40 @@ $(function() {
         })
     }
     // ------------- products-categories -------------
+
+    // ------------- products-single -------------
+    if ($('.products-single').length) {
+        new Swiper('.products-single__swiper', {
+            loop: true,
+            slidesPerView: 1,
+            autoplay: {
+                delay: 5000,
+            },
+            pagination: {
+                el: '.products-single__swiper-bottom-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.products-single__swiper-bottom-next',
+                prevEl: '.products-single__swiper-bottom-prev',
+            },
+        })
+
+        new Swiper('.products-single__recommend-swiper', {
+            loop: true,
+            slidesPerView: 3,
+            spaceBetween: 40,
+            // pagination: {
+            //     el: '.products-single__swiper-bottom-pagination',
+            //     clickable: true,
+            // },
+            // navigation: {
+            //     nextEl: '.products-single__swiper-bottom-next',
+            //     prevEl: '.products-single__swiper-bottom-prev',
+            // },
+        })
+
+        new Plyr('#products-player')
+    }
+    // ------------- products-single -------------
 });

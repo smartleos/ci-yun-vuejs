@@ -97,6 +97,11 @@ $font-family-body:
             font-weight: $font-weight-bold;
             font-family: $font-family-head;
             
+        } @else if $type == 5 {
+            font-size: 1.8rem;
+            font-weight: $font-weight-bold;
+            font-family: $font-family-head;
+            
         } @else {
             @error '#{$type}:沒有這個type';
         }

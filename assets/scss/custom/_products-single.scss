@@ -1,0 +1,320 @@
+.products-single {
+    @include size(100vw, auto);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 11.8rem;
+    padding-bottom: 23.2rem;
+
+    &__swiper {
+        overflow: hidden;
+
+        &-wrapper {
+            > figure {
+                @include size(100%, auto);
+                @include aspect(1);
+
+                position: relative;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 1rem;
+                overflow: hidden;
+
+                > img {
+                    @include size(100%);
+
+                    position: absolute;
+                    object-fit: cover;
+                }
+            }
+        }
+
+        &-bottom {
+            @include size(100%, auto);
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 3.2rem;
+
+            > span {
+                @include size(4rem);
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border: 1px solid map-get($colors, brand-1);
+                border-radius: 50%;
+                color: map-get($colors, brand-1);
+                cursor: pointer;
+
+                > svg {
+                    @include size(1.8rem, auto);
+                }
+            }
+
+            &-pagination {
+                display: flex;
+                justify-content: center;
+
+                > span {
+                    @include size(1.6rem);
+
+                    border: 1px solid map-get($colors, brand-1);
+                    border-radius: 50%;
+                    background-color: transparent;
+                    opacity: 1;
+
+                    &.swiper-pagination-bullet-active {
+                        background-color: map-get($colors, brand-1);
+                    }
+                }
+            }
+        }
+    }
+
+    &__information {
+        display: flex;
+        flex-direction: column;
+        gap: 2.4rem;
+
+        &-tags {
+            display: flex;
+            justify-content: space-between;
+
+            &-category {
+                @include typo('head', 5);
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: map-get($colors, brand-1);
+                color: map-get($colors, white);
+                padding: 0.4rem 1.2rem;
+                border-radius: .4rem;
+            }
+
+            &-promote {
+                @include typo('head', 5);
+
+                padding: 0.4rem 1.6rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: map-get($colors, promote);
+                color: map-get($colors, red);
+                border-radius: 5rem;
+                font-weight: bold;
+            }
+        }
+
+        &-specification {
+            display: flex;
+            flex-direction: column;
+            gap: .8rem;
+
+            > h3 {
+                @include typo('head', 5);
+            }
+
+            > p {
+                @include typo('body', 16);
+
+                color: map-get($colors, brand-1);
+            }
+        }
+
+        > hr {
+            border-top: 1px solid map-get($colors, brand-1);
+            margin: 0;
+        }
+
+        &-payment {
+            display: flex;
+            flex-direction: column;
+            gap: .8rem;
+
+            > h3 {
+                @include typo('head', 5);
+            }
+
+            > p {
+                @include typo('body', 16);
+
+                color: map-get($colors, brand-1);
+            }
+        }
+
+        &-price {
+            display: flex;
+            flex-direction: column;
+
+            &-original {
+                @include typo('body', 16);
+
+                color: map-get($colors, gray-1);
+                text-decoration: line-through;
+            }
+
+            &-now {
+                @include typo('head', 1);
+
+                color: map-get($colors, red);
+            }
+        }
+
+        &-btns {
+            display: flex;
+            gap: 1.6rem;
+        }
+    }
+
+    &__description {
+        margin-top: 8.2rem;
+
+        &-wrapper {
+            display: flex;
+            flex-direction: column;
+            gap: 2.8rem;
+
+            > span {
+                font-weight: bold;
+            }
+
+            &-text {
+                display: flex;
+                flex-direction: column;
+                gap: 1.6rem;
+
+                > h2 {
+                    @include typo('head', 1);
+
+                    color: map-get($colors, brand-1);
+                }
+
+                > h3 {
+                    @include typo('head', 2);
+
+                    color: map-get($colors, brand-1);
+                }
+
+                > p {
+                    @include typo('body', 16);
+
+                    color: map-get($colors, brand-1);
+                    white-space: pre-line;
+
+                    > a {
+                        color: map-get($colors, red);
+                        text-decoration: underline;
+                        cursor: pointer;
+                    }
+                }
+            }
+
+            &-quote {
+                position: relative;
+                display: flex;
+                padding: 1.6rem 2rem;
+                gap: 1rem;
+
+                &::before {
+                    @include typo('body', 16);
+                    @include size(.2rem, 100%);
+
+                    content: '';
+                    background-color: map-get($colors, red);
+                }
+            }
+
+            > ol {
+                display: flex;
+                flex-direction: column;
+                gap: 1.6rem;
+                color: map-get($colors, brand-1);
+                counter-reset: item;
+
+                > li {
+                    display: flex;
+                    align-items: center;
+                    gap: 1.2rem;
+                    counter-increment: item;
+
+                    &::before {
+                        @include typo('body', 16);
+
+                        content: '0' counter(item);
+                        color: map-get($colors, red);
+                    }
+                }
+            }
+
+            > ul {
+                display: flex;
+                flex-direction: column;
+                gap: 1.6rem;
+                color: map-get($colors, brand-1);
+
+                > li {
+                    display: flex;
+                    align-items: center;
+                    gap: 1.2rem;
+
+                    &::before {
+                        @include size(.4rem);
+
+                        content: '';
+                        display: block;
+                        border-radius: 50%;
+                        margin-left: 1.2rem;
+                        background-color: map-get($colors, red);
+                    }
+                }
+            }
+        }
+
+        > figure {
+            padding: 3.2rem 0;
+        }
+
+        &-video {
+            @include size(100%, auto);
+
+            padding: 1.6rem 0;
+
+            .plyr {
+                &__control--overlaid {
+                    background: rgba(map-get($colors, white), .6) !important;
+                }
+            
+                &__control {
+                    &:hover {
+                        background: rgba(map-get($colors, white), .6) !important;
+                    }
+                }
+            
+                &--full-ui {
+                    input[type=range] {
+                        color: rgba(map-get($colors, white), .6) !important;
+                    }
+                }
+            }
+        }
+    }
+
+    &__recommend {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 6rem;
+        padding: 3.2rem 0;
+
+        &-swiper {
+            @include size(100%, auto);
+
+            overflow: hidden;
+        }
+    }
+}

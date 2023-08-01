@@ -47,6 +47,10 @@
         }
     }
 
+    &.-head {
+        @include typo('head', 4);
+    }
+
     @include media-breakpoint-up(medium) {
         &:hover {
             background-color: map-get($colors, brand-1);
