@@ -113,4 +113,13 @@ $(function() {
         })
     }
     // ------------- products -------------
+
+    // ------------- products-categories -------------
+    if ($('.page-products-categories').length) {
+        $('select[name="products_categories"]').on('change', function() {
+            // redirect to products page
+            window.location.href = `/products-categories/${$(this).val()}`
+        })
+    }
+    // ------------- products-categories -------------
 });

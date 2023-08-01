@@ -11617,6 +11617,55 @@ body main {
   height: auto;
 }
 
+.page-products-categories {
+  width: 100vw;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 8.2rem;
+  padding-bottom: 23.2rem;
+}
+.page-products-categories__select {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+}
+.page-products-categories__select > select {
+  line-height: 1.6;
+  font-size: 1.6rem;
+  font-weight: 400;
+  font-family: "Noto Sans TC", "Helvetica Neue", "Helvetica", -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+  border: 1px solid #9A7412;
+  border-radius: 3rem;
+  padding: 0.4rem 3.2rem 0.4rem 2rem;
+  cursor: pointer;
+}
+.page-products-categories__select > svg {
+  width: 1.2rem;
+  height: auto;
+  position: absolute;
+  right: 1rem;
+}
+.page-products-categories__products {
+  display: flex;
+  flex-direction: column;
+  gap: 10rem;
+}
+.page-products-categories__products-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6rem;
+}
+.page-products-categories__products-section-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8rem 4rem;
+}
+
 .bg {
   width: 100vw;
   height: calc(100vh + 8.2rem);

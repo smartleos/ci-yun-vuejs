@@ -17,6 +17,6 @@
         $target="";
         $text="加入購物車";
         $color="red";
-        include ("../components/button.php");
+        file_exists('../components/button.php') ? include ("../components/button.php") : include ("../../components/button.php");
     ?>
 </div>
