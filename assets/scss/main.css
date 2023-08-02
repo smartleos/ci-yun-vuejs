@@ -11753,6 +11753,205 @@ body main {
   padding: 2.4rem 0;
 }
 
+.page-cart-information {
+  width: 100vw;
+  height: auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 8.2rem;
+  padding-bottom: 10.6rem;
+  z-index: 1;
+}
+.page-cart-information__progress {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 6rem;
+  margin-bottom: 4rem;
+}
+.page-cart-information__progress > span {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+.page-cart-information__progress > span:first-child > span::before {
+  display: none;
+}
+.page-cart-information__progress > span:last-child > span::after {
+  display: none;
+}
+.page-cart-information__progress > span.-active > p {
+  color: #9A7412;
+}
+.page-cart-information__progress > span.-active > span {
+  background-color: #9A7412;
+}
+.page-cart-information__progress > span.-progress > span {
+  background-color: #9A7412;
+}
+.page-cart-information__progress > span.-progress > span::after {
+  background-color: #9A7412;
+}
+.page-cart-information__progress > span.-progress + span > span::before {
+  background-color: #9A7412;
+}
+.page-cart-information__progress > span > p {
+  font-size: 1.8rem;
+  font-weight: 700;
+  font-family: "Noto Sans TC", "Helvetica Neue", "Helvetica", -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+}
+.page-cart-information__progress > span > span {
+  width: 1.2rem;
+  height: 1.2rem;
+  content: "";
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: #A4A4A4;
+}
+.page-cart-information__progress > span > span::after {
+  width: 12vw;
+  height: 0.2rem;
+  content: "";
+  position: absolute;
+  left: 0;
+  background-color: #A4A4A4;
+  z-index: -1;
+}
+.page-cart-information__progress > span > span::before {
+  width: 12vw;
+  height: 0.2rem;
+  content: "";
+  position: absolute;
+  right: 0;
+  border-radius: 50%;
+  background-color: #A4A4A4;
+  z-index: -1;
+}
+.page-cart-information__information {
+  display: flex;
+  flex-direction: column;
+  padding: 4rem 0;
+  gap: 3.6rem;
+}
+.page-cart-information__form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2.4rem;
+}
+.page-cart-information__form > h2 {
+  width: 100%;
+  height: auto;
+  font-size: 2rem;
+  font-weight: 700;
+  font-family: "Noto Sans TC", "Helvetica Neue", "Helvetica", -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+  text-align: center;
+}
+.page-cart-information__form > label {
+  line-height: 1.6;
+  font-size: 1.6rem;
+  font-weight: 400;
+  font-family: "Noto Sans TC", "Helvetica Neue", "Helvetica", -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  cursor: pointer;
+}
+.page-cart-information__form > label > input {
+  width: 1.6rem;
+  height: 1.6rem;
+}
+.page-cart-information__form > label > input:checked::before {
+  width: 1.6rem;
+  height: 1.6rem;
+  content: "";
+  display: block;
+  border: 1px solid #9A7412;
+  background-color: #9A7412;
+}
+.page-cart-information__form > label > input::before {
+  width: 1.6rem;
+  height: 1.6rem;
+  content: "";
+  display: block;
+  border: 1px solid #9A7412;
+}
+.page-cart-information__form-wrapper {
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2.4rem;
+}
+.page-cart-information__form-wrapper-col {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.page-cart-information__form-wrapper-col > p {
+  display: flex;
+  gap: 0.4rem;
+}
+.page-cart-information__form-wrapper-col > p > span {
+  color: #C93B3B;
+}
+.page-cart-information__form-wrapper-col > input {
+  padding: 0.6rem 1.2rem;
+  border: 1px solid #9A7412;
+  border-radius: 0.4rem;
+  background-color: #ffffff;
+}
+.page-cart-information__form-wrapper-col > span {
+  display: flex;
+  gap: 2.4rem;
+}
+.page-cart-information__form-wrapper-col > span > div {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+.page-cart-information__form-wrapper-col > span > div > label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.page-cart-information__form-wrapper-col > span > div > input {
+  width: 1.6rem;
+  height: 1.6rem;
+}
+.page-cart-information__form-wrapper-col > span > div > input:checked::before {
+  width: 1.6rem;
+  height: 1.6rem;
+  content: "";
+  display: block;
+  border: 1px solid #9A7412;
+  background-color: #9A7412;
+  border-radius: 50%;
+}
+.page-cart-information__form-wrapper-col > span > div > input::before {
+  width: 1.6rem;
+  height: 1.6rem;
+  content: "";
+  display: block;
+  border: 1px solid #9A7412;
+  border-radius: 50%;
+}
+.page-cart-information__bottom {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  gap: 1.6rem;
+  padding: 2.4rem 0;
+}
+
 .page-products {
   width: 100vw;
   height: auto;

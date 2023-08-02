@@ -117,7 +117,6 @@ $(function() {
     // ------------- products-categories -------------
     if ($('.page-products-categories').length) {
         $('select[name="products_categories"]').on('change', function() {
-            // redirect to products page
             window.location.href = `/products-categories/${$(this).val()}`
         })
     }
@@ -145,17 +144,33 @@ $(function() {
             loop: true,
             slidesPerView: 3,
             spaceBetween: 40,
-            // pagination: {
-            //     el: '.products-single__swiper-bottom-pagination',
-            //     clickable: true,
-            // },
-            // navigation: {
-            //     nextEl: '.products-single__swiper-bottom-next',
-            //     prevEl: '.products-single__swiper-bottom-prev',
-            // },
         })
 
         new Plyr('#products-player')
     }
     // ------------- products-single -------------
+
+    // ------------- cart-information -------------
+    if ($('.page-cart-information').length) {
+        $('input[name="same"]').on('change', function() {
+            if (this.checked) {
+                const buyerName = $('#buyer_name').val();
+                const buyerGender = $('input[name="buyer_gender"]:checked').val();
+                const buyerPhone = $('#buyer_phone').val();
+                const buyerAddress = $('#buyer_address').val();
+
+                $('#receiver_name').val(buyerName);
+                $(`input[name="receiver_gender"][value="${buyerGender}"]`).prop('checked', true);
+                $('#receiver_phone').val(buyerPhone);
+                $('#receiver_address').val(buyerAddress);
+            } else {
+                // clear
+                $('#receiver_name').val('');
+                $(`input[name="receiver_gender"]`).prop('checked', false);
+                $('#receiver_phone').val('');
+                $('#receiver_address').val('');
+            }
+        })
+    }
+    // ------------- cart-information -------------
 });
