@@ -54,23 +54,21 @@
                 <div class="products-single__information-btns">
                     <div class="products-single__information-btns-btn">
                         <?php 
+                            $tag="button";
                             $url="";
                             $target="";
                             $text="加入購物車";
-                            $color="red";
-                            $type="outline";
-                            $typo="head";
+                            $style="-red -outline -head";
                             include ("../../components/button.php");
                         ?>
                     </div>
                     <div class="products-single__information-btns-btn">
                         <?php 
-                            $url="";
+                            $tag="a";
+                            $url="/cart/confirm";
                             $target="";
                             $text="立即結帳";
-                            $color="red";
-                            $type="";
-                            $typo="head";
+                            $style="-red -head";
                             include ("../../components/button.php");
                         ?>
                     </div>
@@ -154,10 +152,11 @@
             </div>
             <div class="products-single__recommend-btn">
                 <?php 
+                    $tag="a";
                     $url="/products";
                     $target="";
                     $text="回商品列表";
-                    $color="";
+                    $style="";
                     include ("../../components/button.php");
                 ?>
             </div>

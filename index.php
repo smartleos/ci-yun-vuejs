@@ -99,9 +99,11 @@
                 </div>
                 <div class="page-index__information-btn">
                     <?php 
+                        $tag="a";
                         $url="https://www.google.com/";
                         $target="_blank";
                         $text="更多法會";
+                        $style="";
                         include ("components/button.php");
                     ?>
                 </div>
@@ -157,9 +159,11 @@
                 </div>
                 <div class="page-index__service-btn">
                     <?php 
+                        $tag="a";
                         $url="https://www.google.com/";
                         $target="_blank";
                         $text="更多法會";
+                        $style="";
                         include ("components/button.php");
                     ?>
                 </div>
@@ -199,9 +203,11 @@
         </div>
         <div class="page-index__navigation-btn">
             <?php 
+                $tag="a";
                 $url="https://www.google.com/";
                 $target="_blank";
                 $text="更多法會";
+                $style="";
                 include ("components/button.php");
             ?>
         </div>

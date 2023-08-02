@@ -1,4 +1,7 @@
-<div class="products-card">
+<a
+    class="products-card"
+    href="/products/精緻代拜組"
+>
     <figure>
         <img src="<?php echo image_dir();?>testimg/08.jpeg" alt="">
     </figure>
@@ -12,11 +15,12 @@
         <span class="products-card__price-now">$4,000</span>
     </div>
     <p>我們積極期望能與各界不同高手領域的設計師、工程師合作，我們能提供多元不同層面的技術支援。</p>
-    <?php 
+    <?php
+        $tag="button";
         $url="";
         $target="";
         $text="加入購物車";
-        $color="red";
+        $style="-red";
         file_exists('../components/button.php') ? include ("../components/button.php") : include ("../../components/button.php");
     ?>
-</div>
+</a>

@@ -1,7 +1,7 @@
-<a
-    class="button <?php echo '-'.$color;?> <?php echo '-'.$type;?> <?php echo '-'.$typo;?>"
+<<?php echo $tag ? $tag : 'a';?>
+    class="button <?php echo $style;?>"
     href="<?php echo $url;?>"
     target="<?php echo $target;?>"
 >
     <p><?php echo $text;?></p>
-</a>
+</<?php echo $tag ? $tag : 'a';?>>

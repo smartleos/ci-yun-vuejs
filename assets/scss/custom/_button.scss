@@ -32,6 +32,11 @@
                 }
             }
         }
+
+        &.-transparent {
+            color: map-get($colors, red);
+            background-color: transparent;
+        }
     }
 
     &.-outline {
@@ -47,8 +52,28 @@
         }
     }
 
+    &.-transparent {
+        color: map-get($colors, brnad-1);
+        background-color: transparent;
+    }
+
     &.-head {
         @include typo('head', 4);
+    }
+
+    &.-disabled {
+        background-color: map-get($colors, gray-2);
+        color: map-get($colors, gray-1);
+        border: 1px solid map-get($colors, gray-1);
+        cursor: not-allowed;
+        pointer-events: none;
+
+        @include media-breakpoint-up(medium) {
+            &:hover {
+                background-color: map-get($colors, gray-2);
+                color: map-get($colors, gray-1);
+            }
+        }
     }
 
     @include media-breakpoint-up(medium) {
