@@ -1,0 +1,245 @@
+.page-cart-confirm {
+    @include size(100vw, auto);
+
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 8.2rem;
+    padding-bottom: 10.6rem;
+    z-index: 1;
+
+    &__progress {
+        @include size(100%, auto);
+
+        display: flex;
+        justify-content: space-between;
+        margin-top: 6rem;
+        margin-bottom: 4rem;
+
+        > span {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 2rem;
+
+            &:first-child {
+                > span {
+                    &::before {
+                        display: none;
+                    }
+                }
+            }
+
+            &:last-child {
+                > span {
+                    &::after {
+                        display: none;
+                    }
+                }
+            }
+
+            &.-active {
+                > p {
+                    color: map-get($colors, brand-1);
+                }
+
+                > span {
+                    background-color: map-get($colors, brand-1);
+                }
+            }
+
+            &.-progress {
+                > span {
+                    background-color: map-get($colors, brand-1);
+
+                    &::after {
+                        background-color: map-get($colors, brand-1);
+                    }
+                }
+
+                + span {
+                    > span {
+                        &::before {
+                            background-color: map-get($colors, brand-1);
+                        }
+                    }
+                }
+            }
+
+            > p {
+                @include typo('head', 5);
+            }
+
+            > span {
+                @include size(1.2rem);
+
+                content: '';
+                position: relative;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 50%;
+                background-color: map-get($colors, gray-1);
+
+                &::after {
+                    @include size(12vw, .2rem);
+
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    background-color: map-get($colors, gray-1);
+                    z-index: -1;
+                }
+
+                &::before {
+                    @include size(12vw, .2rem);
+
+                    content: '';
+                    position: absolute;
+                    right: 0;
+                    border-radius: 50%;
+                    background-color: map-get($colors, gray-1);
+                    z-index: -1;
+                }
+            }
+        }
+    }
+
+    &__cart {
+        display: flex;
+        flex-direction: column;
+        gap: 1.6rem;
+        padding-bottom: 4rem;
+
+        hr {
+            margin: 0;
+            border-top: 1px solid map-get($colors, brand-1);
+        }
+
+        &-shipment {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 2.4rem;
+
+            > h3 {
+                @include typo('head', 2);
+            }
+
+            > label {
+                display: flex;
+                align-items: center;
+                gap: .8rem;
+                cursor: pointer;
+
+                > input {
+                    @include size(1.6rem);
+
+                    &:checked {
+                        &::before {
+                            @include size(1.6rem);
+
+                            content: '';
+                            display: block;
+                            border: 1px solid map-get($colors, brand-1);
+                            background-color: map-get($colors, brand-1);
+                            border-radius: 50%;
+                        }
+                    }
+
+                    &::before {
+                        @include size(1.6rem);
+
+                        content: '';
+                        display: block;
+                        border: 1px solid map-get($colors, brand-1);
+                        border-radius: 50%;
+                    }
+                }
+            }
+
+            > p {
+                display: flex;
+                gap: 1.2rem;
+            }
+        }
+
+        &-coupon {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 1.2rem;
+
+            > h3 {
+                @include typo('head', 2);
+            }
+
+            > p {
+                @include typo('body', 16);
+            }
+
+            &-code {
+                display: flex;
+                flex-direction: column;
+                gap: .5rem;
+
+                > p {
+                    @include typo('body', 16);
+                }
+
+                &-input {
+                    display: flex;
+                    gap: .8rem;
+
+                    > input {
+                        padding: 0.6rem 1.2rem;
+                        border: 1px solid map-get($colors, brand-1);
+                        border-radius: .4rem;
+                    }
+                }
+            }
+
+            &-subtotal {
+                @include typo('body', 16);
+                
+                display: flex;
+                gap: 1.2rem;
+            }
+    
+            &-discount {
+                @include typo('body', 16);
+    
+                display: flex;
+                gap: 1.2rem;
+    
+                > span {
+                    color: map-get($colors, red);
+                }
+            }
+        }
+
+        &-total {
+            @include size(100%, auto);
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            > span {
+                @include typo('head', 2);
+
+                color: map-get($colors, red);
+            }
+        }
+
+        &-bottom {
+            @include size(100%, auto);
+
+            display: flex;
+            justify-content: center;
+            gap: 1.6rem;
+            padding: 2.4rem 0;
+        }
+    }
+}

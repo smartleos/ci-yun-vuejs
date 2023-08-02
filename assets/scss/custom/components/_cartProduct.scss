@@ -1,0 +1,57 @@
+.cart-product {
+    @include size(100%, auto);
+
+    display: flex;
+    align-items: flex-start;
+    padding: 1.6rem 2.4rem;
+    gap: 2.4rem;
+    background-color: map-get($colors, white);
+    box-shadow: 5px 5px 5px 0px rgba(map-get($colors, black-1), 0.15);
+
+    > figure {
+        @include size(14.2rem, auto);
+        @include aspect(1);
+
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        border-radius: .4rem;
+
+        > img {
+            @include size(100%);
+
+            position: absolute;
+            object-fit: cover;
+        }
+    }
+
+    &__information {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        gap: .6rem;
+
+        > h4 {
+            @include typo('head', 4);
+        }
+
+        > p {
+            @include typo('body', 16);
+
+            color: map-get($colors, gray-1);
+        }
+
+        > span {
+            @include typo('head', 4);
+        }
+    }
+
+    > p {
+        @include typo('body', 16);
+
+        color: map-get($colors, red);
+        cursor: pointer;
+    }
+}
