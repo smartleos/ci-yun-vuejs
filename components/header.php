@@ -47,7 +47,7 @@
                         <?php get_svg('person_outline') ?>
                         <span>會員</span>
                     </a>
-                    <a href="" class="header__cart">
+                    <a href="/cart/confirm" class="header__cart">
                         <?php get_svg('shopping_cart') ?>
                         <span>購物車</span>
                     </a>
@@ -58,19 +58,19 @@
                             <a href="/about">關於慈雲</a>
                         </li>
                         <li>
-                            <a href="/about">關於慈雲</a>
+                            <a href="/news">最新消息</a>
                         </li>
                         <li>
-                            <a href="/about">關於慈雲</a>
+                            <a href="/products">產品介紹</a>
                         </li>
                         <li>
-                            <a href="/about">關於慈雲</a>
+                            <a href="/about">慈善公益</a>
                         </li>
                         <li>
-                            <a href="/about">關於慈雲</a>
+                            <a href="/about">客服資訊</a>
                         </li>
                         <li>
-                            <a href="/about">關於慈雲</a>
+                            <a href="/about">常用表單</a>
                         </li>
                     </ul>
                 </div>

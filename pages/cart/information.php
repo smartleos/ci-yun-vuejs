@@ -52,7 +52,7 @@
                         </div>
                         <div class="page-cart-information__form-wrapper-col">
                             <p>聯絡電話<span>*</span></p>
-                            <input type="number" id="buyer_phone" name="buyer_phone" placeholder="請輸入...">
+                            <input type="tel" id="buyer_phone" name="buyer_phone" placeholder="請輸入...">
                         </div>
                         <div class="page-cart-information__form-wrapper-col">
                             <p>地址<span>*</span></p>
