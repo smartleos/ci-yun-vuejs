@@ -8,5 +8,5 @@
         <p>數量：3</p>
         <span>＄5000</span>
     </div>
-    <p>刪除</p>
+    <p class="<?php echo $delete ? '-show' : '' ?>">刪除</p>
 </div>

@@ -134,7 +134,7 @@
                 <div class="page-cart-information__bottom-btn">
                     <?php 
                         $tag="a";
-                        $url="/cart/information";
+                        $url="/cart/checkout";
                         $target="";
                         $text="下一步";
                         $style="-red";

@@ -26,8 +26,14 @@
                 </span>
             </div>
             <div class="page-cart-confirm__cart">
-                <?php include('../../components/cart/product.php'); ?>
-                <?php include('../../components/cart/product.php'); ?>
+                <?php
+                    $delete=true;
+                    include('../../components/cart/product.php');
+                ?>
+                <?php
+                    $delete=true;
+                    include('../../components/cart/product.php');
+                ?>
                 <div class="page-cart-confirm__cart-shipment">
                     <h3>寄送方式</h3>
                     <label for="method1">

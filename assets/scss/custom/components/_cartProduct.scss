@@ -53,5 +53,10 @@
 
         color: map-get($colors, red);
         cursor: pointer;
+        display: none;
+
+        &.-show {
+            display: block;
+        }
     }
 }
