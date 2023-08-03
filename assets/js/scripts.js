@@ -173,4 +173,15 @@ $(function() {
         })
     }
     // ------------- cart-information -------------
+
+    // ------------- cart-completed -------------
+    if ($('.page-cart-completed').length) {
+        const height = $('.page-cart-completed__receipt-wrapper').outerHeight()
+        $('.page-cart-completed__receipt-wrapper').css('max-height', height)
+        $('.page-cart-completed__receipt-top-btn').on('click', function() {
+            $('.page-cart-completed__receipt-top-btn').toggleClass('-active')
+            $('.page-cart-completed__receipt-wrapper').toggleClass('-hide')
+        })
+    }
+    // ------------- cart-completed -------------
 });

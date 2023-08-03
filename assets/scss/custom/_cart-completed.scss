@@ -1,0 +1,235 @@
+.page-cart-completed {
+    @include size(100vw, auto);
+
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 8.2rem;
+    padding-bottom: 10.6rem;
+    z-index: 1;
+
+    &__progress {
+        @include size(100%, auto);
+
+        display: flex;
+        justify-content: space-between;
+        margin-top: 6rem;
+        margin-bottom: 4rem;
+
+        > span {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 2rem;
+
+            &:first-child {
+                > span {
+                    &::before {
+                        display: none;
+                    }
+                }
+            }
+
+            &:last-child {
+                > span {
+                    &::after {
+                        display: none;
+                    }
+                }
+            }
+
+            &.-active {
+                > p {
+                    color: map-get($colors, brand-1);
+                }
+
+                > span {
+                    background-color: map-get($colors, brand-1);
+                }
+            }
+
+            &.-progress {
+                > span {
+                    background-color: map-get($colors, brand-1);
+
+                    &::after {
+                        background-color: map-get($colors, brand-1);
+                    }
+                }
+
+                + span {
+                    > span {
+                        &::before {
+                            background-color: map-get($colors, brand-1);
+                        }
+                    }
+                }
+            }
+
+            > p {
+                @include typo('head', 5);
+            }
+
+            > span {
+                @include size(1.2rem);
+
+                content: '';
+                position: relative;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 50%;
+                background-color: map-get($colors, gray-1);
+
+                &::after {
+                    @include size(12vw, .2rem);
+
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    background-color: map-get($colors, gray-1);
+                    z-index: -1;
+                }
+
+                &::before {
+                    @include size(12vw, .2rem);
+
+                    content: '';
+                    position: absolute;
+                    right: 0;
+                    border-radius: 50%;
+                    background-color: map-get($colors, gray-1);
+                    z-index: -1;
+                }
+            }
+        }
+    }
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        padding: 4rem 0;
+        gap: 3.6rem;
+
+        &-top {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            > p {
+                @include typo('body', 16);
+
+                font-weight: bold;
+            }
+        }
+    }
+
+    &__receipt {
+        @include size(100%, auto);
+
+        display: flex;
+        flex-direction: column;
+
+        &-top {
+            @include size(100%, auto);
+
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 2.4rem;
+
+            &-btn {
+                display: flex;
+                gap: 1.6rem;
+                cursor: pointer;
+
+                &.-active {
+                    > svg {
+                        transform: rotateX(180deg);
+                    }
+                }
+
+                > p {
+                    @include typo('body', 16);
+
+                    color: map-get($colors, brand-1);
+                }
+
+                > svg {
+                    @include size(1.2rem, auto);
+
+                    transition: transform .6s ease-in-out;
+                }
+            }
+        }
+
+        &-wrapper {
+            display: flex;
+            flex-direction: column;
+            gap: 2.4rem;
+            border-top: 1px solid map-get($colors, brand-1);
+            border-bottom: 1px solid map-get($colors, brand-1);
+            overflow: hidden;
+            transition: max-height .6s ease-in-out, padding .6s ease-in-out;
+            padding: 2.4rem 0;
+            
+            &.-hide {
+                padding: 0;
+                max-height: 0 !important;
+            }
+
+            > ul {
+                @include size(100%, auto);
+
+                display: flex;
+                flex-direction: column;
+                gap: 1.2rem;
+                padding: 1.2rem 1.6rem;
+                background-color: map-get($colors, white);
+                border: 1px solid map-get($colors, brand-1);
+                border-radius: .4rem;
+
+                > li {
+                    @include size(100%, auto);
+                    @include typo('body', 16);
+
+                    display: flex;
+                    justify-content: space-between;
+
+                    > p {
+                        &:last-child {
+                            color: map-get($colors, brand-1);
+                        }
+                    }
+                }
+            }
+
+            &-total {
+                @include size(100%, auto);
+            
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                > p {
+                    @include typo('body', 16);
+                }
+
+                > h2 {
+                    @include typo('head', 2);
+
+                    color: map-get($colors, red);
+                }
+            }
+        }
+    }
+
+    &__bottom {
+        @include size(100%, auto);
+
+        display: flex;
+        justify-content: center;
+        gap: 1.6rem;
+        padding: 2.4rem 0;
+    }
+}
