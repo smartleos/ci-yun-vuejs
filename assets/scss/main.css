@@ -10803,7 +10803,9 @@ pre {
   direction: ltr;
 }
 
-.esNotification {
+.es-notification {
+  width: 100vw;
+  height: 100vh;
   line-height: 1.6;
   font-size: 1.6rem;
   font-weight: 400;
@@ -10812,39 +10814,82 @@ pre {
   z-index: 990;
   bottom: 0;
   left: 0;
-  width: 100%;
-  padding: 0 0 3vw;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   pointer-events: none;
 }
-.esNotification .inner {
-  color: white;
+.es-notification__inner {
+  position: relative;
+  background-color: #ffffff;
   animation: fadeInUp 0.6s;
-  padding: 1rem 2rem;
-  border-radius: 10rem;
-  display: flex;
-  align-items: center;
+  border-radius: 0.8rem;
+  padding: 3.2rem 1.6em;
+  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.15);
+  pointer-events: auto;
+  color: #9A7412;
 }
-.esNotification .inner h2 {
+.es-notification__inner > svg {
+  width: 1.6rem;
+  height: auto;
+  position: absolute;
+  top: 1.6rem;
+  right: 1.6rem;
+  cursor: pointer;
+}
+.es-notification__inner > h2 {
   line-height: 1.6;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   font-weight: 400;
   font-family: "Noto Sans TC", "Helvetica Neue", "Helvetica", -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
-  margin: 0 1rem 0 0;
-  opacity: 0.5;
-  font-weight: bolder;
+  font-weight: bold;
+  margin-bottom: 0.8rem;
 }
-.esNotification.out {
+.es-notification__inner > p {
+  line-height: 1.6;
+  font-size: 1.6rem;
+  font-weight: 400;
+  font-family: "Noto Sans TC", "Helvetica Neue", "Helvetica", -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+}
+.es-notification__inner-btns {
+  display: flex;
+  gap: 1.6rem;
+  margin-top: 2rem;
+}
+.es-notification__inner-btns > button {
+  min-width: 15.6rem;
+  padding: 0.6rem 1.2rem;
+  border-radius: 5rem;
+}
+.es-notification__inner-btns > button.cancel {
+  border: 1px solid #9A7412;
+}
+.es-notification__inner-btns > button.confirm {
+  background-color: #9A7412;
+  color: #ffffff;
+}
+.es-notification__inner.-out {
   animation: fadeOut 0.2s both;
 }
-.esNotification.success .inner {
-  background: #19B66A;
+.es-notification.-success .es-notification__inner {
+  color: #19B66A;
+}
+.es-notification.-success .es-notification__inner-btns > button.cancel {
+  border: 1px solid #19B66A;
+}
+.es-notification.-success .es-notification__inner-btns > button.confirm {
+  background-color: #19B66A;
+  color: #ffffff;
+}
+.es-notification.-alert .es-notification__inner-btns > button.cancel {
+  border: 1px solid;
+}
+.es-notification.-alert .es-notification__inner-btns > button.confirm {
+  color: #ffffff;
 }
 @media (max-width: 1023.98px) {
-  .esNotification {
+  .es-notification {
     top: initial;
     bottom: 0;
     padding: 0 0 4rem 0;

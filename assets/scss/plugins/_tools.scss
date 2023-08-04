@@ -1,48 +1,109 @@
-.esNotification{
+.es-notification{
+    @include size(100vw, 100vh);
     @include typo('body', 16);
+
     position: fixed;
     z-index: 990;
     bottom: 0;
     left: 0;
-    width: 100%;
-    padding: 0 0 3vw;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     pointer-events: none;
-
-    .inner{
-        color: white;
+    
+    &__inner{
+        position: relative;
+        background-color: map-get($colors, white);
         animation: fadeInUp .6s;
-        padding: 1rem 2rem;
-        border-radius: 10rem;
-        display: flex;
-        align-items: center;
+        border-radius: .8rem;
+        padding: 3.2rem 1.6em;
+        box-shadow: 5px 5px 5px 0px rgba(map-get($colors, black-1), 0.15);
+        pointer-events: auto;
+        color: map-get($colors, brand-1);
+
+        > svg {
+            @include size(1.6rem, auto);
+
+            position: absolute;
+            top: 1.6rem;
+            right: 1.6rem;
+            cursor: pointer;
+        }
+
+        > h2 {
+            @include typo('body', 16);
+
+            font-weight: bold;
+            margin-bottom: 0.8rem;
+        }
+
+        > p {
+            @include typo('body', 16);
+        }
+
+        &-btns {
+            display: flex;
+            gap: 1.6rem;
+            margin-top: 2rem;
+
+            > button {
+                min-width: 15.6rem;
+                padding: 0.6rem 1.2rem;
+                border-radius: 5rem;
+
+                &.cancel {
+                    border: 1px solid map-get($colors, brand-1);
+                }
+
+                &.confirm {
+                    background-color: map-get($colors, brand-1);
+                    color: map-get($colors, white);
+                }
+            }
+        }
         
-        h2 {
-            @include typo('body', 14);
-            margin: 0 1rem 0 0;
-            opacity: 0.5;
-            font-weight: bolder;
+        &.-out{
+            animation: fadeOut .2s both;
         }
     }
-    &.out{
-        animation: fadeOut .2s both;
-    }
-    &.success {
-        .inner {
-            background: map-get($colors, success);
+
+
+    &.-success {
+        .es-notification__inner {
+            color: map-get($colors, success);
+
+            &-btns {
+                > button {
+                    &.cancel {
+                        border: 1px solid map-get($colors, success);
+                    }
+
+                    &.confirm {
+                        background-color: map-get($colors, success);
+                        color: map-get($colors, white);
+                    }
+                }
+            }
         }
     }
-    &.alert {
-        .inner {
-            background: map-get($colors, alert);
-        }
-    }
-    &.normal {
-        .inner {
-            background: map-get($colors, normal);
+
+    &.-alert {
+        .es-notification__inner {
+            color: map-get($colors, alert);
+
+            &-btns {
+                > button {
+                    &.cancel {
+                        border: 1px solid map-get($colors, alert);
+                    }
+
+                    &.confirm {
+                        background-color: map-get($colors, alert);
+                        color: map-get($colors, white);
+                    }
+                }
+            }
         }
     }
 
