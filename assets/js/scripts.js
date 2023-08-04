@@ -176,6 +176,14 @@ $(function() {
 
     // ------------- cart-completed -------------
     if ($('.page-cart-completed').length) {
+        $('.page-cart-completed__popup').addClass('-active')
+        $('.page-cart-completed__popup-wrapper-close').on('click', function() {
+            $('.page-cart-completed__popup').removeClass('-active')
+        })
+        $('.page-cart-completed__popup-wrapper-btn').on('click', function() {
+            $('.page-cart-completed__popup').removeClass('-active')
+        })
+
         const height = $('.page-cart-completed__receipt-wrapper').outerHeight()
         $('.page-cart-completed__receipt-wrapper').css('max-height', height)
         $('.page-cart-completed__receipt-top-btn').on('click', function() {

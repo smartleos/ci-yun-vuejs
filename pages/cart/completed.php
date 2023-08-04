@@ -143,6 +143,34 @@
                     ?>
                 </div>
             </div>
+            <div class="page-cart-completed__popup container">
+                <div class="grid">
+                    <div class="page-cart-completed__popup-wrapper col-3-11-medium">
+                        <div class="page-cart-completed__popup-wrapper-close">
+                            <?php get_svg('close') ?>
+                        </div>
+                        <h3>訂單成功送出！<br>訂單內有未填寫的祈福資訊，請立即填寫</h3>
+                        <?php
+                            $button=true;
+                            include('../../components/cart/product.php');
+                        ?>
+                        <?php
+                            $button=true;
+                            include('../../components/cart/product.php');
+                        ?>
+                        <div class="page-cart-completed__popup-wrapper-btn">
+                            <?php 
+                                $tag="button";
+                                $url="";
+                                $target="";
+                                $text="稍後再說";
+                                $style="-transparent";
+                                include ("../../components/button.php");
+                            ?>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>

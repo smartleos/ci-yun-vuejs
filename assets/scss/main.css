@@ -10977,6 +10977,11 @@ body main {
 .button.-transparent {
   background-color: transparent;
 }
+@media (min-width: 1024px) {
+  .button.-transparent:hover {
+    background-color: transparent;
+  }
+}
 .button.-head {
   font-size: 2rem;
   font-weight: 700;
@@ -12428,6 +12433,61 @@ body main {
   justify-content: center;
   gap: 1.6rem;
   padding: 2.4rem 0;
+}
+.page-cart-completed__popup {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 12rem;
+  padding-bottom: 12rem;
+  overflow: scroll;
+  z-index: 999;
+  opacity: 0;
+  transform: translateY(4.8rem);
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+.page-cart-completed__popup.-active {
+  opacity: 1;
+  transform: translateY(0);
+}
+.page-cart-completed__popup-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding: 4.8rem 3.2rem;
+  background-color: #C93B3B;
+  border-radius: 0.8rem;
+}
+.page-cart-completed__popup-wrapper-close {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 1.8rem;
+  right: 2.4rem;
+  display: flex;
+  justify-content: flex-end;
+  color: #ffffff;
+  cursor: pointer;
+}
+.page-cart-completed__popup-wrapper-close > svg {
+  width: 1.6rem;
+  height: auto;
+}
+.page-cart-completed__popup-wrapper > h3 {
+  line-height: 1.6;
+  font-size: 1.6rem;
+  font-weight: 400;
+  font-family: "Noto Sans TC", "Helvetica Neue", "Helvetica", -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+  font-weight: bold;
+  text-align: center;
+  color: #ffffff;
 }
 
 .page-products {
