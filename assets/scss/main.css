@@ -12243,6 +12243,7 @@ body main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  min-height: calc(100vh - 42rem);
   padding-top: 8.2rem;
   padding-bottom: 10.6rem;
   z-index: 1;
@@ -12323,6 +12324,9 @@ body main {
   padding: 4rem 0;
   gap: 3.6rem;
 }
+.page-cart-completed__wrapper.-hide {
+  display: none;
+}
 .page-cart-completed__wrapper-top {
   display: flex;
   flex-direction: column;
@@ -12381,6 +12385,7 @@ body main {
 .page-cart-completed__receipt-wrapper.-hide {
   padding: 0;
   max-height: 0 !important;
+  pointer-events: none;
 }
 .page-cart-completed__receipt-wrapper > ul {
   width: 100%;
@@ -12434,6 +12439,41 @@ body main {
   gap: 1.6rem;
   padding: 2.4rem 0;
 }
+.page-cart-completed__bottom.-hide {
+  display: none;
+  pointer-events: none;
+}
+.page-cart-completed__fail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3.6rem;
+}
+.page-cart-completed__fail.-hide {
+  display: none;
+}
+.page-cart-completed__fail-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #C93B3B;
+  padding: 2.4rem 0;
+  gap: 0.4rem;
+}
+.page-cart-completed__fail-wrapper > svg {
+  width: 2rem;
+  height: auto;
+}
+.page-cart-completed__fail-wrapper > h2 {
+  line-height: 1.6;
+  font-size: 1.6rem;
+  font-weight: 400;
+  font-family: "Noto Sans TC", "Helvetica Neue", "Helvetica", -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+  font-weight: bold;
+}
+.page-cart-completed__fail-btn {
+  padding: 2.4rem 0;
+}
 .page-cart-completed__popup {
   width: 100vw;
   height: 100vh;
@@ -12450,10 +12490,12 @@ body main {
   opacity: 0;
   transform: translateY(4.8rem);
   transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  pointer-events: none;
 }
 .page-cart-completed__popup.-active {
   opacity: 1;
   transform: translateY(0);
+  pointer-events: auto;
 }
 .page-cart-completed__popup-wrapper {
   position: relative;

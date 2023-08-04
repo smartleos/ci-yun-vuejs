@@ -143,6 +143,23 @@
                     ?>
                 </div>
             </div>
+            <div class="page-cart-completed__fail">
+                <div class="page-cart-completed__fail-wrapper">
+                    <?php get_svg('caution') ?>
+                    <h2>訂單編號  #000000</h2>
+                    <h2>付款失敗！請重新付款。</h2>
+                </div>
+                <div class="page-cart-completed__fail-btn">
+                    <?php 
+                        $tag="button";
+                        $url="";
+                        $target="";
+                        $text="重新付款";
+                        $style="";
+                        include ("../../components/button.php");
+                    ?>
+                </div>
+            </div>
             <div class="page-cart-completed__popup container">
                 <div class="grid">
                     <div class="page-cart-completed__popup-wrapper col-3-11-medium">

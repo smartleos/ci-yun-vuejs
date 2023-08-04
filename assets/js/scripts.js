@@ -176,20 +176,31 @@ $(function() {
 
     // ------------- cart-completed -------------
     if ($('.page-cart-completed').length) {
-        $('.page-cart-completed__popup').addClass('-active')
-        $('.page-cart-completed__popup-wrapper-close').on('click', function() {
-            $('.page-cart-completed__popup').removeClass('-active')
-        })
-        $('.page-cart-completed__popup-wrapper-btn').on('click', function() {
-            $('.page-cart-completed__popup').removeClass('-active')
-        })
+        // fail
+        const fail = false
+        if (fail) {
+            $('.page-cart-completed__wrapper').addClass('-hide')
+            $('.page-cart-completed__bottom').addClass('-hide')
+        } else {
+            $('.page-cart-completed__fail').addClass('-hide')
 
-        const height = $('.page-cart-completed__receipt-wrapper').outerHeight()
-        $('.page-cart-completed__receipt-wrapper').css('max-height', height)
-        $('.page-cart-completed__receipt-top-btn').on('click', function() {
-            $('.page-cart-completed__receipt-top-btn').toggleClass('-active')
-            $('.page-cart-completed__receipt-wrapper').toggleClass('-hide')
-        })
+            // popup
+            $('.page-cart-completed__popup').addClass('-active')
+            $('.page-cart-completed__popup-wrapper-close').on('click', function() {
+                $('.page-cart-completed__popup').removeClass('-active')
+            })
+            $('.page-cart-completed__popup-wrapper-btn').on('click', function() {
+                $('.page-cart-completed__popup').removeClass('-active')
+            })
+    
+            // accordion
+            const height = $('.page-cart-completed__receipt-wrapper').outerHeight()
+            $('.page-cart-completed__receipt-wrapper').css('max-height', height)
+            $('.page-cart-completed__receipt-top-btn').on('click', function() {
+                $('.page-cart-completed__receipt-top-btn').toggleClass('-active')
+                $('.page-cart-completed__receipt-wrapper').toggleClass('-hide')
+            })
+        }
     }
     // ------------- cart-completed -------------
 });
