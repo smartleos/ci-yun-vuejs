@@ -5,15 +5,15 @@ console.log("%c ✦  Made By ES design studio ✦ ", "background:#C89862;padding
 $(function() {
     console.log('HTML Ready')
 
-    esNotification(
-        'success',
-        '成功',
-        '您已成功登入',
-        '取消',
-        '確認',
-        () => {console.log('cancel')},
-        () => {console.log('confirm')}
-    )
+    // esNotification(
+    //     'success',
+    //     '成功',
+    //     '您已成功登入',
+    //     '取消',
+    //     '確認',
+    //     () => {console.log('cancel')},
+    //     () => {console.log('confirm')}
+    // )
 
     $('.footer__back').on('click', function() {
         window.scrollTo({

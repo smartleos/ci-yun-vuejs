@@ -5,12 +5,11 @@
 </style>
 <?php include('../components/bg.php'); ?>
 <main class="page-products">
-    <div class="page-products__top">
-        <figure>
-            <img src="../assets/imgs/testimg/01.jpg" alt="">
-        </figure>
-        <h2>商品列表</h2>
-    </div>
+    <?php
+        $img_url="testimg/01.jpg";
+        $title="商品列表";
+        include ("../components/banner.php");
+    ?>
     <div class="page-products__select">
         <select name="products_categories">
             <option value="all">所有商品</option>

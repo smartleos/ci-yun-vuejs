@@ -1,0 +1,35 @@
+.banner {
+    @include size(100vw, 31.6vw);
+
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-bottom: 9.2rem;
+    overflow: hidden;
+
+    > figure {
+        @include size(200vw);
+
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        border-radius: 50%;
+        overflow: hidden;
+
+        > img {
+            @include size(100vw, auto);
+
+            position: absolute;
+            bottom: 0;
+        }
+    }
+
+    > h2 {
+        @include typo('display', 2);
+
+        color: map-get($colors, white);
+        z-index: 1;
+        margin-bottom: 6rem;
+    }
+}
