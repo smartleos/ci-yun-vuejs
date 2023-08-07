@@ -67,7 +67,7 @@
                             <a href="/charity">慈善公益</a>
                         </li>
                         <li>
-                            <a href="/about">客服資訊</a>
+                            <a href="/service">客服資訊</a>
                         </li>
                         <li>
                             <a href="/about">常用表單</a>

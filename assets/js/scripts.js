@@ -162,6 +162,25 @@ $(function() {
     }
     // ------------- charity -------------
 
+    // ------------- service -------------
+    if ($('.page-service').length) {
+        $('.page-service__content-qna > li').each(function() {
+            $(this).on('click', function() {
+                if ($(this).hasClass('-active')) {
+                    $(this).removeClass('-active')
+                    $(this).children('.page-service__content-qna > li > ul').removeClass('-active')
+                    $(this).children('.page-service__content-qna > li > ul').css('max-height', 0)
+                } else {
+                    $(this).addClass('-active')
+                    const height = $(this).children('.page-service__content-qna > li > ul').prop('scrollHeight')
+                    $(this).children('.page-service__content-qna > li > ul').toggleClass('-active')
+                    $(this).children('.page-service__content-qna > li > ul').css('max-height', height)
+                }
+            })
+        })
+    }
+    // ------------- service -------------
+
     // ------------- products -------------
     if ($('.page-products').length) {
         $('select[name="products_categories"]').on('change', function() {
