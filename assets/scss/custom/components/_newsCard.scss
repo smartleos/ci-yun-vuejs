@@ -1,4 +1,4 @@
-.information-card {
+.news-card {
     @include size(100%, auto);
 
     display: flex;
@@ -75,7 +75,7 @@
         margin: 0;
     }
 
-    &-btn {
+    &__btn {
         display: flex;
         align-items: center;
         gap: 1.2rem;

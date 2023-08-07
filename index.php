@@ -60,40 +60,19 @@
                     <div class="page-index__information-card">
                         <?php 
                             $size="large";
-                            $url="https://www.google.com/";
-                            $target="_blank";
-                            $img_url="testimg/08.jpeg";
-                            $tag="祈福法會";
-                            $date="國曆｜03.31 -  04.02";
-                            $title="112年度清明祭祀法會";
-                            $description="慈雲寶塔前天台廣場。線上報名：https://reurl.cc/Dmd53R，三節代拜線上訂購表單：https://reurl.cc/52j3kq。注意事項：（一）法會期間，塔位區勿擺設極品，並請勿持香進入大殿。（二）法會當天紙錢統一集中安排燒化。（三）法會期間電腦暫不開放使用。（四）如遇颱風影響，延期日期將公佈於官網。（五）法會期間現場提供金紙、紙紮、祭品販售服務。";
-                            include ("components/index/informationCard.php");
+                            include ("components/news/card.php");
                         ?>
                     </div>
                     <div class="page-index__information-card">
                         <?php 
                             $size="small";
-                            $url="https://www.google.com/";
-                            $target="_blank";
-                            $img_url="testimg/08.jpeg";
-                            $tag="祈福法會";
-                            $date="國曆｜03.31 -  04.02";
-                            $title="112年度清明祭祀法會";
-                            $description="慈雲寶塔前天台廣場。線上報名：https://reurl.cc/Dmd53R，三節代拜線上訂購表單：https://reurl.cc/52j3kq。注意事項：（一）法會期間，塔位區勿擺設極品，並請勿持香進入大殿。（二）法會當天紙錢統一集中安排燒化。（三）法會期間電腦暫不開放使用。（四）如遇颱風影響，延期日期將公佈於官網。（五）法會期間現場提供金紙、紙紮、祭品販售服務。";
-                            include ("components/index/informationCard.php");
+                            include ("components/news/card.php");
                         ?>
                     </div>
                     <div class="page-index__information-card">
                         <?php 
                             $size="small";
-                            $url="https://www.google.com/";
-                            $target="_blank";
-                            $img_url="testimg/08.jpeg";
-                            $tag="祈福法會";
-                            $date="國曆｜03.31 -  04.02";
-                            $title="112年度清明祭祀法會";
-                            $description="慈雲寶塔前天台廣場。線上報名：https://reurl.cc/Dmd53R，三節代拜線上訂購表單：https://reurl.cc/52j3kq。注意事項：（一）法會期間，塔位區勿擺設極品，並請勿持香進入大殿。（二）法會當天紙錢統一集中安排燒化。（三）法會期間電腦暫不開放使用。（四）如遇颱風影響，延期日期將公佈於官網。（五）法會期間現場提供金紙、紙紮、祭品販售服務。";
-                            include ("components/index/informationCard.php");
+                            include ("components/news/card.php");
                         ?>
                     </div>
                 </div>

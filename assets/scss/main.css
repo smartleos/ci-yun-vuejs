@@ -11167,6 +11167,43 @@ body main {
   display: grid;
 }
 
+.page-news {
+  width: 100vw;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 8.2rem;
+  padding-bottom: 23.2rem;
+}
+.page-news__select {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10rem;
+}
+.page-news__select > select {
+  line-height: 1.6;
+  font-size: 1.6rem;
+  font-weight: 400;
+  font-family: "Noto Sans TC", "Helvetica Neue", "Helvetica", -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+  border: 1px solid #9A7412;
+  border-radius: 3rem;
+  padding: 0.4rem 3.2rem 0.4rem 2rem;
+  cursor: pointer;
+}
+.page-news__select > svg {
+  width: 1.2rem;
+  height: auto;
+  position: absolute;
+  right: 1rem;
+}
+.page-news__wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8rem 4rem;
+}
+
 .header {
   line-height: 1.6;
   font-size: 1.6rem;
@@ -13392,7 +13429,7 @@ body main {
   height: auto;
 }
 
-.information-card {
+.news-card {
   width: 100%;
   height: auto;
   display: flex;
@@ -13400,13 +13437,13 @@ body main {
   align-items: flex-start;
   gap: 1.6rem;
 }
-.information-card.-small > p {
+.news-card.-small > p {
   display: none;
 }
-.information-card.-small > h4 {
+.news-card.-small > h4 {
   text-align: center;
 }
-.information-card > figure {
+.news-card > figure {
   width: 100%;
   height: auto;
   position: relative;
@@ -13415,39 +13452,39 @@ body main {
   align-items: center;
   overflow: hidden;
 }
-.information-card > figure::before {
+.news-card > figure::before {
   content: "";
   display: block;
   padding-bottom: 50%;
 }
-.information-card > figure > img {
+.news-card > figure > img {
   width: 100%;
   height: 100%;
   position: absolute;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.information-card-row {
+.news-card-row {
   width: 100%;
   height: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.information-card-row > span {
+.news-card-row > span {
   padding: 0.4rem 1.2rem;
   background-color: #C93B3B;
   border-radius: 0.4rem;
   color: #ffffff;
 }
-.information-card-row > p {
+.news-card-row > p {
   line-height: 1.6;
   font-size: 1.6rem;
   font-weight: 400;
   font-family: "Noto Sans TC", "Helvetica Neue", "Helvetica", -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
   color: #C93B3B;
 }
-.information-card > h4 {
+.news-card > h4 {
   font-size: 2.8rem;
   line-height: 1.6;
   font-weight: 700;
@@ -13455,7 +13492,7 @@ body main {
   width: 100%;
   height: auto;
 }
-.information-card > p {
+.news-card > p {
   line-height: 1.6;
   font-size: 1.6rem;
   font-weight: 400;
@@ -13464,13 +13501,13 @@ body main {
   flex-direction: column;
   color: #9A7412;
 }
-.information-card > hr {
+.news-card > hr {
   width: 100%;
   height: auto;
   border-top: 1px solid #C93B3B;
   margin: 0;
 }
-.information-card-btn {
+.news-card__btn {
   display: flex;
   align-items: center;
   gap: 1.2rem;
@@ -13479,15 +13516,15 @@ body main {
   transition: color 0.3s ease-in-out;
 }
 @media (min-width: 1024px) {
-  .information-card-btn:hover {
+  .news-card__btn:hover {
     color: #C6A80E;
   }
-  .information-card-btn:hover > span {
+  .news-card__btn:hover > span {
     color: #C6A80E;
     border-color: #C6A80E;
   }
 }
-.information-card-btn > span {
+.news-card__btn > span {
   width: 2.4rem;
   height: 2.4rem;
   display: flex;
@@ -13497,11 +13534,11 @@ body main {
   border: 1px solid #9A7412;
   transition: color 0.3s ease-in-out, border-color 0.3s ease-in-out;
 }
-.information-card-btn > span > svg {
+.news-card__btn > span > svg {
   width: 1em;
   height: auto;
 }
-.information-card-btn > p {
+.news-card__btn > p {
   line-height: 1.6;
   font-size: 1.6rem;
   font-weight: 400;
