@@ -11167,6 +11167,127 @@ body main {
   display: grid;
 }
 
+.page-charity {
+  width: 100vw;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 8.2rem;
+  padding-bottom: 23.2rem;
+  gap: 6rem;
+}
+.page-charity__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6rem;
+}
+.page-charity__wrapper-content {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4rem 0;
+  gap: 6rem;
+  color: #9A7412;
+}
+.page-charity__wrapper-content-list {
+  display: flex;
+  flex-direction: column;
+}
+.page-charity__wrapper-content-list > li {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  padding: 1.2rem 0;
+  border-bottom: 1px solid #9A7412;
+  cursor: pointer;
+}
+.page-charity__wrapper-content-list > li:first-child {
+  border-top: 1px solid #9A7412;
+}
+.page-charity__wrapper-content-list > li.-active > .page-charity__wrapper-content-list-top > .page-charity__wrapper-content-list-top-icon > svg {
+  transform: rotateX(180deg);
+}
+.page-charity__wrapper-content-list-top {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+.page-charity__wrapper-content-list-top > span > div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+.page-charity__wrapper-content-list-top > span > div:last-child {
+  grid-column-start: 2;
+  grid-column-end: 7;
+}
+.page-charity__wrapper-content-list-top-icon {
+  width: auto;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  display: flex;
+  align-items: center;
+  padding: 0.8rem;
+}
+.page-charity__wrapper-content-list-top-icon > svg {
+  width: 1.6rem;
+  height: auto;
+  transition: transform 0.3s ease-in-out;
+}
+.page-charity__wrapper-content-list-accordion {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
+}
+.page-charity__wrapper-content-list-accordion > span > div:last-child {
+  grid-column-start: 2;
+  grid-column-end: 7;
+}
+.page-charity__wrapper-content-list-accordion-btn {
+  margin-top: 2rem;
+}
+.page-charity__wrapper-content-video {
+  width: 100%;
+  height: auto;
+  position: relative;
+  z-index: 1;
+}
+.page-charity__wrapper-content-video .plyr__control--overlaid {
+  background: rgba(255, 255, 255, 0.6) !important;
+}
+.page-charity__wrapper-content-video .plyr__control:hover {
+  background: rgba(255, 255, 255, 0.6) !important;
+}
+.page-charity__wrapper-content-video .plyr--full-ui input[type=range] {
+  color: rgba(255, 255, 255, 0.6) !important;
+}
+.page-charity__wrapper-content-paragraph {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+.page-charity__wrapper-content-paragraph > h2 {
+  font-size: 3.6rem;
+  font-weight: 700;
+  font-family: "Noto Sans TC", "Helvetica Neue", "Helvetica", -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+  text-align: center;
+}
+.page-charity__wrapper-content-paragraph > p {
+  line-height: 1.6;
+  font-size: 1.6rem;
+  font-weight: 400;
+  font-family: "Noto Sans TC", "Helvetica Neue", "Helvetica", -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+}
+
 .page-news {
   width: 100vw;
   height: auto;

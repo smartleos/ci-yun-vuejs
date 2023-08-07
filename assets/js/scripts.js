@@ -141,6 +141,27 @@ $(function() {
     }
     // ------------- about -------------
 
+    // ------------- charity -------------
+    if ($('.page-charity').length) {
+        $('.page-charity__wrapper-content-list > li').each(function() {
+            $(this).on('click', function() {
+                if ($(this).hasClass('-active')) {
+                    $(this).removeClass('-active')
+                    $(this).children('.page-charity__wrapper-content-list-accordion').removeClass('-active')
+                    $(this).children('.page-charity__wrapper-content-list-accordion').css('max-height', 0)
+                } else {
+                    $(this).addClass('-active')
+                    const height = $(this).children('.page-charity__wrapper-content-list-accordion').prop('scrollHeight')
+                    $(this).children('.page-charity__wrapper-content-list-accordion').toggleClass('-active')
+                    $(this).children('.page-charity__wrapper-content-list-accordion').css('max-height', height)
+                }
+            })
+        })
+
+        new Plyr('#charity-player')
+    }
+    // ------------- charity -------------
+
     // ------------- products -------------
     if ($('.page-products').length) {
         $('select[name="products_categories"]').on('change', function() {

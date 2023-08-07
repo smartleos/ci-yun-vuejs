@@ -64,7 +64,7 @@
                             <a href="/products">產品介紹</a>
                         </li>
                         <li>
-                            <a href="/about">慈善公益</a>
+                            <a href="/charity">慈善公益</a>
                         </li>
                         <li>
                             <a href="/about">客服資訊</a>
