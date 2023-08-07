@@ -11204,6 +11204,184 @@ body main {
   gap: 8rem 4rem;
 }
 
+.news-single {
+  width: 100vw;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6rem;
+  padding-top: 8.2rem;
+  padding-bottom: 23.2rem;
+}
+.news-single > figure {
+  width: 100vw;
+  height: auto;
+  position: relative;
+  z-index: 1;
+}
+.news-single > figure > img {
+  width: 100%;
+  height: auto;
+}
+.news-single__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6rem;
+}
+.news-single__wrapper-top {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+.news-single__wrapper-top > h1 {
+  font-size: 3.6rem;
+  font-weight: 700;
+  font-family: "Noto Sans TC", "Helvetica Neue", "Helvetica", -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+}
+.news-single__wrapper-top-tags {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.news-single__wrapper-top-tags-category {
+  line-height: 1.6;
+  font-size: 1.6rem;
+  font-weight: 400;
+  font-family: "Noto Sans TC", "Helvetica Neue", "Helvetica", -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+  color: #ffffff;
+  background-color: #C93B3B;
+  padding: 0.4rem 1.2rem;
+  border-radius: 0.4rem;
+}
+.news-single__wrapper-top-tags-date {
+  line-height: 1.6;
+  font-size: 1.6rem;
+  font-weight: 400;
+  font-family: "Noto Sans TC", "Helvetica Neue", "Helvetica", -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+  color: #C93B3B;
+}
+.news-single__wrapper-paragraph {
+  display: flex;
+  flex-direction: column;
+  gap: 2.8rem;
+}
+.news-single__wrapper-paragraph-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+.news-single__wrapper-paragraph-text > h2 {
+  font-size: 3.6rem;
+  font-weight: 700;
+  font-family: "Noto Sans TC", "Helvetica Neue", "Helvetica", -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+  color: #9A7412;
+}
+.news-single__wrapper-paragraph-text > h3 {
+  font-size: 2.8rem;
+  line-height: 1.6;
+  font-weight: 700;
+  font-family: "Noto Sans TC", "Helvetica Neue", "Helvetica", -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+  color: #9A7412;
+}
+.news-single__wrapper-paragraph-text > p {
+  line-height: 1.6;
+  font-size: 1.6rem;
+  font-weight: 400;
+  font-family: "Noto Sans TC", "Helvetica Neue", "Helvetica", -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+  color: #9A7412;
+  white-space: pre-line;
+}
+.news-single__wrapper-paragraph-text > p > a {
+  color: #C93B3B;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.news-single__wrapper-paragraph-quote {
+  position: relative;
+  display: flex;
+  padding: 1.6rem 2rem;
+  gap: 1rem;
+}
+.news-single__wrapper-paragraph-quote::before {
+  line-height: 1.6;
+  font-size: 1.6rem;
+  font-weight: 400;
+  font-family: "Noto Sans TC", "Helvetica Neue", "Helvetica", -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+  width: 0.2rem;
+  height: 100%;
+  content: "";
+  background-color: #C93B3B;
+}
+.news-single__wrapper-paragraph > ol {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  color: #9A7412;
+  counter-reset: item;
+}
+.news-single__wrapper-paragraph > ol > li {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  counter-increment: item;
+}
+.news-single__wrapper-paragraph > ol > li::before {
+  line-height: 1.6;
+  font-size: 1.6rem;
+  font-weight: 400;
+  font-family: "Noto Sans TC", "Helvetica Neue", "Helvetica", -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+  content: "0" counter(item);
+  color: #C93B3B;
+}
+.news-single__wrapper-paragraph > ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  color: #9A7412;
+}
+.news-single__wrapper-paragraph > ul > li {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+.news-single__wrapper-paragraph > ul > li::before {
+  width: 0.4rem;
+  height: 0.4rem;
+  content: "";
+  display: block;
+  border-radius: 50%;
+  margin-left: 1.2rem;
+  background-color: #C93B3B;
+}
+.news-single__wrapper-share {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+.news-single__wrapper-share > p {
+  line-height: 1.6;
+  font-size: 1.6rem;
+  font-weight: 400;
+  font-family: "Noto Sans TC", "Helvetica Neue", "Helvetica", -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+  font-weight: bold;
+}
+.news-single__wrapper-share-icons {
+  display: flex;
+  gap: 1.2rem;
+  color: #C6A80E;
+}
+.news-single__wrapper-share-icons > button {
+  width: 3.6rem;
+  height: 3.6rem;
+}
+
 .header {
   line-height: 1.6;
   font-size: 1.6rem;

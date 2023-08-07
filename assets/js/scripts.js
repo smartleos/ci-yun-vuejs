@@ -207,6 +207,23 @@ $(function() {
     }
     // ------------- products-single -------------
 
+    // ------------- news-single -------------
+    if ($('.news-single').length) {
+        $('#news_facebook').on('click', function() {
+            const url = window.location.href
+            esShareTo(url, 'Facebook')
+        })
+        $('#news_line').on('click', function() {
+            const url = window.location.href
+            esShareTo(url, 'Line')
+        })
+        $('#news_twitter').on('click', function() {
+            const url = window.location.href
+            esShareTo(url, 'Twitter')
+        })
+    }
+    // ------------- news-single -------------
+
     // ------------- cart-information -------------
     if ($('.page-cart-information').length) {
         $('input[name="same"]').on('change', function() {
