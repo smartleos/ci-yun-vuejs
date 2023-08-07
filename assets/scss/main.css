@@ -10969,86 +10969,202 @@ body main {
   background: transparent;
 }
 
-.button {
+.page-about {
+  width: 100vw;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 8.2rem;
+  padding-bottom: 23.2rem;
+}
+.page-about__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6rem;
+}
+.page-about__content {
+  display: flex;
+  flex-direction: column;
+  padding: 4rem 0;
+  gap: 6rem;
+}
+.page-about__content > figure {
   width: 100%;
   height: auto;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.page-about__content > figure::before {
+  content: "";
+  display: block;
+  padding-bottom: 66%;
+}
+.page-about__content > figure > img {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.page-about__content > p {
   line-height: 1.6;
   font-size: 1.6rem;
   font-weight: 400;
   font-family: "Noto Sans TC", "Helvetica Neue", "Helvetica", -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+  color: #9A7412;
+}
+.page-about__traffic {
+  width: 100vw;
+  height: auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+  background-color: #9A7412;
+  gap: 3.6rem;
+  z-index: 1;
+  color: #ffffff;
+  margin-bottom: 6rem;
+}
+.page-about__traffic-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 3.6rem;
+}
+.page-about__traffic-wrapper > p {
+  font-size: 1.8rem;
+  font-weight: 700;
+  font-family: "Noto Sans TC", "Helvetica Neue", "Helvetica", -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+  text-align: center;
+}
+.page-about__navigation {
+  width: 100vw;
+  height: auto;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 8rem;
+}
+.page-about__navigation-wrapper {
+  display: flex;
+}
+.page-about__navigation-wrapper > figure {
+  width: 50vw;
+  height: auto;
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0.6rem 1.8rem;
-  background-color: #C6A80E;
-  color: #ffffff;
-  border-radius: 5rem;
-  transition: background-color 0.3s ease-in-out;
+  overflow: hidden;
 }
-.button.-red {
-  background-color: #C93B3B;
+.page-about__navigation-wrapper > figure::before {
+  content: "";
+  display: block;
+  padding-bottom: 71%;
 }
-@media (min-width: 1024px) {
-  .button.-red:hover {
-    background-color: #aa2424;
-  }
+.page-about__navigation-wrapper > figure > img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
-.button.-red.-outline {
-  background-color: transparent;
-  border: 1px solid #C93B3B;
-  color: #C93B3B;
+.page-about__navigation-bottom {
+  width: 100%;
+  height: auto;
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 3.5rem;
+  margin-top: -6.4rem;
+  z-index: 1;
 }
-@media (min-width: 1024px) {
-  .button.-red.-outline:hover {
-    background-color: #C93B3B;
-    color: #ffffff;
-  }
+.page-about__navigation-bottom > svg {
+  width: 58.5rem;
+  height: auto;
+  position: absolute;
+  top: 0;
 }
-.button.-red.-transparent {
-  color: #C93B3B;
-  background-color: transparent;
-}
-.button.-outline {
-  background-color: transparent;
-  border: 1px solid #C6A80E;
-  color: #C6A80E;
-}
-@media (min-width: 1024px) {
-  .button.-outline:hover {
-    background-color: #C6A80E;
-    color: #ffffff;
-  }
-}
-.button.-transparent {
-  background-color: transparent;
-}
-@media (min-width: 1024px) {
-  .button.-transparent:hover {
-    background-color: transparent;
-  }
-}
-.button.-head {
-  font-size: 2rem;
+.page-about__navigation-bottom > h2 {
+  font-size: 3.6rem;
   font-weight: 700;
   font-family: "Noto Sans TC", "Helvetica Neue", "Helvetica", -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+  margin-bottom: 2.8rem;
+  z-index: 1;
 }
-.button.-disabled {
-  background-color: #EDEDED;
-  color: #A4A4A4;
-  border: 1px solid #A4A4A4;
-  cursor: not-allowed;
-  pointer-events: none;
+.page-about__navigation-bottom-control {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #9A7412;
+  gap: 3.6rem;
+  z-index: 1;
 }
-@media (min-width: 1024px) {
-  .button.-disabled:hover {
-    background-color: #EDEDED;
-    color: #A4A4A4;
-  }
+.page-about__navigation-bottom-control-prev, .page-about__navigation-bottom-control-next {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  cursor: pointer;
 }
-@media (min-width: 1024px) {
-  .button:hover {
-    background-color: #9A7412;
-  }
+.page-about__navigation-bottom-control-prev > span, .page-about__navigation-bottom-control-next > span {
+  width: 3.2rem;
+  height: 3.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 1px solid #9A7412;
+}
+.page-about__navigation-bottom-control-prev > span > svg, .page-about__navigation-bottom-control-next > span > svg {
+  width: 1.5rem;
+  height: auto;
+}
+.page-about__navigation-bottom-pagination {
+  display: flex;
+  justify-content: center;
+  width: auto !important;
+}
+.page-about__navigation-bottom-pagination > span {
+  width: 1.2rem;
+  height: 1.2rem;
+  border: 1px solid #9A7412;
+  background-color: transparent;
+  opacity: 0.6 !important;
+}
+.page-about__navigation-bottom-pagination > span.swiper-pagination-bullet-active {
+  background-color: #9A7412;
+  opacity: 1 !important;
+}
+.page-about__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6rem;
+}
+.page-about__list-tab {
+  display: flex;
+  align-items: center;
+  gap: 2.4rem;
+}
+.page-about__list-wrapper {
+  width: 100%;
+  height: auto;
+  display: none;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 6rem 4rem;
+}
+.page-about__list-wrapper.-show {
+  display: grid;
 }
 
 .header {
@@ -12586,39 +12702,6 @@ body main {
   padding-top: 8.2rem;
   padding-bottom: 23.2rem;
 }
-.page-products__top {
-  width: 100vw;
-  height: 31.6vw;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  margin-bottom: 9.2rem;
-  overflow: hidden;
-}
-.page-products__top > figure {
-  width: 200vw;
-  height: 200vw;
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  border-radius: 50%;
-  overflow: hidden;
-}
-.page-products__top > figure > img {
-  width: 100vw;
-  height: auto;
-  position: absolute;
-  bottom: 0;
-}
-.page-products__top > h2 {
-  font-size: 4.8rem;
-  font-weight: 700;
-  font-family: "Noto Sans TC", "Helvetica Neue", "Helvetica", -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
-  color: #ffffff;
-  z-index: 1;
-  margin-bottom: 6rem;
-}
 .page-products__select {
   position: relative;
   display: flex;
@@ -13024,73 +13107,79 @@ body main {
   overflow: hidden;
 }
 
-.bg {
-  width: 100vw;
-  height: calc(100vh + 8.2rem);
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 0;
-  pointer-events: none;
-}
-.bg__wrapper {
-  width: 100vw;
-  height: 100vh;
-  position: sticky;
-  top: 8.2rem;
-}
-.bg__wrapper > figure {
-  width: 23vw;
-  height: auto;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-}
-.bg__wrapper > figure:last-child {
-  left: auto;
-  right: 0;
-  bottom: -1.2rem;
-}
-.bg__wrapper > figure > img {
+.about-card {
   width: 100%;
   height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.2rem;
+  color: #9A7412;
 }
-
-.popup {
-  width: 100vw;
-  height: 100vh;
-  position: fixed;
-  top: 0;
-  left: 0;
+.about-card > figure {
+  width: 100%;
+  height: auto;
+  position: relative;
   display: flex;
   justify-content: center;
-  align-items: flex-start;
-  padding-top: 12rem;
-  padding-bottom: 12rem;
-  overflow: scroll;
-  z-index: 999;
-  opacity: 0;
-  transform: translateY(4.8rem);
-  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  align-items: center;
+  overflow: hidden;
 }
-.popup.-active {
-  opacity: 1;
-  transform: translateY(0);
+.about-card > figure::before {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
 }
-.popup .grid > figure {
-  position: relative;
-}
-.popup .grid > figure > svg {
-  width: 2.4rem;
-  height: auto;
-  position: absolute;
-  top: 2.4rem;
-  right: 2.4rem;
-  cursor: pointer;
-}
-.popup .grid > figure > img {
+.about-card > figure > img {
   width: 100%;
+  height: 100%;
+  position: absolute;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.about-card > h3 {
+  line-height: 1.6;
+  font-size: 1.6rem;
+  font-weight: 400;
+  font-family: "Noto Sans TC", "Helvetica Neue", "Helvetica", -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+  font-weight: bold;
+}
+.about-card__btn {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  cursor: pointer;
+  color: #9A7412;
+  transition: color 0.3s ease-in-out;
+}
+@media (min-width: 1024px) {
+  .about-card__btn:hover {
+    color: #C6A80E;
+  }
+  .about-card__btn:hover > span {
+    color: #C6A80E;
+    border-color: #C6A80E;
+  }
+}
+.about-card__btn > span {
+  width: 2.4rem;
+  height: 2.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 1px solid #9A7412;
+  transition: color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+}
+.about-card__btn > span > svg {
+  width: 1em;
   height: auto;
+}
+.about-card__btn > p {
+  line-height: 1.6;
+  font-size: 1.6rem;
+  font-weight: 400;
+  font-family: "Noto Sans TC", "Helvetica Neue", "Helvetica", -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
 }
 
 .announcement-card {
@@ -13142,6 +13231,165 @@ body main {
   font-size: 1.6rem;
   font-weight: 400;
   font-family: "Noto Sans TC", "Helvetica Neue", "Helvetica", -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+}
+
+.banner {
+  width: 100vw;
+  height: 31.6vw;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin-bottom: 9.2rem;
+  overflow: hidden;
+}
+.banner > figure {
+  width: 200vw;
+  height: 200vw;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.banner > figure > img {
+  width: 100vw;
+  height: auto;
+  position: absolute;
+  bottom: 0;
+}
+.banner > h2 {
+  font-size: 4.8rem;
+  font-weight: 700;
+  font-family: "Noto Sans TC", "Helvetica Neue", "Helvetica", -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+  color: #ffffff;
+  z-index: 1;
+  margin-bottom: 6rem;
+}
+
+.button {
+  width: 100%;
+  height: auto;
+  line-height: 1.6;
+  font-size: 1.6rem;
+  font-weight: 400;
+  font-family: "Noto Sans TC", "Helvetica Neue", "Helvetica", -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.6rem 1.8rem;
+  background-color: #C6A80E;
+  color: #ffffff;
+  border-radius: 5rem;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+}
+.button.-red {
+  background-color: #C93B3B;
+}
+@media (min-width: 1024px) {
+  .button.-red:hover {
+    background-color: #aa2424;
+  }
+}
+.button.-red.-outline {
+  background-color: transparent;
+  border: 1px solid #C93B3B;
+  color: #C93B3B;
+}
+@media (min-width: 1024px) {
+  .button.-red.-outline:hover {
+    background-color: #C93B3B;
+    color: #ffffff;
+  }
+}
+.button.-red.-transparent {
+  color: #C93B3B;
+  background-color: transparent;
+}
+.button.-outline {
+  background-color: transparent;
+  border: 1px solid #C6A80E;
+  color: #C6A80E;
+}
+@media (min-width: 1024px) {
+  .button.-outline:hover {
+    background-color: #C6A80E;
+    color: #ffffff;
+  }
+}
+.button.-transparent {
+  background-color: transparent;
+}
+@media (min-width: 1024px) {
+  .button.-transparent:hover {
+    background-color: transparent;
+  }
+}
+.button.-transparent.-outline {
+  background-color: transparent;
+  border: 1px solid #C6A80E;
+  color: #9A7412;
+}
+@media (min-width: 1024px) {
+  .button.-transparent.-outline:hover {
+    background-color: #C6A80E;
+    color: #ffffff;
+  }
+}
+.button.-head {
+  font-size: 2rem;
+  font-weight: 700;
+  font-family: "Noto Sans TC", "Helvetica Neue", "Helvetica", -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+}
+.button.-disabled {
+  background-color: #EDEDED;
+  color: #A4A4A4;
+  border: 1px solid #A4A4A4;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+@media (min-width: 1024px) {
+  .button.-disabled:hover {
+    background-color: #EDEDED;
+    color: #A4A4A4;
+  }
+}
+@media (min-width: 1024px) {
+  .button:hover {
+    background-color: #9A7412;
+  }
+}
+
+.bg {
+  width: 100vw;
+  height: calc(100vh + 8.2rem);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+.bg__wrapper {
+  width: 100vw;
+  height: 100vh;
+  position: sticky;
+  top: 8.2rem;
+}
+.bg__wrapper > figure {
+  width: 23vw;
+  height: auto;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.bg__wrapper > figure:last-child {
+  left: auto;
+  right: 0;
+  bottom: -1.2rem;
+}
+.bg__wrapper > figure > img {
+  width: 100%;
+  height: auto;
 }
 
 .information-card {
@@ -13540,13 +13788,57 @@ body main {
   flex-direction: column;
   align-items: center;
 }
+.title.-white {
+  color: #ffffff;
+}
+.title.-white > svg {
+  color: #ffffff;
+}
 .title > svg {
   width: 9rem;
   height: auto;
   margin-bottom: 2rem;
+  color: #9A7412;
 }
 .title > h3 {
   font-size: 3.6rem;
   font-weight: 700;
   font-family: "Noto Sans TC", "Helvetica Neue", "Helvetica", -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+}
+
+.popup {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 12rem;
+  padding-bottom: 12rem;
+  overflow: scroll;
+  z-index: 999;
+  opacity: 0;
+  transform: translateY(4.8rem);
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+.popup.-active {
+  opacity: 1;
+  transform: translateY(0);
+}
+.popup .grid > figure {
+  position: relative;
+}
+.popup .grid > figure > svg {
+  width: 2.4rem;
+  height: auto;
+  position: absolute;
+  top: 2.4rem;
+  right: 2.4rem;
+  cursor: pointer;
+}
+.popup .grid > figure > img {
+  width: 100%;
+  height: auto;
 }/*# sourceMappingURL=main.css.map */

@@ -3,9 +3,19 @@
     flex-direction: column;
     align-items: center;
 
+    &.-white {
+        color: map-get($colors, white);
+        
+        > svg {
+            color: map-get($colors, white);
+        }
+    }
+
     > svg {
         @include size(9rem, auto);
         margin-bottom: 2rem;
+
+        color: map-get($colors, brand-1);
     }
 
     > h3 {

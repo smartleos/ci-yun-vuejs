@@ -92,6 +92,55 @@ $(function() {
     }
     // ------------- index -------------
 
+    // ------------- about -------------
+    if ($('.page-about').length) {
+
+
+        new Swiper('.page-about__navigation', {
+            slidesPerView: 'auto',
+            spaceBetween: 24,
+            loop: true,
+            centeredSlides: true,
+            autoplay: {
+                delay: 5000,
+            },
+            pagination: {
+                el: '.page-about__navigation-bottom-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.page-about__navigation-bottom-control-next',
+                prevEl: '.page-about__navigation-bottom-control-prev',
+            },
+        })
+
+        $('#scenery_tab').on('click', function() {
+            if (!$('#scenery').hasClass('-show')) {
+                $('#environment').removeClass('-show')
+                $('#scenery').addClass('-show')
+                $('#scenery_tab .button').removeClass('-transparent').removeClass('-outline')
+                $('#environment_tab .button').addClass('-transparent').addClass('-outline')
+            }
+        })
+
+        $('#environment_tab').on('click', function() {
+            if (!$('#environment').hasClass('-show')) {
+                $('#scenery').removeClass('-show')
+                $('#environment').addClass('-show')
+                $('#environment_tab .button').removeClass('-transparent').removeClass('-outline')
+                $('#scenery_tab .button').addClass('-transparent').addClass('-outline')
+            }
+        })
+
+        $('.about-card__btn').each(function() {
+            $(this).on('click', function() {
+                const url = $(this).attr('data-url')
+                createPopup(url)
+            })
+        })
+    }
+    // ------------- about -------------
+
     // ------------- products -------------
     if ($('.page-products').length) {
         $('select[name="products_categories"]').on('change', function() {
