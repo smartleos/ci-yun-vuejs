@@ -24,30 +24,6 @@
         gap: 6rem;
         z-index: 1;
 
-        > figure {
-            @include size(100%, auto);
-            @include aspect(0.66);
-
-            position: relative;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            overflow: hidden;
-            
-            > img {
-                @include size(100%, auto);
-
-                position: absolute;
-                object-fit: cover;
-            }
-        }
-
-        > p {
-            @include typo('body', 16);
-
-            color: map-get($colors, brand-1);
-        }
-
         &-list {
             @include size(100%, auto);
 

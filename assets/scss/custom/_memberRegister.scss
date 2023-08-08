@@ -1,0 +1,246 @@
+.page-member-register {
+    @include size(100vw, auto);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10rem;
+    padding-bottom: 8.2rem;
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 6rem;
+    }
+
+    &__content {
+        @include size(100%, auto);
+
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        padding: 4rem 0;
+        gap: 6rem;
+        z-index: 1;
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        gap: 2.8rem;
+
+        &-input {
+            display: flex;
+            flex-direction: column;
+            gap: .5rem;
+
+            > label {
+                @include typo('body', 16);
+
+                display: flex;
+
+                &.-require {
+                    &::after {
+                        @include size(.8rem, .8rem);
+
+                        content: '*';
+                        display: block;
+                        color: map-get($colors, red);
+                    }
+                }
+            }
+
+            > input {
+                @include typo('body', 16);
+
+                padding: .6rem 1.2rem;
+                border: 1px solid map-get($colors, brand-1);
+                border-radius: 4px;
+            }
+
+            > a {
+                @include typo('body', 14);
+
+                color: map-get($colors, brand-1);
+                text-decoration: underline;
+            }
+
+            &-password {
+                position: relative;
+                display: flex;
+                align-items: center;
+
+                > input {
+                    @include typo('body', 16);
+    
+                    position: relative;
+                    padding: .6rem 1.2rem .6rem 3.2rem;
+                    border: 1px solid map-get($colors, brand-1);
+                    border-radius: 4px;
+                }
+
+                > svg {
+                    @include size(1.2rem, auto);
+
+                    position: absolute;
+                    left: 1.6rem;
+                    color: map-get($colors, brand-1);
+                }
+
+                &-show {
+                    position: absolute;
+                    right: 1.6rem;
+                    cursor: pointer;
+
+                    > svg {
+                        @include size(1.6rem, auto);
+
+                        color: map-get($colors, gray-1);
+                    }
+                }
+            }
+        }
+
+        &-checkbox {
+            display: flex;
+            align-items: center;
+            gap: 1.2rem;
+
+            > input {
+                @include size(1.6rem);
+
+                cursor: pointer;
+
+                &:checked {
+                    &::before {
+                        @include size(1.6rem);
+
+                        content: '';
+                        display: block;
+                        border: 1px solid map-get($colors, brand-1);
+                        background-color: map-get($colors, brand-1);
+                    }
+                }
+                
+                &::before {
+                    @include size(1.6rem);
+
+                    content: '';
+                    display: block;
+                    border: 1px solid map-get($colors, brand-1);
+                }
+            }
+
+            > label {
+                @include typo('body', 16);
+
+                cursor: pointer;
+
+                > a {
+                    color: map-get($colors, red);
+                    text-decoration: underline;
+                }
+            }
+        }
+
+        &-btns {
+            display: flex;
+            align-items: center;
+            gap: 2.4rem;
+
+            &-item {
+                flex: 1;
+            }
+        }
+
+        &-or {
+            @include size(100%, auto);
+
+            display: flex;
+            align-items: center;
+
+            > p {
+                @include typo('body', 16);
+
+                color: map-get($colors, brand-1);
+                padding: 0 2.4rem;
+            }
+
+            &::before, &::after {
+                @include size(auto, .1rem);
+
+                display: block;
+                content: '';
+                flex: 1;
+                background-color: map-get($colors, brand-1);
+            }
+        }
+
+        > h3 {
+            @include typo('body', 16);
+
+            color: map-get($colors, brand-1);
+            text-align: center;
+        }
+
+        &-social {
+            display: flex;
+            flex-direction: column;
+            gap: 2.8rem;
+
+            &-btn {
+                @include size(100%, auto);
+
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 1rem;
+                padding: .6rem 0;
+                border-radius: 5rem;
+                cursor: pointer;
+                box-shadow: 5px 5px 5px 0px rgba(map-get($colors, black-1), 0.15);
+                background-color: map-get($colors, white);
+
+                &.-facebook {
+                    background-color: #365FC9;
+                    color: map-get($colors, white);
+                }
+
+                &.-line {
+                    background-color: #2ECA4E;
+                    color: map-get($colors, white);
+                }
+
+                > svg {
+                    @include size(2rem, auto);
+                }
+
+                > p {
+                    @include typo('body', 16);
+                }
+            }
+        }
+
+        > p {
+            @include typo('body', 16);
+
+            display: flex;
+            align-items: center;
+            color: map-get($colors, brand-1);
+
+            > svg {
+                @include size(1.2rem, auto);
+
+                color: map-get($colors, red);
+                margin-right: 0.4rem;
+            }
+
+            > a {
+                @include typo('body', 16);
+
+                color: map-get($colors, red);
+            }
+        }
+    }
+}

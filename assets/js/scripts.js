@@ -264,6 +264,34 @@ $(function() {
     }
     // ------------- news-single -------------
 
+    // ------------- member-login -------------
+    if ($('.page-member-login').length) {
+        $('.page-member-login__form-input-password-show').each(function() {
+            $(this).on('click', function() {
+                const password = $(this).siblings('input')
+                if (password.attr('type') === 'password') {
+                    password.attr('type', 'text')
+                } else {
+                    password.attr('type', 'password')
+                }
+            })
+        })
+    }
+    // ------------- member-login -------------
+
+    // ------------- member-register -------------
+    if ($('.page-member-register').length) {
+        $('.page-member-register__form-input-password-show').on('click', function() {
+            const password = $(this).siblings('input')
+            if (password.attr('type') === 'password') {
+                password.attr('type', 'text')
+            } else {
+                password.attr('type', 'password')
+            }
+        })
+    }
+    // ------------- member-register -------------
+
     // ------------- cart-information -------------
     if ($('.page-cart-information').length) {
         $('input[name="same"]').on('change', function() {
