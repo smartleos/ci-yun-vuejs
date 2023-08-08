@@ -181,7 +181,7 @@
                                 $url="";
                                 $target="";
                                 $text="稍後再說";
-                                $style="-transparent";
+                                $style="-transparent -white";
                                 include ("../../components/button.php");
                             ?>
                         </div>

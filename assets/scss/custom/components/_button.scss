@@ -53,13 +53,17 @@
     }
 
     &.-transparent {
-        color: map-get($colors, brnad-1);
+        color: map-get($colors, brand-1);
         background-color: transparent;
 
         @include media-breakpoint-up(medium) {
             &:hover {
                 background-color: transparent;
             }
+        }
+
+        &.-white {
+            color: map-get($colors, white);
         }
 
         &.-outline {
