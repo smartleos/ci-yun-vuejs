@@ -286,6 +286,14 @@
             @include typo('body', 16);
 
             color: map-get($colors, red);
+            text-decoration: underline;
         }
+    }
+
+    > a {
+        @include typo('body', 16);
+
+        color: map-get($colors, red);
+        text-decoration: underline;
     }
 }
