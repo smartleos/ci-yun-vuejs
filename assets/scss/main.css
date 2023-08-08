@@ -11288,7 +11288,7 @@ body main {
   font-family: "Noto Sans TC", "Helvetica Neue", "Helvetica", -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
 }
 
-.page-service {
+.page-download {
   width: 100vw;
   height: auto;
   display: flex;
@@ -11297,102 +11297,69 @@ body main {
   padding-top: 8.2rem;
   padding-bottom: 23.2rem;
 }
-.page-service__wrapper {
+.page-download__wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 6rem;
 }
-.page-service__content {
+.page-download__content {
   width: 100%;
   height: auto;
+  position: relative;
   display: flex;
   flex-direction: column;
-  align-items: center;
   padding: 4rem 0;
   gap: 6rem;
+  z-index: 1;
 }
-.page-service__content-contact {
+.page-download__content > figure {
+  width: 100%;
+  height: auto;
+  position: relative;
   display: flex;
-  flex-direction: column;
-  gap: 1.6rem;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
 }
-.page-service__content-contact > h2 {
-  font-size: 3.6rem;
-  font-weight: 700;
-  font-family: "Noto Sans TC", "Helvetica Neue", "Helvetica", -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
-  color: #9A7412;
+.page-download__content > figure::before {
+  content: "";
+  display: block;
+  padding-bottom: 66%;
 }
-.page-service__content-contact > ul {
-  display: flex;
-  flex-direction: column;
+.page-download__content > figure > img {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
-.page-service__content-contact > ul > li {
+.page-download__content > p {
   line-height: 1.6;
   font-size: 1.6rem;
   font-weight: 400;
   font-family: "Noto Sans TC", "Helvetica Neue", "Helvetica", -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
-}
-.page-service__content-contact > a {
-  display: flex;
-  gap: 1.2rem;
   color: #9A7412;
 }
-.page-service__content-contact > a > svg {
-  width: 2rem;
-  height: auto;
-}
-.page-service__content-qna {
+.page-download__content-list {
   width: 100%;
   height: auto;
   display: flex;
   flex-direction: column;
-  color: #9A7412;
 }
-.page-service__content-qna > li {
+.page-download__content-list > li {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   padding: 2rem 0;
   border-bottom: 1px solid #9A7412;
-  cursor: pointer;
 }
-.page-service__content-qna > li.-active > .page-service__content-qna-question > svg {
-  transform: rotateX(180deg);
-  color: #C93B3B;
-}
-.page-service__content-qna > li.-active > .page-service__content-qna-question > h3 {
-  color: #000000;
-}
-.page-service__content-qna > li.-active > ul {
-  margin-top: 1.6rem;
-}
-.page-service__content-qna > li:first-child {
+.page-download__content-list > li:first-child {
   border-top: 1px solid #9A7412;
 }
-.page-service__content-qna > li > ul {
-  line-height: 1.6;
-  font-size: 1.6rem;
-  font-weight: 400;
-  font-family: "Noto Sans TC", "Helvetica Neue", "Helvetica", -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.3s ease-in-out, margin-top 0.3s ease-in-out;
-}
-.page-service__content-qna-question {
-  display: flex;
-}
-.page-service__content-qna-question > h3 {
-  font-size: 1.8rem;
+.page-download__content-list > li > p {
+  font-size: 2rem;
   font-weight: 700;
   font-family: "Noto Sans TC", "Helvetica Neue", "Helvetica", -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
-  flex: 1;
-  transition: color 0.3s ease-in-out;
-}
-.page-service__content-qna-question > svg {
-  width: 1.6rem;
-  height: auto;
-  margin-right: 0.6rem;
-  transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
 .page-news {
@@ -11608,6 +11575,113 @@ body main {
 .news-single__wrapper-share-icons > button {
   width: 3.6rem;
   height: 3.6rem;
+}
+
+.page-service {
+  width: 100vw;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 8.2rem;
+  padding-bottom: 23.2rem;
+}
+.page-service__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6rem;
+}
+.page-service__content {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4rem 0;
+  gap: 6rem;
+}
+.page-service__content-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+.page-service__content-contact > h2 {
+  font-size: 3.6rem;
+  font-weight: 700;
+  font-family: "Noto Sans TC", "Helvetica Neue", "Helvetica", -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+  color: #9A7412;
+}
+.page-service__content-contact > ul {
+  display: flex;
+  flex-direction: column;
+}
+.page-service__content-contact > ul > li {
+  line-height: 1.6;
+  font-size: 1.6rem;
+  font-weight: 400;
+  font-family: "Noto Sans TC", "Helvetica Neue", "Helvetica", -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+}
+.page-service__content-contact > a {
+  display: flex;
+  gap: 1.2rem;
+  color: #9A7412;
+}
+.page-service__content-contact > a > svg {
+  width: 2rem;
+  height: auto;
+}
+.page-service__content-qna {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  color: #9A7412;
+}
+.page-service__content-qna > li {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 0;
+  border-bottom: 1px solid #9A7412;
+  cursor: pointer;
+}
+.page-service__content-qna > li.-active > .page-service__content-qna-question > svg {
+  transform: rotateX(180deg);
+  color: #C93B3B;
+}
+.page-service__content-qna > li.-active > .page-service__content-qna-question > h3 {
+  color: #000000;
+}
+.page-service__content-qna > li.-active > ul {
+  margin-top: 1.6rem;
+}
+.page-service__content-qna > li:first-child {
+  border-top: 1px solid #9A7412;
+}
+.page-service__content-qna > li > ul {
+  line-height: 1.6;
+  font-size: 1.6rem;
+  font-weight: 400;
+  font-family: "Noto Sans TC", "Helvetica Neue", "Helvetica", -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out, margin-top 0.3s ease-in-out;
+}
+.page-service__content-qna-question {
+  display: flex;
+}
+.page-service__content-qna-question > h3 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  font-family: "Noto Sans TC", "Helvetica Neue", "Helvetica", -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+  flex: 1;
+  transition: color 0.3s ease-in-out;
+}
+.page-service__content-qna-question > svg {
+  width: 1.6rem;
+  height: auto;
+  margin-right: 0.6rem;
+  transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
 .header {
