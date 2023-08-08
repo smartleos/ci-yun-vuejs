@@ -44,7 +44,7 @@
                     </div>
                     <div class="form__input -require">
                         <label for="password">密碼</label>
-                        <div>
+                        <div class="-password">
                             <?php get_svg('lock') ?>
                             <input type="password" id="password" placeholder="請輸入您的密碼 ...">
                             <div class="show-password">
@@ -57,7 +57,7 @@
                     </div>
                     <div class="form__input -require">
                         <label for="password_confirm">再次輸入密碼</label>
-                        <div>
+                        <div class="-password">
                             <?php get_svg('lock') ?>
                             <input type="password" id="password_confirm" placeholder="請再次輸入您的密碼 ...">
                             <div class="show-password">

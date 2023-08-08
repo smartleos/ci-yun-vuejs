@@ -11359,199 +11359,6 @@ body main {
   gap: 6rem;
   z-index: 1;
 }
-.page-member-login__form {
-  display: flex;
-  flex-direction: column;
-  gap: 2.8rem;
-}
-.page-member-login__form-input {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-}
-.page-member-login__form-input > label {
-  line-height: 1.6;
-  font-size: 1.6rem;
-  font-weight: 400;
-  font-family: "Noto Sans TC", "Helvetica Neue", "Helvetica", -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
-}
-.page-member-login__form-input > input {
-  line-height: 1.6;
-  font-size: 1.6rem;
-  font-weight: 400;
-  font-family: "Noto Sans TC", "Helvetica Neue", "Helvetica", -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
-  padding: 0.6rem 1.2rem;
-  border: 1px solid #9A7412;
-  border-radius: 4px;
-}
-.page-member-login__form-input > a {
-  line-height: 1.6;
-  font-size: 1.4rem;
-  font-weight: 400;
-  font-family: "Noto Sans TC", "Helvetica Neue", "Helvetica", -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
-  color: #9A7412;
-  text-decoration: underline;
-}
-.page-member-login__form-input-password {
-  position: relative;
-  display: flex;
-  align-items: center;
-}
-.page-member-login__form-input-password > input {
-  line-height: 1.6;
-  font-size: 1.6rem;
-  font-weight: 400;
-  font-family: "Noto Sans TC", "Helvetica Neue", "Helvetica", -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
-  position: relative;
-  padding: 0.6rem 1.2rem 0.6rem 3.2rem;
-  border: 1px solid #9A7412;
-  border-radius: 4px;
-}
-.page-member-login__form-input-password > svg {
-  width: 1.2rem;
-  height: auto;
-  position: absolute;
-  left: 1.6rem;
-  color: #9A7412;
-}
-.page-member-login__form-input-password-show {
-  position: absolute;
-  right: 1.6rem;
-  cursor: pointer;
-}
-.page-member-login__form-input-password-show > svg {
-  width: 1.6rem;
-  height: auto;
-  color: #A4A4A4;
-}
-.page-member-login__form-checkbox {
-  display: flex;
-  align-items: center;
-  gap: 1.2rem;
-}
-.page-member-login__form-checkbox > input {
-  width: 1.6rem;
-  height: 1.6rem;
-  cursor: pointer;
-}
-.page-member-login__form-checkbox > input:checked::before {
-  width: 1.6rem;
-  height: 1.6rem;
-  content: "";
-  display: block;
-  border: 1px solid #9A7412;
-  background-color: #9A7412;
-}
-.page-member-login__form-checkbox > input::before {
-  width: 1.6rem;
-  height: 1.6rem;
-  content: "";
-  display: block;
-  border: 1px solid #9A7412;
-}
-.page-member-login__form-checkbox > label {
-  line-height: 1.6;
-  font-size: 1.6rem;
-  font-weight: 400;
-  font-family: "Noto Sans TC", "Helvetica Neue", "Helvetica", -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
-  cursor: pointer;
-}
-.page-member-login__form-btns {
-  display: flex;
-  align-items: center;
-  gap: 2.4rem;
-}
-.page-member-login__form-btns-item {
-  flex: 1;
-}
-.page-member-login__form-or {
-  width: 100%;
-  height: auto;
-  display: flex;
-  align-items: center;
-}
-.page-member-login__form-or > p {
-  line-height: 1.6;
-  font-size: 1.6rem;
-  font-weight: 400;
-  font-family: "Noto Sans TC", "Helvetica Neue", "Helvetica", -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
-  color: #9A7412;
-  padding: 0 2.4rem;
-}
-.page-member-login__form-or::before, .page-member-login__form-or::after {
-  width: auto;
-  height: 0.1rem;
-  display: block;
-  content: "";
-  flex: 1;
-  background-color: #9A7412;
-}
-.page-member-login__form > h3 {
-  line-height: 1.6;
-  font-size: 1.6rem;
-  font-weight: 400;
-  font-family: "Noto Sans TC", "Helvetica Neue", "Helvetica", -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
-  color: #9A7412;
-  text-align: center;
-}
-.page-member-login__form-social {
-  display: flex;
-  flex-direction: column;
-  gap: 2.8rem;
-}
-.page-member-login__form-social-btn {
-  width: 100%;
-  height: auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
-  padding: 0.6rem 0;
-  border-radius: 5rem;
-  cursor: pointer;
-  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.15);
-  background-color: #ffffff;
-}
-.page-member-login__form-social-btn.-facebook {
-  background-color: #365FC9;
-  color: #ffffff;
-}
-.page-member-login__form-social-btn.-line {
-  background-color: #2ECA4E;
-  color: #ffffff;
-}
-.page-member-login__form-social-btn > svg {
-  width: 2rem;
-  height: auto;
-}
-.page-member-login__form-social-btn > p {
-  line-height: 1.6;
-  font-size: 1.6rem;
-  font-weight: 400;
-  font-family: "Noto Sans TC", "Helvetica Neue", "Helvetica", -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
-}
-.page-member-login__form > p {
-  line-height: 1.6;
-  font-size: 1.6rem;
-  font-weight: 400;
-  font-family: "Noto Sans TC", "Helvetica Neue", "Helvetica", -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
-  display: flex;
-  align-items: center;
-  color: #9A7412;
-}
-.page-member-login__form > p > svg {
-  width: 1.2rem;
-  height: auto;
-  color: #C93B3B;
-  margin-right: 0.4rem;
-}
-.page-member-login__form > p > a {
-  line-height: 1.6;
-  font-size: 1.6rem;
-  font-weight: 400;
-  font-family: "Noto Sans TC", "Helvetica Neue", "Helvetica", -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
-  color: #C93B3B;
-}
 
 .page-member-register {
   width: 100vw;
@@ -11578,90 +11385,150 @@ body main {
   gap: 6rem;
   z-index: 1;
 }
-.page-member-register__form {
+
+.page-member-verify {
+  width: 100vw;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10rem;
+  padding-bottom: 8.2rem;
+}
+.page-member-verify__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6rem;
+}
+.page-member-verify__content {
+  width: 100%;
+  height: auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 4rem 0;
+  gap: 6rem;
+  z-index: 1;
+}
+
+.form {
   display: flex;
   flex-direction: column;
   gap: 2.8rem;
 }
-.page-member-register__form-input {
+.form__input {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
 }
-.page-member-register__form-input > label {
-  line-height: 1.6;
-  font-size: 1.6rem;
-  font-weight: 400;
-  font-family: "Noto Sans TC", "Helvetica Neue", "Helvetica", -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
-  display: flex;
-}
-.page-member-register__form-input > label.-require::after {
+.form__input.-require > label::after {
   width: 0.8rem;
   height: 0.8rem;
   content: "*";
   display: block;
   color: #C93B3B;
 }
-.page-member-register__form-input > input {
+.form__input.-notice > span {
+  display: flex;
+}
+.form__input.-alert > span {
+  display: flex;
+  color: #C93B3B;
+}
+.form__input.-alert > div > input {
+  border: 1px solid #C93B3B;
+}
+.form__input > label {
   line-height: 1.6;
   font-size: 1.6rem;
   font-weight: 400;
   font-family: "Noto Sans TC", "Helvetica Neue", "Helvetica", -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
-  padding: 0.6rem 1.2rem;
-  border: 1px solid #9A7412;
-  border-radius: 4px;
+  display: flex;
 }
-.page-member-register__form-input > a {
+.form__input > a {
   line-height: 1.6;
   font-size: 1.4rem;
   font-weight: 400;
   font-family: "Noto Sans TC", "Helvetica Neue", "Helvetica", -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
-  color: #9A7412;
+  color: #C93B3B;
   text-decoration: underline;
 }
-.page-member-register__form-input-password {
+.form__input > span {
+  line-height: 1.6;
+  font-size: 1.6rem;
+  font-weight: 400;
+  font-family: "Noto Sans TC", "Helvetica Neue", "Helvetica", -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+  display: none;
+  align-items: center;
+  gap: 0.4rem;
+  color: #A4A4A4;
+}
+.form__input > span > svg {
+  width: 1.2rem;
+  height: auto;
+}
+.form__input > div {
   position: relative;
   display: flex;
   align-items: center;
 }
-.page-member-register__form-input-password > input {
+.form__input > div.-password > input {
+  padding: 0.6rem 1.2rem 0.6rem 3.2rem;
+}
+.form__input > div > input {
   line-height: 1.6;
   font-size: 1.6rem;
   font-weight: 400;
   font-family: "Noto Sans TC", "Helvetica Neue", "Helvetica", -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
   position: relative;
-  padding: 0.6rem 1.2rem 0.6rem 3.2rem;
+  padding: 0.6rem 1.2rem;
   border: 1px solid #9A7412;
   border-radius: 4px;
 }
-.page-member-register__form-input-password > svg {
+.form__input > div > svg {
   width: 1.2rem;
   height: auto;
   position: absolute;
   left: 1.6rem;
   color: #9A7412;
 }
-.page-member-register__form-input-password-show {
+.form__input > div .show-password {
   position: absolute;
   right: 1.6rem;
   cursor: pointer;
 }
-.page-member-register__form-input-password-show > svg {
+.form__input > div .show-password > svg {
   width: 1.6rem;
   height: auto;
   color: #A4A4A4;
 }
-.page-member-register__form-checkbox {
+.form__checkbox {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+.form__checkbox.-notice > span {
+  display: flex;
+}
+.form__checkbox.-alert > input::before {
+  border: 1px solid #C93B3B;
+}
+.form__checkbox.-alert > span {
+  display: flex;
+  color: #C93B3B;
+}
+.form__checkbox > div {
   display: flex;
   align-items: center;
   gap: 1.2rem;
 }
-.page-member-register__form-checkbox > input {
+.form__checkbox > div > input {
   width: 1.6rem;
   height: 1.6rem;
   cursor: pointer;
 }
-.page-member-register__form-checkbox > input:checked::before {
+.form__checkbox > div > input:checked::before {
   width: 1.6rem;
   height: 1.6rem;
   content: "";
@@ -11669,39 +11536,57 @@ body main {
   border: 1px solid #9A7412;
   background-color: #9A7412;
 }
-.page-member-register__form-checkbox > input::before {
+.form__checkbox > div > input::before {
   width: 1.6rem;
   height: 1.6rem;
   content: "";
   display: block;
   border: 1px solid #9A7412;
 }
-.page-member-register__form-checkbox > label {
+.form__checkbox > div > label {
   line-height: 1.6;
   font-size: 1.6rem;
   font-weight: 400;
   font-family: "Noto Sans TC", "Helvetica Neue", "Helvetica", -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
   cursor: pointer;
 }
-.page-member-register__form-checkbox > label > a {
+.form__checkbox > div > label > a {
+  line-height: 1.6;
+  font-size: 1.6rem;
+  font-weight: 400;
+  font-family: "Noto Sans TC", "Helvetica Neue", "Helvetica", -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
   color: #C93B3B;
   text-decoration: underline;
 }
-.page-member-register__form-btns {
+.form__checkbox > span {
+  line-height: 1.6;
+  font-size: 1.6rem;
+  font-weight: 400;
+  font-family: "Noto Sans TC", "Helvetica Neue", "Helvetica", -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+  display: none;
+  align-items: center;
+  gap: 0.4rem;
+  color: #A4A4A4;
+}
+.form__checkbox > span > svg {
+  width: 1.2rem;
+  height: auto;
+}
+.form__btns {
   display: flex;
   align-items: center;
   gap: 2.4rem;
 }
-.page-member-register__form-btns-item {
+.form__btns-item {
   flex: 1;
 }
-.page-member-register__form-or {
+.form__or {
   width: 100%;
   height: auto;
   display: flex;
   align-items: center;
 }
-.page-member-register__form-or > p {
+.form__or > p {
   line-height: 1.6;
   font-size: 1.6rem;
   font-weight: 400;
@@ -11709,7 +11594,7 @@ body main {
   color: #9A7412;
   padding: 0 2.4rem;
 }
-.page-member-register__form-or::before, .page-member-register__form-or::after {
+.form__or::before, .form__or::after {
   width: auto;
   height: 0.1rem;
   display: block;
@@ -11717,7 +11602,7 @@ body main {
   flex: 1;
   background-color: #9A7412;
 }
-.page-member-register__form > h3 {
+.form > h3 {
   line-height: 1.6;
   font-size: 1.6rem;
   font-weight: 400;
@@ -11725,12 +11610,12 @@ body main {
   color: #9A7412;
   text-align: center;
 }
-.page-member-register__form-social {
+.form__social {
   display: flex;
   flex-direction: column;
   gap: 2.8rem;
 }
-.page-member-register__form-social-btn {
+.form__social-btn {
   width: 100%;
   height: auto;
   display: flex;
@@ -11743,25 +11628,25 @@ body main {
   box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.15);
   background-color: #ffffff;
 }
-.page-member-register__form-social-btn.-facebook {
+.form__social-btn.-facebook {
   background-color: #365FC9;
   color: #ffffff;
 }
-.page-member-register__form-social-btn.-line {
+.form__social-btn.-line {
   background-color: #2ECA4E;
   color: #ffffff;
 }
-.page-member-register__form-social-btn > svg {
+.form__social-btn > svg {
   width: 2rem;
   height: auto;
 }
-.page-member-register__form-social-btn > p {
+.form__social-btn > p {
   line-height: 1.6;
   font-size: 1.6rem;
   font-weight: 400;
   font-family: "Noto Sans TC", "Helvetica Neue", "Helvetica", -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
 }
-.page-member-register__form > p {
+.form > p {
   line-height: 1.6;
   font-size: 1.6rem;
   font-weight: 400;
@@ -11770,13 +11655,13 @@ body main {
   align-items: center;
   color: #9A7412;
 }
-.page-member-register__form > p > svg {
+.form > p > svg {
   width: 1.2rem;
   height: auto;
   color: #C93B3B;
   margin-right: 0.4rem;
 }
-.page-member-register__form > p > a {
+.form > p > a {
   line-height: 1.6;
   font-size: 1.6rem;
   font-weight: 400;
@@ -14257,12 +14142,16 @@ body main {
   }
 }
 .button.-transparent {
+  color: #9A7412;
   background-color: transparent;
 }
 @media (min-width: 1024px) {
   .button.-transparent:hover {
     background-color: transparent;
   }
+}
+.button.-transparent.-white {
+  color: #ffffff;
 }
 .button.-transparent.-outline {
   background-color: transparent;

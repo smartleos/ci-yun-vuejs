@@ -26,7 +26,7 @@
                     </div>
                     <div class="form__input -alert">
                         <label for="password">密碼</label>
-                        <div>
+                        <div class="-password">
                             <?php get_svg('lock') ?>
                             <input type="password" id="password" placeholder="請輸入您的密碼 ...">
                             <div class="show-password">

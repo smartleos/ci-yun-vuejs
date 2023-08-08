@@ -48,7 +48,7 @@
         > a {
             @include typo('body', 14);
 
-            color: map-get($colors, brand-1);
+            color: map-get($colors, red);
             text-decoration: underline;
         }
 
@@ -70,11 +70,17 @@
             display: flex;
             align-items: center;
 
+            &.-password {
+                > input {
+                    padding: .6rem 1.2rem .6rem 3.2rem;
+                }
+            }
+
             > input {
                 @include typo('body', 16);
 
                 position: relative;
-                padding: .6rem 1.2rem .6rem 3.2rem;
+                padding: .6rem 1.2rem;
                 border: 1px solid map-get($colors, brand-1);
                 border-radius: 4px;
             }
