@@ -11427,6 +11427,67 @@ body main {
   }
 }
 
+.page-member-information {
+  width: 100vw;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 12rem;
+  padding-bottom: 8.2rem;
+}
+.page-member-information__tab {
+  display: flex;
+  justify-content: center;
+  gap: 0.8rem;
+}
+@media (max-width: 1023.98px) {
+  .page-member-information__tab {
+    align-items: flex-start;
+    overflow: scroll;
+  }
+}
+.page-member-information__top {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 0;
+  border-top: 1px solid #9A7412;
+  border-bottom: 1px solid #9A7412;
+}
+.page-member-information__top-title {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+.page-member-information__top-title > svg {
+  width: 4rem;
+  height: auto;
+  color: #9A7412;
+}
+.page-member-information__top-title > h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  font-family: "Noto Sans TC", "Helvetica Neue", "Helvetica", -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+}
+.page-member-information__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.4rem;
+}
+.page-member-information__content {
+  width: 100%;
+  height: auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+  z-index: 1;
+}
+
 .page-member-register {
   width: 100vw;
   height: auto;
@@ -11525,6 +11586,11 @@ body main {
   flex-direction: column;
   gap: 2.8rem;
 }
+.form.-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2.4rem;
+}
 .form__input {
   display: flex;
   flex-direction: column;
@@ -11546,6 +11612,10 @@ body main {
 }
 .form__input.-alert > div > input {
   border: 1px solid #C93B3B;
+}
+.form__input.-disable > div > input {
+  background-color: #EDEDED;
+  pointer-events: none;
 }
 .form__input > label {
   line-height: 1.6;
@@ -11593,6 +11663,7 @@ body main {
   padding: 0.6rem 1.2rem;
   border: 1px solid #9A7412;
   border-radius: 4px;
+  color: #9A7412;
 }
 .form__input > div > svg {
   width: 1.2rem;
@@ -11600,6 +11671,7 @@ body main {
   position: absolute;
   left: 1.6rem;
   color: #9A7412;
+  z-index: 1;
 }
 .form__input > div .show-password {
   position: absolute;
@@ -11610,6 +11682,89 @@ body main {
   width: 1.6rem;
   height: auto;
   color: #A4A4A4;
+}
+.form__radio {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.form__radio.-require > label::after {
+  width: 0.8rem;
+  height: 0.8rem;
+  content: "*";
+  display: block;
+  color: #C93B3B;
+}
+.form__radio.-notice > span {
+  display: flex;
+}
+.form__radio.-alert > span {
+  display: flex;
+  color: #C93B3B;
+}
+.form__radio > label {
+  line-height: 1.6;
+  font-size: 1.6rem;
+  font-weight: 400;
+  font-family: "Noto Sans TC", "Helvetica Neue", "Helvetica", -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+  display: flex;
+}
+.form__radio > a {
+  line-height: 1.6;
+  font-size: 1.4rem;
+  font-weight: 400;
+  font-family: "Noto Sans TC", "Helvetica Neue", "Helvetica", -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+  color: #C93B3B;
+  text-decoration: underline;
+}
+.form__radio > span {
+  line-height: 1.6;
+  font-size: 1.6rem;
+  font-weight: 400;
+  font-family: "Noto Sans TC", "Helvetica Neue", "Helvetica", -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+  display: none;
+  align-items: center;
+  gap: 0.4rem;
+  color: #A4A4A4;
+}
+.form__radio > span > svg {
+  width: 1.2rem;
+  height: auto;
+}
+.form__radio > div {
+  display: flex;
+  gap: 2.4rem;
+}
+.form__radio > div > div {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+.form__radio > div > div > label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.form__radio > div > div > input {
+  width: 1.6rem;
+  height: 1.6rem;
+}
+.form__radio > div > div > input:checked::before {
+  width: 1.6rem;
+  height: 1.6rem;
+  content: "";
+  display: block;
+  border: 1px solid #9A7412;
+  background-color: #9A7412;
+  border-radius: 50%;
+}
+.form__radio > div > div > input::before {
+  width: 1.6rem;
+  height: 1.6rem;
+  content: "";
+  display: block;
+  border: 1px solid #9A7412;
+  border-radius: 50%;
 }
 .form__checkbox {
   display: flex;
@@ -11685,8 +11840,15 @@ body main {
   align-items: center;
   gap: 2.4rem;
 }
+.-grid .form__btns {
+  grid-column: 1/-1;
+  justify-content: center;
+}
 .form__btns-item {
   flex: 1;
+}
+.-grid .form__btns-item {
+  flex: none;
 }
 .form__or {
   width: 100%;

@@ -3,6 +3,12 @@
     flex-direction: column;
     gap: 2.8rem;
 
+    &.-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2.4rem;
+    }
+
     &__input {
         display: flex;
         flex-direction: column;
@@ -35,6 +41,15 @@
             > div {
                 > input {
                     border: 1px solid map-get($colors, red);
+                }
+            }
+        }
+
+        &.-disable {
+            > div {
+                > input {
+                    background-color: map-get($colors, gray-2);
+                    pointer-events: none;
                 }
             }
         }
@@ -83,6 +98,7 @@
                 padding: .6rem 1.2rem;
                 border: 1px solid map-get($colors, brand-1);
                 border-radius: 4px;
+                color: map-get($colors, brand-1);
             }
 
             > svg {
@@ -91,6 +107,7 @@
                 position: absolute;
                 left: 1.6rem;
                 color: map-get($colors, brand-1);
+                z-index: 1;
             }
 
             .show-password {
@@ -104,6 +121,107 @@
                     color: map-get($colors, gray-1);
                 }
             }
+        }
+    }
+
+    &__radio {
+        display: flex;
+        flex-direction: column;
+        gap: .5rem;
+
+        &.-require {
+            > label {
+                &::after {
+                    @include size(.8rem, .8rem);
+
+                    content: '*';
+                    display: block;
+                    color: map-get($colors, red);
+                }
+            }
+        }
+
+        &.-notice {
+            > span {
+                display: flex;
+            }
+        }
+
+        &.-alert {
+            > span {
+                display: flex;
+                color: map-get($colors, red);
+            }
+        }
+
+        > label {
+            @include typo('body', 16);
+
+            display: flex;
+        }
+
+        > a {
+            @include typo('body', 14);
+
+            color: map-get($colors, red);
+            text-decoration: underline;
+        }
+
+        > span {
+            @include typo('body', 16);
+
+            display: none;
+            align-items: center;
+            gap: .4rem;
+            color: map-get($colors, gray-1);
+
+            > svg {
+                @include size(1.2rem, auto);
+            }
+        }
+
+        > div {
+            display: flex;
+            gap: 2.4rem;
+            
+            > div {
+                display: flex;
+                align-items: center;
+                gap: .8rem;
+    
+                > label {
+                    display: flex;
+                    align-items: center;
+                    
+                    cursor: pointer;
+                }
+    
+                > input {
+                    @include size(1.6rem);
+    
+                    &:checked {
+                        &::before {
+                            @include size(1.6rem);
+    
+                            content: '';
+                            display: block;
+                            border: 1px solid map-get($colors, brand-1);
+                            background-color: map-get($colors, brand-1);
+                            border-radius: 50%;
+                        }
+                    }
+    
+                    &::before {
+                        @include size(1.6rem);
+    
+                        content: '';
+                        display: block;
+                        border: 1px solid map-get($colors, brand-1);
+                        border-radius: 50%;
+                    }
+                }
+            }
+
         }
     }
 
@@ -195,8 +313,17 @@
         align-items: center;
         gap: 2.4rem;
 
+        .-grid & {
+            grid-column: 1 / -1;
+            justify-content: center;
+        }
+
         &-item {
             flex: 1;
+
+            .-grid & {
+                flex: none;
+            }
         }
     }
 
