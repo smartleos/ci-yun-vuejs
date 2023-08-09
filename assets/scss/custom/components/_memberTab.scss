@@ -1,0 +1,10 @@
+.member-tab {
+    display: flex;
+    justify-content: center;
+    gap: .8rem;
+
+    @include media-breakpoint-down(medium) {
+        align-items: flex-start;
+        overflow: scroll;
+    }
+}

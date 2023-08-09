@@ -7,77 +7,14 @@
 <main class="page-member-information">
     <div class="container grid">
         <div class="page-member-information__wrapper col-3-11-medium">
-            <ul class="page-member-information__tab">
-                <li>
-                    <?php 
-                        $tag="a";
-                        $url="/member/information";
-                        $text="回首頁";
-                        $style="";
-                        include ("../../components/button.php");
-                    ?>
-                </li>
-                <li>
-                    <?php 
-                        $tag="a";
-                        $url="/member/order";
-                        $text="訂單查詢";
-                        $style="-transparent -outline";
-                        include ("../../components/button.php");
-                    ?>
-                </li>
-                <li>
-                    <?php 
-                        $tag="a";
-                        $url="/member/level";
-                        $text="會員等級";
-                        $style="-transparent -outline";
-                        include ("../../components/button.php");
-                    ?>
-                </li>
-                <li>
-                    <?php 
-                        $tag="a";
-                        $url="/member/common";
-                        $text="常用祈福人資訊";
-                        $style="-transparent -outline";
-                        include ("../../components/button.php");
-                    ?>
-                </li>
-                <li>
-                    <?php 
-                        $tag="a";
-                        $url="/member/coupon";
-                        $text="我的優惠券";
-                        $style="-transparent -outline";
-                        include ("../../components/button.php");
-                    ?>
-                </li>
-                <li>
-                    <?php 
-                        $tag="a";
-                        $url="/member/privatcy";
-                        $text="隱私權/會員權益說明";
-                        $style="-transparent -outline";
-                        include ("../../components/button.php");
-                    ?>
-                </li>
-            </ul>
-            <div class="page-member-information__top">
-                <div class="page-member-information__top-title">
-                    <?php get_svg('title_cloud') ?>
-                    <h1>會員基本資料</h1>
-                </div>
-                <div class="page-member-information__top-btn">
-                    <?php 
-                        $tag="a";
-                        $url="/member/logout";
-                        $text="登出";
-                        $style="-red";
-                        include ("../../components/button.php");
-                    ?>
-                </div>
-            </div>
+            <?php 
+                $active="information";
+                include ("../../components/member/tab.php");
+            ?>
+            <?php 
+                $title="會員基本資料";
+                include ("../../components/member/top.php");
+            ?>
             <div class="page-member-information__content">
                 <form class="form -grid">
                     <div class="form__input -require">
@@ -128,9 +65,9 @@
                         </span>
                     </div>
                     <div class="form__input">
-                        <label for="phone">聯絡電話</label>
+                        <label for="tel">聯絡電話</label>
                         <div>
-                            <input type="text" id="phone" placeholder="請輸入...">
+                            <input type="text" id="tel" placeholder="請輸入...">
                         </div>
                         <span>
                             <?php get_svg('notice') ?>您尚未輸入...
