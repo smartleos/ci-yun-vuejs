@@ -70,7 +70,7 @@
                             <a href="/service">客服資訊</a>
                         </li>
                         <li>
-                            <a href="/about">常用表單</a>
+                            <a href="/download">常用表單</a>
                         </li>
                     </ul>
                 </div>

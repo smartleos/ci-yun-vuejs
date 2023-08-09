@@ -332,4 +332,21 @@ $(function() {
         }
     }
     // ------------- cart-completed -------------
+
+    // ------------- member-order-information -------------
+    if ($('.page-member-order-information').length) {
+        $('.page-member-order-information__card-item-btn').each(function() {
+            $(this).on('click', function() {
+                if ($(this).hasClass('-active')) {
+                    $(this).removeClass('-active')
+                    $(this).siblings('.page-member-order-information__card-item-list').css('max-height', 0)
+                } else {
+                    $(this).addClass('-active')
+                    const height = $(this).siblings('.page-member-order-information__card-item-list').prop('scrollHeight')
+                    $(this).siblings('.page-member-order-information__card-item-list').css('max-height', height)
+                }
+            })
+        })
+    }
+    // ------------- member-order-information -------------
 });
