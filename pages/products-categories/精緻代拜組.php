@@ -10,7 +10,7 @@
             <option value="精緻代拜組">精緻代拜組</option>
             <option value="精緻代拜組2">精緻代拜組2</option>
         </select>
-        <svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 8"><path d="M1.41.59 6 5.17 10.59.59 12 2 6 8 0 2 1.41.59Z" fill="#9A7412"/></svg>
+        <?php get_svg('down') ?>
     </div>
     <div class="container grid">
         <div class="page-products-categories__products col-3-11-medium">

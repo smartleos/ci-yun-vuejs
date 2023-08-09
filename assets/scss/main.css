@@ -11488,6 +11488,98 @@ body main {
   z-index: 1;
 }
 
+.page-member-order {
+  width: 100vw;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 12rem;
+  padding-bottom: 8.2rem;
+}
+.page-member-order__tab {
+  display: flex;
+  justify-content: center;
+  gap: 0.8rem;
+}
+@media (max-width: 1023.98px) {
+  .page-member-order__tab {
+    align-items: flex-start;
+    overflow: scroll;
+  }
+}
+.page-member-order__top {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 0;
+  border-top: 1px solid #9A7412;
+  border-bottom: 1px solid #9A7412;
+}
+.page-member-order__top-title {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+.page-member-order__top-title > svg {
+  width: 4rem;
+  height: auto;
+  color: #9A7412;
+}
+.page-member-order__top-title > h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  font-family: "Noto Sans TC", "Helvetica Neue", "Helvetica", -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+}
+.page-member-order__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.4rem;
+}
+.page-member-order__order {
+  width: 100%;
+  height: auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.8rem;
+  padding: 2.4rem 0;
+  z-index: 1;
+}
+.page-member-order__order-select {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.page-member-order__order-select > select {
+  line-height: 1.6;
+  font-size: 1.6rem;
+  font-weight: 400;
+  font-family: "Noto Sans TC", "Helvetica Neue", "Helvetica", -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+  border: 1px solid #9A7412;
+  border-radius: 3rem;
+  padding: 0.4rem 3.2rem 0.4rem 2rem;
+  cursor: pointer;
+}
+.page-member-order__order-select > svg {
+  width: 1.2rem;
+  height: auto;
+  position: absolute;
+  right: 1rem;
+  color: #9A7412;
+}
+.page-member-order__order-list {
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2.4rem;
+}
+
 .page-member-register {
   width: 100vw;
   height: auto;
@@ -13970,6 +14062,7 @@ body main {
   height: auto;
   position: absolute;
   right: 1rem;
+  color: #9A7412;
 }
 .page-products__products {
   display: flex;
@@ -14041,6 +14134,7 @@ body main {
   height: auto;
   position: absolute;
   right: 1rem;
+  color: #9A7412;
 }
 .page-products-categories__products {
   display: flex;
@@ -14897,6 +14991,37 @@ body main {
   font-weight: 400;
   font-family: "Noto Sans TC", "Helvetica Neue", "Helvetica", -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
   color: #846D1C;
+}
+
+.member-order-card {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 1.2rem 1.6rem;
+  border: 1px solid #9A7412;
+  border-radius: 0.4rem;
+  gap: 1.2rem;
+}
+.member-order-card > h3 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  font-family: "Noto Sans TC", "Helvetica Neue", "Helvetica", -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+}
+.member-order-card__row {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.member-order-card__row > p {
+  line-height: 1.6;
+  font-size: 1.6rem;
+  font-weight: 400;
+  font-family: "Noto Sans TC", "Helvetica Neue", "Helvetica", -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+}
+.member-order-card__row > p:last-child {
+  color: #9A7412;
 }
 
 .cart-coupon {

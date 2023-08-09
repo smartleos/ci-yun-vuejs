@@ -1,0 +1,29 @@
+.member-order-card {
+    @include size(100%, auto);
+
+    display: flex;
+    flex-direction: column;
+    padding: 1.2rem 1.6rem;
+    border: 1px solid map-get($colors, brand-1);
+    border-radius: .4rem;
+    gap: 1.2rem;
+
+    > h3 {
+        @include typo('head', 5);
+    }
+
+    &__row {
+        @include size(100%, auto);
+
+        display: flex;
+        justify-content: space-between;
+
+        > p {
+            @include typo('body', 16);
+
+            &:last-child {
+                color: map-get($colors, brand-1);
+            }
+        }
+    }
+}
