@@ -128,45 +128,27 @@
                         </span>
                     </div>
                     <div class="form__input">
-                        <label for="company_name">公司名稱</label>
+                        <label for="phone">聯絡電話</label>
                         <div>
-                            <input type="text" id="company_name" placeholder="請輸入...">
+                            <input type="text" id="phone" placeholder="請輸入...">
                         </div>
                         <span>
                             <?php get_svg('notice') ?>您尚未輸入...
                         </span>
                     </div>
                     <div class="form__input">
-                        <label for="company_address">公司地址</label>
+                        <label for="birthday">生日</label>
                         <div>
-                            <input type="text" id="company_address" placeholder="請輸入...">
+                            <input type="text" id="birthday" placeholder="請輸入...">
                         </div>
                         <span>
                             <?php get_svg('notice') ?>您尚未輸入...
                         </span>
                     </div>
                     <div class="form__input">
-                        <label for="phone_day">聯絡電話(日)</label>
+                        <label for="address">地址</label>
                         <div>
-                            <input type="text" id="phone_day" placeholder="請輸入...">
-                        </div>
-                        <span>
-                            <?php get_svg('notice') ?>您尚未輸入...
-                        </span>
-                    </div>
-                    <div class="form__input">
-                        <label for="phone_night">聯絡電話(夜)</label>
-                        <div>
-                            <input type="text" id="phone_night" placeholder="請輸入...">
-                        </div>
-                        <span>
-                            <?php get_svg('notice') ?>您尚未輸入...
-                        </span>
-                    </div>
-                    <div class="form__input">
-                        <label for="tax">傳真</label>
-                        <div>
-                            <input type="text" id="tax" placeholder="請輸入...">
+                            <input type="text" id="address" placeholder="請輸入...">
                         </div>
                         <span>
                             <?php get_svg('notice') ?>您尚未輸入...
