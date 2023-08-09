@@ -333,6 +333,27 @@ $(function() {
     }
     // ------------- cart-completed -------------
 
+    // ------------- member-coupon -------------
+    if ($('.page-member-coupon').length) {
+        $('select[name="coupon"]').on('change', function() {
+            switch ($(this).val()) {
+                case '我的優惠券':
+                    $('section').each(function() {
+                        $(this).removeClass('-active')
+                    })
+                    $('.page-member-coupon__my').addClass('-active')
+                    break;
+                case '領取優惠券':
+                    $('section').each(function() {
+                        $(this).removeClass('-active')
+                    })
+                    $('.page-member-coupon__get').addClass('-active')
+                break;
+            }
+        })
+    }
+    // ------------- member-order-information -------------
+
     // ------------- member-order-information -------------
     if ($('.page-member-order-information').length) {
         $('.page-member-order-information__card-item-btn').each(function() {

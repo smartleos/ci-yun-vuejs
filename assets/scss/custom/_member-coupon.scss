@@ -1,0 +1,241 @@
+.page-member-coupon {
+    @include size(100vw, auto);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 12rem;
+    padding-bottom: 8.2rem;
+
+    &__tab {
+        display: flex;
+        justify-content: center;
+        gap: .8rem;
+
+        @include media-breakpoint-down(medium) {
+            align-items: flex-start;
+            overflow: scroll;
+        }
+    }
+
+    &__top {
+        @include size(100%, auto);
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1.2rem 0;
+        border-top: 1px solid map-get($colors, brand-1);
+        border-bottom: 1px solid map-get($colors, brand-1);
+
+        &-title {
+            display: flex;
+            align-items: center;
+            gap: .8rem;
+
+            > svg {
+                @include size(4rem, auto);
+
+                color: map-get($colors, brand-1);
+            }
+
+            > h1 {
+                @include typo('head', 4);
+            }
+        }
+    }
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2.4rem;
+    }
+
+    &__select {
+        position: relative;
+        display: flex;
+        align-items: center;
+        
+        > select {
+            @include typo('body', 16);
+            
+            border: 1px solid map-get($colors, brand-1);
+            border-radius: 3rem;
+            padding: 0.4rem 3.2rem 0.4rem 2rem;
+            cursor: pointer;
+        }
+
+        > svg {
+            @include size(1.2rem, auto);
+
+            position: absolute;
+            right: 1rem;
+            color: map-get($colors, brand-1);
+        }
+    }
+
+    &__my {
+        @include size(100%, auto);
+
+        position: relative;
+        display: none;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2.4rem;
+        z-index: 1;
+
+        &.-active {
+            display: grid;
+        }
+
+        &-card {
+            display: flex;
+            align-items: flex-start;
+            gap: 1.2rem;
+            padding: 1.2rem;
+            background-color: map-get($colors, white);
+            box-shadow: 5px 5px 5px 0px rgba(map-get($colors, black-1), 0.15);
+
+            > figure {
+                @include size(7rem, auto);
+                @include aspect(1);
+
+                position: relative;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                overflow: hidden;
+
+                > img {
+                    @include size(100%, auto);
+                
+                    position: absolute;
+                    object-fit: cover;
+                }
+            }
+
+            &-content {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                flex: 1;
+                gap: .5rem;
+
+                > span {
+                    padding: 0 .8rem;
+                    border-radius: .2rem;
+
+                    &.-available {
+                        background-color: map-get($colors, success);
+                        color: map-get($colors, white);
+                    }
+                    
+                    &.-used {
+                        background-color: map-get($colors, promote);
+                        color: map-get($colors, red);
+                    }
+
+                    &.-expired {
+                        background-color: map-get($colors, gray-2);
+                        color: map-get($colors, gray-1);
+                        border: 1px solid map-get($colors, gray-1);
+                    }
+                }
+
+                > h3 {
+                    @include typo('body', 16);
+
+                    font-weight: bold;
+                }
+
+                > p {
+                    @include typo('body', 14);
+
+                    color: map-get($colors, gray-1);
+
+                    &:last-child {
+                        color: map-get($colors, brand-1);
+                    }
+                }
+            }
+        }
+    }
+
+    &__get {
+        @include size(100%, auto);
+
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.6rem;
+
+        &.-active {
+            display: flex;
+        }
+
+        > hr {
+            @include size(100%, auto);
+
+            border-top: 1px solid map-get($colors, brand-1);
+        }
+
+        &-list {
+            @include size(100%, auto);
+
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2.4rem;
+
+            &-card {
+                display: flex;
+                align-items: flex-start;
+                gap: 1.2rem;
+                padding: 1.2rem 1.6rem;
+                background-color: map-get($colors, white);
+                box-shadow: 5px 5px 5px 0px rgba(map-get($colors, black-1), 0.15);
+
+                > figure {
+                    @include size(7rem, auto);
+                    @include aspect(1);
+
+                    position: relative;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    overflow: hidden;
+
+                    > img {
+                        @include size(100%, auto);
+                    
+                        position: absolute;
+                        object-fit: cover;
+                    }
+                }
+
+                &-content {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-end;
+                    flex: 1;
+                    gap: .5rem;
+
+                    > h3 {
+                        @include typo('body', 16);
+
+                        font-weight: bold;
+                    }
+
+                    > p {
+                        @include typo('body', 14);
+
+                        color: map-get($colors, gray-1);
+
+                        &:last-child {
+                            color: map-get($colors, brand-1);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

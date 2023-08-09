@@ -14,7 +14,7 @@
     </div>
     <?php 
         $tag="a";
-        $url="/member/order/訂單1";
+        $url="/member/order-information";
         $text="查看詳細內容";
         $style="";
         include ("../../components/button.php");

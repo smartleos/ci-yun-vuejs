@@ -32,6 +32,13 @@
             }
         }
 
+        &.-important {
+            > span {
+                display: flex;
+                color: map-get($colors, red);
+            }
+        }
+
         &.-alert {
             > span {
                 display: flex;
@@ -84,6 +91,7 @@
             position: relative;
             display: flex;
             align-items: center;
+            gap: 1.2rem;
 
             &.-password {
                 > input {
@@ -99,6 +107,10 @@
                 border: 1px solid map-get($colors, brand-1);
                 border-radius: 4px;
                 color: map-get($colors, brand-1);
+            }
+
+            > div {
+                flex: 0 0 auto;
             }
 
             > svg {
