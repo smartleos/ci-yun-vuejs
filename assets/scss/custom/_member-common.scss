@@ -1,0 +1,103 @@
+.page-member-common {
+    @include size(100vw, auto);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 12rem;
+    padding-bottom: 8.2rem;
+
+    &__tab {
+        display: flex;
+        justify-content: center;
+        gap: .8rem;
+
+        @include media-breakpoint-down(medium) {
+            align-items: flex-start;
+            overflow: scroll;
+        }
+    }
+
+    &__top {
+        @include size(100%, auto);
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1.2rem 0;
+        border-top: 1px solid map-get($colors, brand-1);
+        border-bottom: 1px solid map-get($colors, brand-1);
+
+        &-title {
+            display: flex;
+            align-items: center;
+            gap: .8rem;
+
+            > svg {
+                @include size(4rem, auto);
+
+                color: map-get($colors, brand-1);
+            }
+
+            > h1 {
+                @include typo('head', 4);
+            }
+        }
+    }
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.2rem;
+    }
+
+    &__list {
+        display: none;
+        flex-direction: column;
+        gap: 1.2rem;
+
+        &.-active {
+            display: flex;
+        }
+
+        > li {
+            display: flex;
+            padding: 1.2rem 1.6rem;
+            background-color: map-get($colors, white);
+            box-shadow: 5px 5px 5px 0px rgba(map-get($colors, black-1), 0.15);
+        }
+
+        &-content {
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+            gap: 1.2rem;
+
+            > h3 {
+                @include typo('head', 5);
+            }
+
+            > p {
+                @include typo('body', 16);
+
+                color: map-get($colors, brand-1);
+            }
+        }
+
+        &-btn {
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    &__form {
+        @include size(100%, auto);
+
+        display: none;
+
+        &.-active {
+            display: grid;
+        }
+    }
+}

@@ -47,9 +47,9 @@
     <li>
         <?php 
             $tag="a";
-            $url="/member/privatcy";
+            $url="/member/privacy";
             $text="隱私權/會員權益說明";
-            $style= $active=="privatcy" ? "" : "-transparent -outline";
+            $style= $active=="privacy" ? "" : "-transparent -outline";
             include ("../../components/button.php");
         ?>
     </li>

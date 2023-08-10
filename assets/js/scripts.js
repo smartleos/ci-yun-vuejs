@@ -370,4 +370,21 @@ $(function() {
         })
     }
     // ------------- member-order-information -------------
+
+    // ------------- member-common -------------
+    if ($('.page-member-common').length) {
+        $('.page-member-common__list-btn').each(function() {
+            $(this).on('click', function() {
+                $('.page-member-common__list').removeClass('-active')
+                $('.page-member-common__form').addClass('-active')
+            })
+        })
+        $('.form__btns-item').each(function() {
+            $(this).on('click', function() {
+                $('.page-member-common__list').addClass('-active')
+                $('.page-member-common__form').removeClass('-active')
+            })
+        })
+    }
+    // ------------- member-common -------------
 });
