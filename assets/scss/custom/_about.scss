@@ -7,11 +7,20 @@
     padding-top: 8.2rem;
     padding-bottom: 23.2rem;
 
+    @include media-breakpoint-down(medium) {
+        padding-top: 4.4rem;
+        padding-bottom: 8rem;
+    }
+
     &__wrapper {
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: 6rem;
+
+        @include media-breakpoint-down(medium) {
+            gap: 0;
+        }
     }
 
     &__content {
@@ -19,6 +28,10 @@
         flex-direction: column;
         padding: 4rem 0;
         gap: 6rem;
+
+        @include media-breakpoint-down(medium) {
+            gap: 2.4rem;
+        }
 
         > figure {
             @include size(100%, auto);
@@ -29,6 +42,10 @@
             justify-content: center;
             align-items: center;
             overflow: hidden;
+
+            @include media-breakpoint-down(medium) {
+                @include size(100vw, auto);
+            }
             
             > img {
                 @include size(100%, auto);
@@ -42,6 +59,10 @@
             @include typo('body', 16);
 
             color: map-get($colors, brand-1);
+
+            @include media-breakpoint-down(medium) {
+                padding: 0 2.4rem;
+            }
         }
     }
 
@@ -64,10 +85,20 @@
             flex-direction: column;
             gap: 3.6rem;
 
+            @include media-breakpoint-down(medium) {
+                gap: 2.4rem;
+            }
+
             > p {
                 @include typo('head', 5);
 
                 text-align: center;
+
+                @include media-breakpoint-down(medium) {
+                    @include typo('body', 16);
+
+                    text-align: left;
+                }
             }
         }
     }
@@ -80,6 +111,10 @@
         align-items: center;
         flex-direction: column;
         padding-bottom: 8rem;
+        
+        @include media-breakpoint-down(medium) {
+            padding-bottom: 4rem;
+        }
 
         &-wrapper {
             display: flex;
@@ -93,6 +128,10 @@
                 justify-content: center;
                 align-items: center;
                 overflow: hidden;
+
+                @include media-breakpoint-down(medium) {
+                    @include size(100vw, auto);
+                }
 
                 > img {
                     @include size(100%);
@@ -114,11 +153,20 @@
             margin-top: -6.4rem;
             z-index: 1;
 
+            @include media-breakpoint-down(medium) {
+                padding-top: 2.5rem;
+                margin-top: -4rem;
+            }
+
             > svg {
                 @include size(58.5rem, auto);
 
                 position: absolute;
                 top: 0;
+
+                @include media-breakpoint-down(medium) {
+                    @include size(24.5rem, auto);
+                }
             }
 
             > h2 {
@@ -126,6 +174,12 @@
 
                 margin-bottom: 2.8rem;
                 z-index: 1;
+
+                @include media-breakpoint-down(medium) {
+                    @include typo('head', 3);
+
+                    margin-bottom: 1.6rem;
+                }
             }
 
             &-control {
@@ -137,6 +191,10 @@
                 color: map-get($colors, brand-1);
                 gap: 3.6rem;
                 z-index: 1;
+
+                @include media-breakpoint-down(medium) {
+                    align-items: flex-end;
+                }
                 
                 &-prev, &-next {
                     display: flex;
@@ -164,6 +222,10 @@
                 display: flex;
                 justify-content: center;
                 width: auto !important;
+
+                @include media-breakpoint-down(medium) {
+                    margin-bottom: 4.8rem;
+                }
 
                 > span {
                     @include size(1.2rem);
@@ -200,6 +262,11 @@
             display: none;
             grid-template-columns: repeat(3, 1fr);
             gap: 6rem 4rem;
+
+            @include media-breakpoint-down(medium) {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 2.4rem;
+            }
             
             &.-show {
                 display: grid;

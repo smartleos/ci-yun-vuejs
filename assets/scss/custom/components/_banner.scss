@@ -8,6 +8,12 @@
     margin-bottom: 9.2rem;
     overflow: hidden;
 
+    @include media-breakpoint-down(medium) {
+        @include size(100vw, 21.2rem);
+
+        margin-bottom: 7rem;
+    }
+
     > figure {
         @include size(200vw);
 
@@ -22,6 +28,12 @@
 
             position: absolute;
             bottom: 0;
+
+            @include media-breakpoint-down(medium) {
+                @include size(100vw);
+
+                object-fit: cover;
+            }
         }
     }
 
@@ -31,5 +43,11 @@
         color: map-get($colors, white);
         z-index: 1;
         margin-bottom: 6rem;
+
+        @include media-breakpoint-down(medium) {
+            @include typo('head', 2);
+
+            margin-bottom: 1.6rem;
+        }
     }
 }
