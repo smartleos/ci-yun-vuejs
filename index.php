@@ -31,10 +31,10 @@
         </div>
     </div>
     <div class="container grid">
-        <div class="col-3-11-medium">
-            <div class="page-index__announcement grid -cols-8-medium">
-                <h3 class="col-1-2-medium">重要公告</h3>
-                <div class="page-index__announcement-wrapper col-2-9-medium">
+        <div class="col-3-11-tablet col-1-5-mobile">
+            <div class="page-index__announcement grid -cols-8-tablet">
+                <h3 class="col-1-2-tablet">重要公告</h3>
+                <div class="page-index__announcement-wrapper col-2-9-tablet">
                     <?php 
                         $date="2023.02.24";
                         $title="為配合祭拜時間，即日起寶塔營業時段調整為：每日 8:30~16:30";
@@ -56,7 +56,7 @@
                         include ("components/title.php");
                     ?>
                 </div>
-                <div class="grid -cols-8-medium">
+                <div class="grid -cols-8-tablet -cols-4-mobile">
                     <div class="page-index__information-card">
                         <?php 
                             $size="large";
@@ -90,11 +90,13 @@
         </div>
     </div>
     <div class="page-index__banner">
+        <img src="<?php image_dir() ?>page/deco_cloud.png" alt="">
         <h2>慈雲寶塔，</h2>
         <h2>孝順的塔</h2>
+        <img src="<?php image_dir() ?>page/deco_cloud.png" alt="">
     </div>
     <div class="container grid">
-        <div class="col-3-11-medium">
+        <div class="col-3-11-tablet col-1-5-mobile">
             <div class="page-index__service">
                 <div class="page-index__service-title">
                     <?php 
@@ -102,7 +104,7 @@
                         include ("components/title.php");
                     ?>
                 </div>
-                <div class="grid -cols-8-medium">
+                <div class="grid -cols-8-tablet -cols-4-mobile">
                     <div class="page-index__service-card">
                         <?php 
                             $img_url="testimg/14.jpg";
@@ -139,9 +141,9 @@
                 <div class="page-index__service-btn">
                     <?php 
                         $tag="a";
-                        $url="https://www.google.com/";
-                        $target="_blank";
-                        $text="更多法會";
+                        $url="/service";
+                        $target="";
+                        $text="服務一覽";
                         $style="";
                         include ("components/button.php");
                     ?>
@@ -183,16 +185,16 @@
         <div class="page-index__navigation-btn">
             <?php 
                 $tag="a";
-                $url="https://www.google.com/";
-                $target="_blank";
-                $text="更多法會";
+                $url="/about";
+                $target="";
+                $text="完整導覽";
                 $style="";
                 include ("components/button.php");
             ?>
         </div>
     </div>
     <div class="container grid">
-        <div class="col-4-10-medium">
+        <div class="col-4-10-tablet col-1-5-mobile">
             <div class="page-index__video">
                 <div class="page-index__video-title">
                     <?php 

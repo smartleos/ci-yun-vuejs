@@ -16,9 +16,19 @@
         margin-bottom: 2rem;
 
         color: map-get($colors, brand-1);
+
+        @include media-breakpoint-down(medium) {
+            @include size(6.4rem, auto);
+
+            margin-bottom: 1.2rem;
+        }
     }
 
     > h3 {
         @include typo('head', 1);
+
+        @include media-breakpoint-down(medium) {
+            @include typo('head', 3);
+        }
     }
 }

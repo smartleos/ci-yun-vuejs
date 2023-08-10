@@ -13694,16 +13694,33 @@ body main {
   flex-direction: column;
   padding-top: 8.2rem;
 }
+@media (max-width: 1023.98px) {
+  .page-index {
+    padding-top: 4.4rem;
+  }
+}
 .page-index__kv {
   width: 100vw;
   height: 100vh;
   position: relative;
+}
+@media (max-width: 1023.98px) {
+  .page-index__kv {
+    width: 100vw;
+    height: auto;
+  }
 }
 .page-index__kv-swiper {
   width: 100vw;
   height: 42vw;
   position: relative;
   overflow: hidden;
+}
+@media (max-width: 1023.98px) {
+  .page-index__kv-swiper {
+    width: 100vw;
+    height: 85vw;
+  }
 }
 .page-index__kv-swiper > h2 {
   position: absolute;
@@ -13713,6 +13730,18 @@ body main {
   font-size: 4.8rem;
   line-height: 1.3;
   color: #ffffff;
+}
+@media (max-width: 1023.98px) {
+  .page-index__kv-swiper > h2 {
+    width: 100%;
+    height: auto;
+    font-size: 2.8rem;
+    line-height: 1.6;
+    font-weight: 700;
+    font-family: "Noto Sans TC", "Helvetica Neue", "Helvetica", -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+    text-align: center;
+    bottom: 5.2rem;
+  }
 }
 .page-index__kv-swiper-deco {
   width: 26vw;
@@ -13741,6 +13770,12 @@ body main {
   overflow: hidden;
   border-radius: 50%;
 }
+@media (max-width: 1023.98px) {
+  .page-index__kv-swiper-clip {
+    width: 185vw;
+    height: 185vw;
+  }
+}
 .page-index__kv-swiper-wrapper {
   display: flex;
   align-items: flex-end;
@@ -13748,12 +13783,17 @@ body main {
 .page-index__kv-swiper-wrapper > figure {
   width: 100vw;
   height: 42vw;
-  height: 42vw !important;
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   overflow: hidden;
+}
+@media (max-width: 1023.98px) {
+  .page-index__kv-swiper-wrapper > figure {
+    width: 100vw;
+    height: 85vw;
+  }
 }
 .page-index__kv-swiper-wrapper > figure > img {
   width: 100%;
@@ -13771,12 +13811,23 @@ body main {
   justify-content: center;
   z-index: 2;
 }
+@media (max-width: 1023.98px) {
+  .page-index__kv-swiper-pagination {
+    bottom: 3.6rem !important;
+  }
+}
 .page-index__kv-swiper-pagination > span {
   width: 1.2rem;
   height: 1.2rem;
   border: 1px solid #ffffff;
   background-color: transparent;
   opacity: 0.6 !important;
+}
+@media (max-width: 1023.98px) {
+  .page-index__kv-swiper-pagination > span {
+    width: 0.8rem;
+    height: 0.8rem;
+  }
 }
 .page-index__kv-swiper-pagination > span.swiper-pagination-bullet-active {
   background-color: #ffffff;
@@ -13785,10 +13836,24 @@ body main {
 .page-index__announcement {
   padding: 8rem 0;
 }
+@media (max-width: 1023.98px) {
+  .page-index__announcement {
+    display: flex;
+    flex-direction: column;
+    padding-top: 0;
+    padding-bottom: 4rem;
+    margin-top: 1.8rem;
+  }
+}
 .page-index__announcement h3 {
   font-size: 2rem;
   font-weight: 700;
   font-family: "Noto Sans TC", "Helvetica Neue", "Helvetica", -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+}
+@media (max-width: 1023.98px) {
+  .page-index__announcement h3 {
+    text-align: center;
+  }
 }
 .page-index__announcement-wrapper {
   display: flex;
@@ -13810,9 +13875,21 @@ body main {
   grid-column-start: 5;
   grid-column-end: 9;
 }
+@media (max-width: 1023.98px) {
+  .page-index__information-card:nth-child(odd) {
+    grid-column-start: 1;
+    grid-column-end: 5;
+  }
+}
 .page-index__information-card:nth-child(odd):first-child {
   grid-column-start: 1;
   grid-column-end: 9;
+}
+@media (max-width: 1023.98px) {
+  .page-index__information-card:nth-child(odd):first-child {
+    grid-column-start: 1;
+    grid-column-end: 5;
+  }
 }
 .page-index__information-card:nth-child(odd):first-child > h4 {
   text-align: left;
@@ -13824,9 +13901,17 @@ body main {
 .page-index__information-btn {
   margin-top: 6rem;
 }
+@media (max-width: 1023.98px) {
+  .page-index__information-btn {
+    width: 100%;
+    height: auto;
+    margin-top: 3.6rem;
+  }
+}
 .page-index__banner {
   width: 100vw;
   height: 100vh;
+  position: relative;
   display: flex;
   flex-direction: row-reverse;
   justify-content: center;
@@ -13837,6 +13922,7 @@ body main {
   background-repeat: no-repeat;
   background-attachment: fixed;
   z-index: 1;
+  overflow: hidden;
 }
 .page-index__banner > h2 {
   font-size: 7vw;
@@ -13847,8 +13933,46 @@ body main {
   color: #ffffff;
   font-size: 6rem;
 }
+@media (max-width: 1023.98px) {
+  .page-index__banner > h2 {
+    font-size: 3.6rem;
+    font-weight: 700;
+    font-family: "Noto Sans TC", "Helvetica Neue", "Helvetica", -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+  }
+}
 .page-index__banner > h2:last-child {
   margin-top: 4.8rem;
+}
+.page-index__banner > img {
+  width: 27.6vw;
+  height: auto;
+  position: absolute;
+}
+@media (max-width: 1023.98px) {
+  .page-index__banner > img {
+    width: 62vw;
+    height: auto;
+  }
+}
+.page-index__banner > img:first-child {
+  top: 12.6rem;
+  left: -9.5rem;
+}
+@media (max-width: 1023.98px) {
+  .page-index__banner > img:first-child {
+    top: 11rem;
+    left: -8.3rem;
+  }
+}
+.page-index__banner > img:last-child {
+  bottom: 5.4rem;
+  right: -9.5rem;
+}
+@media (max-width: 1023.98px) {
+  .page-index__banner > img:last-child {
+    bottom: 7.3rem;
+    right: -8.3rem;
+  }
 }
 .page-index__service {
   position: relative;
@@ -13858,11 +13982,25 @@ body main {
   padding: 16rem 0;
   z-index: 1;
 }
+@media (max-width: 1023.98px) {
+  .page-index__service {
+    padding: 8rem 0;
+  }
+}
 .page-index__service-title {
   margin-bottom: 6rem;
 }
 .page-index__service-card {
   margin-bottom: 1.2rem;
+}
+@media (max-width: 1023.98px) {
+  .page-index__service-card {
+    padding: 0 2rem;
+    margin-bottom: 0;
+  }
+  .page-index__service-card:not(:last-child) {
+    margin-bottom: 1.2rem;
+  }
 }
 .page-index__service-card:nth-child(odd) {
   grid-column-start: 1;
@@ -13872,8 +14010,20 @@ body main {
   grid-column-start: 5;
   grid-column-end: 9;
 }
+@media (max-width: 1023.98px) {
+  .page-index__service-card:nth-child(even) {
+    grid-column-start: 1;
+    grid-column-end: 5;
+  }
+}
 .page-index__service-btn {
   margin-top: 6rem;
+}
+@media (max-width: 1023.98px) {
+  .page-index__service-btn {
+    width: 100%;
+    height: auto;
+  }
 }
 .page-index__navigation {
   width: 100vw;
@@ -13883,6 +14033,11 @@ body main {
   align-items: center;
   flex-direction: column;
   padding-bottom: 8rem;
+}
+@media (max-width: 1023.98px) {
+  .page-index__navigation {
+    padding-bottom: 4rem;
+  }
 }
 .page-index__navigation-wrapper {
   display: flex;
@@ -13900,6 +14055,12 @@ body main {
   content: "";
   display: block;
   padding-bottom: 71%;
+}
+@media (max-width: 1023.98px) {
+  .page-index__navigation-wrapper > figure {
+    width: 100vw;
+    height: auto;
+  }
 }
 .page-index__navigation-wrapper > figure > img {
   width: 100%;
@@ -13919,11 +14080,23 @@ body main {
   margin-top: -6.4rem;
   z-index: 1;
 }
+@media (max-width: 1023.98px) {
+  .page-index__navigation-bottom {
+    padding-top: 2.5rem;
+    margin-top: -4rem;
+  }
+}
 .page-index__navigation-bottom > svg {
   width: 58.5rem;
   height: auto;
   position: absolute;
   top: 0;
+}
+@media (max-width: 1023.98px) {
+  .page-index__navigation-bottom > svg {
+    width: 24.5rem;
+    height: auto;
+  }
 }
 .page-index__navigation-bottom > h2 {
   font-size: 3.6rem;
@@ -13931,6 +14104,15 @@ body main {
   font-family: "Noto Sans TC", "Helvetica Neue", "Helvetica", -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
   margin-bottom: 2.8rem;
   z-index: 1;
+}
+@media (max-width: 1023.98px) {
+  .page-index__navigation-bottom > h2 {
+    font-size: 2.4rem;
+    line-height: 1.6;
+    font-weight: 700;
+    font-family: "Noto Sans TC", "Helvetica Neue", "Helvetica", -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+    margin-bottom: 1.6rem;
+  }
 }
 .page-index__navigation-bottom-control {
   width: 100%;
@@ -13941,6 +14123,11 @@ body main {
   color: #9A7412;
   gap: 3.6rem;
   z-index: 1;
+}
+@media (max-width: 1023.98px) {
+  .page-index__navigation-bottom-control {
+    align-items: flex-end;
+  }
 }
 .page-index__navigation-bottom-control-prev, .page-index__navigation-bottom-control-next {
   display: flex;
@@ -13966,6 +14153,11 @@ body main {
   justify-content: center;
   width: auto !important;
 }
+@media (max-width: 1023.98px) {
+  .page-index__navigation-bottom-pagination {
+    margin-bottom: 4.8rem;
+  }
+}
 .page-index__navigation-bottom-pagination > span {
   width: 1.2rem;
   height: 1.2rem;
@@ -13980,13 +14172,31 @@ body main {
 .page-index__navigation-btn {
   margin-top: 6rem;
 }
+@media (max-width: 1023.98px) {
+  .page-index__navigation-btn {
+    width: 100%;
+    height: auto;
+    margin-top: 3.6rem;
+    padding: 0 2.4rem;
+  }
+}
 .page-index__video {
   display: flex;
   flex-direction: column;
   padding: 8rem 0;
 }
+@media (max-width: 1023.98px) {
+  .page-index__video {
+    padding: 4rem 0;
+  }
+}
 .page-index__video-title {
   margin-bottom: 3.2rem;
+}
+@media (max-width: 1023.98px) {
+  .page-index__video-title {
+    margin-bottom: 2.4rem;
+  }
 }
 .page-index__video-plyr {
   position: relative;
@@ -14009,6 +14219,14 @@ body main {
   text-align: center;
   color: #9A7412;
   margin-top: 3rem;
+}
+@media (max-width: 1023.98px) {
+  .page-index__video > h3 {
+    font-size: 2rem;
+    font-weight: 700;
+    font-family: "Noto Sans TC", "Helvetica Neue", "Helvetica", -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+    margin-top: 2.4rem;
+  }
 }
 
 .page-cart-confirm {
@@ -15501,6 +15719,11 @@ body main {
   color: #9A7412;
   border-bottom: 1px solid #9A7412;
 }
+@media (max-width: 1023.98px) {
+  .announcement-card {
+    gap: 0.8rem;
+  }
+}
 .announcement-card:first-child {
   border-top: 1px solid #9A7412;
 }
@@ -15712,6 +15935,11 @@ body main {
   align-items: flex-start;
   gap: 1.6rem;
 }
+@media (max-width: 1023.98px) {
+  .news-card {
+    gap: 2rem;
+  }
+}
 .news-card.-small > p {
   display: none;
 }
@@ -15731,6 +15959,13 @@ body main {
   content: "";
   display: block;
   padding-bottom: 50%;
+}
+@media (max-width: 1023.98px) {
+  .news-card > figure {
+    width: 100vw;
+    height: auto;
+    margin-left: -2.4rem;
+  }
 }
 .news-card > figure > img {
   width: 100%;
@@ -15786,6 +16021,20 @@ body main {
   height: auto;
   border-top: 1px solid #C93B3B;
   margin: 0;
+}
+.news-card > hr.-mobile {
+  display: none;
+}
+@media (max-width: 1023.98px) {
+  .news-card > hr {
+    border-top: 1px solid #9A7412;
+  }
+  .news-card > hr.-desktop {
+    display: none;
+  }
+  .news-card > hr.-mobile {
+    display: block;
+  }
 }
 .news-card__btn {
   display: flex;
@@ -16187,10 +16436,25 @@ body main {
   margin-bottom: 2rem;
   color: #9A7412;
 }
+@media (max-width: 1023.98px) {
+  .title > svg {
+    width: 6.4rem;
+    height: auto;
+    margin-bottom: 1.2rem;
+  }
+}
 .title > h3 {
   font-size: 3.6rem;
   font-weight: 700;
   font-family: "Noto Sans TC", "Helvetica Neue", "Helvetica", -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+}
+@media (max-width: 1023.98px) {
+  .title > h3 {
+    font-size: 2.4rem;
+    line-height: 1.6;
+    font-weight: 700;
+    font-family: "Noto Sans TC", "Helvetica Neue", "Helvetica", -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+  }
 }
 
 .popup {

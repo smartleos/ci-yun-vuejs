@@ -6,6 +6,10 @@
     align-items: flex-start;
     gap: 1.6rem;
 
+    @include media-breakpoint-down(medium) {
+        gap: 2rem;
+    }
+
     &.-small {
         > p {
             display: none;
@@ -25,6 +29,12 @@
         justify-content: center;
         align-items: center;
         overflow: hidden;
+
+        @include media-breakpoint-down(medium) {
+            @include size(100vw, auto);
+
+            margin-left: -2.4rem;
+        }
 
         > img {
             @include size(100%);
@@ -72,6 +82,22 @@
 
         border-top: 1px solid map-get($colors, red);
         margin: 0;
+
+        &.-mobile {
+            display: none;
+        }
+
+        @include media-breakpoint-down(medium) {
+            border-top: 1px solid map-get($colors, brand-1);
+
+            &.-desktop {
+                display: none;
+            }
+
+            &.-mobile {
+                display: block;
+            }
+        }
     }
 
     &__btn {
