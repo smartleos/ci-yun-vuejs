@@ -11,14 +11,53 @@
     border-bottom: 1px solid map-get($colors, brown-line);
     animation: fadeInDown .3s .3s both;
 
+    @include media-breakpoint-down(medium) {
+        padding: 1.2rem 0;
+
+        &.-active {
+            .header__membcart {
+                color: map-get($colors, white);
+
+                &-cart {
+                    color: map-get($colors, white);
+                }
+            }
+
+            .header__mobile {
+                > button {
+                    > svg {
+                        color: map-get($colors, white);
+                    }
+                }
+
+                &-hamburger {
+                    > span {
+                        background: map-get($colors, white);
+                    }
+                }
+            }
+
+            .header__logo {
+                svg {
+                    color: map-get($colors, white);
+                }
+            }
+        }
+    }
+
     &__logo {
         @include media-breakpoint-down(tablet) {
-            order: 2;
-            margin: 0 auto;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
         }
 
-        > img {
+        svg {
             @include size(17rem, auto);
+
+            color: map-get($colors, brand-1);
+            transition: color .3s ease-in-out;
     
             @include media-breakpoint-down(tablet) {
                 @include size(12rem, auto);
@@ -27,45 +66,231 @@
     }
 
     &__membcart{
+        display: flex;
+        justify-content: flex-end;
+        gap: 2.4rem;
         text-align: right;
         white-space: nowrap;
+        color: map-get($colors, brand-1);
+        order: 0;
 
-        a {
-            margin-left: 2.4rem;
+        @include media-breakpoint-down(medium) {
+            justify-content: flex-start;
         }
 
+        a, button {
+            display: flex;
+            align-items: center;
+            gap: .8rem;
+            margin: 0;
+            transition: color .3s ease-in-out;
 
-        @include media-breakpoint-down(tablet) {
-            order: 1;
-            text-align: left;
+            > svg {
+                @include size(1.6rem, auto);
 
-            a {
-                margin-left: 0;
-                margin-right: 1rem;
+                @include media-breakpoint-down(medium) {
+                    @include size(2rem, auto);
+                }
             }
 
-            span {
+            > p {
+                @include media-breakpoint-down(medium) {
+                    display: none;
+                }
+            }
+        }
+
+        > button {
+            @include media-breakpoint-down(medium) {
                 display: none;
+            }
+        }
+
+        &-cart {
+            position: relative;
+            background-color: map-get($colors, brand-1);
+            color: map-get($colors, white);
+            padding: 0.8rem 1.6rem;
+            border-radius: 5rem;
+            transition: color .3s ease-in-out;
+
+            @include media-breakpoint-down(medium) {
+                padding: 0;
+                background-color: transparent;
+                color: map-get($colors, brand-1);
+
+                > p {
+                    display: none;
+                }
+            }
+
+            > span {
+                @include size(1.8rem);
+                @include typo('body', 12);
+
+                background-color: map-get($colors, red);
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: map-get($colors, white);
+
+                @include media-breakpoint-down(medium) {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    transform: translate(50%, -50%);
+                }
             }
         }
     }
 
     &__nav {
         left: 50%;
-        transform: translateX(-50%);
+        top: 50%;
+        transform: translate(-50%, -50%);
         position: absolute;
 
         @include media-breakpoint-down(medium) {
-            display: none;
+            @include size(100vw, 100dvh);
+
+            position: fixed;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            top: 0;
+            left: 0;
+            transform: translate(0, 0);
+            background-color: map-get($colors, brand-1);
+            z-index: -1;
+            color: map-get($colors, white);
+            max-height: 0;
+            transition: max-height .3s ease-in-out, padding .3s ease-in-out;
+            overflow: hidden;
+
+            &.-active {
+                padding: 10.2rem 0 3rem;
+                max-height: 100dvh;
+            }
         }
 
-        ul {
+        > ul {
             display: flex;
+            gap: 2.4rem;
             white-space: nowrap;
 
+            @include media-breakpoint-down(medium) {
+                flex-direction: column;
+                align-items: center;
+                flex: 1;
+            }
+            
             a {
-                padding: 2.4rem;
                 color: map-get($colors, brand-1);
+                padding: 0;
+                
+                @include media-breakpoint-down(medium) {
+                    @include typo('head', 4);
+
+                    color: map-get($colors, white);
+                }
+            }
+        }
+
+        &-social {
+            display: none;
+
+            @include media-breakpoint-down(medium) {
+                display: flex;
+                justify-content: center;
+                gap: .8rem;
+                color: map-get($colors, white);
+                margin-bottom: 4rem;
+    
+                > a {
+                    > svg {
+                        @include size(2.6rem, auto);
+                    }
+                }
+            }
+        }
+
+        &-bottom {
+            display: none;
+
+            @include media-breakpoint-down(medium) {
+                @include size(100%, auto);
+                
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+    }
+
+    &__search {
+        position: fixed;
+        top: 10rem;
+        z-index: 99;
+        transition: transform .3s ease-in-out, opacity .3s ease-in-out;
+        transform: translateY(-100%);
+        opacity: 0;
+        pointer-events: none;
+
+        @include media-breakpoint-down(medium) {
+            top: 5rem;
+        }
+
+        &.-active {
+            transform: translateY(0);
+            opacity: 1;
+            pointer-events: all;
+        }
+
+        &-wrapper {
+            display: flex;
+            background-color: map-get($colors, white);
+            padding: 0.8rem 1.6rem;
+            border-radius: 5rem;
+            border: 1px solid map-get($colors, brand-1);
+        }
+
+        &-btn {
+            @include size(1.6rem, auto);
+
+            > svg {
+                @include size(100%, auto);
+    
+                color: map-get($colors, brand-1);
+            }
+        }
+    }
+
+    &__mobile {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        > button {
+            > svg {
+                @include size(1.6rem, auto);
+
+                color: map-get($colors, brand-1);
+                transition: color .3s ease-in-out;
+            }
+        }
+
+        &-hamburger {
+            @include size(1.6rem, auto);
+
+            display: flex;
+            flex-direction: column;
+            gap: .2rem;
+
+            > span {
+                @include size(100%, 2px);
+
+                background-color: map-get($colors, brand-1);
+                transition: color .3s ease-in-out;
             }
         }
     }

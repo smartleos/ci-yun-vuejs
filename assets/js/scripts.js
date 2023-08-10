@@ -49,6 +49,19 @@ $(function() {
         })
     }
 
+    // ------------- header -------------
+    $('.header__membcart-search').on('click', function() {
+        $('.header__search').toggleClass('-active')
+    })
+    $('.header__mobile-search').on('click', function() {
+        $('.header__search').toggleClass('-active')
+    })
+    $('.header__mobile-hamburger').on('click', function() {
+        $('.header__nav').toggleClass('-active')
+        $('.header').toggleClass('-active')
+    })
+    // ------------- header -------------
+
     // ------------- form -------------
     if ($('.show-password').length) {
         $('.show-password').each(function() {

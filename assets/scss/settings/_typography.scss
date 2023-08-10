@@ -122,6 +122,14 @@ $font-family-body:
             font-weight: $font-weight-normal;
             font-family: $font-family-body;
 
+        } @else if $type == 12 {
+            font-size: 1.2rem;
+            font-weight: $font-weight-normal;
+            font-family: $font-family-body;
+
+            @include media-breakpoint-down(medium) {
+                font-size: 1rem;
+            }
         } @else {
             @error '#{$type}:沒有這個type';
         }

@@ -39,18 +39,32 @@
             <div class="grid">
                 <div class="col-2-4-mobile col-1-6-tablet header__logo">
                     <a href="<?php site_url() ?>" title="回到首頁">
-                        <img src="<?php image_dir() ?>logo.svg" alt="慈雲寶塔">
+                        <?php get_svg('logo') ?>
                     </a>
                 </div>
-                <div class="col-1-2-mobile col-7-13-tablet header__membcart">
-                    <a href="/member/account" class="header__member">
+                <div class="col-1-3-mobile col-10-13-tablet header__membcart">
+                    <a href="/member/account" class="header__membcart-member">
                         <?php get_svg('person_outline') ?>
-                        <span>會員</span>
+                        <p>會員</p>
                     </a>
-                    <a href="/cart/confirm" class="header__cart">
+                    <button href="/member/account" class="header__membcart-search">
+                        <?php get_svg('search') ?>
+                        <p>搜尋</p>
+                    </button>
+                    <a href="/cart/confirm" class="header__membcart-cart">
                         <?php get_svg('shopping_cart') ?>
-                        <span>購物車</span>
+                        <p>購物車</p>
+                        <span>1</span>
                     </a>
+                </div>
+                <div class="header__mobile col-4-5-mobile">
+                    <button href="/member/account" class="header__mobile-search">
+                        <?php get_svg('search') ?>
+                    </button>
+                    <div class="header__mobile-hamburger">
+                        <span></span>
+                        <span></span>
+                    </div>
                 </div>
                 <div class="header__nav">
                     <ul>
@@ -73,8 +87,31 @@
                             <a href="/download">常用表單</a>
                         </li>
                     </ul>
+                    <div class="header__nav-social container">
+                        <a href="">
+                            <?php get_svg('facebook') ?>
+                        </a>
+                        <a href="">
+                            <?php get_svg('line') ?>
+                        </a>
+                        <a href="">
+                            <?php get_svg('twitter') ?>
+                        </a>
+                    </div>
+                    <div class="header__nav-bottom container">
+                        <p>© 2023 Copyright</p>
+                        <a href="/member/privacy">隱私權條款</a>
+                    </div>
                 </div>
             </div>
+        </div>
+        <div class="header__search container grid">
+            <form class="header__search-wrapper col-9-12-tablet col-1-5-mobile">
+                <input type="text">
+                <button class="header__search-btn">
+                    <?php get_svg('search') ?>
+                </button>
+            </form>
         </div>
     </header>
 
