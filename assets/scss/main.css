@@ -13423,28 +13423,33 @@ body main {
   color: #9A7412;
 }
 .header__mobile {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  display: none;
 }
-.header__mobile > button > svg {
-  width: 1.6rem;
-  height: auto;
-  color: #9A7412;
-  transition: color 0.3s ease-in-out;
-}
-.header__mobile-hamburger {
-  width: 1.6rem;
-  height: auto;
-  display: flex;
-  flex-direction: column;
-  gap: 0.2rem;
-}
-.header__mobile-hamburger > span {
-  width: 100%;
-  height: 2px;
-  background-color: #9A7412;
-  transition: color 0.3s ease-in-out;
+@media (max-width: 1023.98px) {
+  .header__mobile {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .header__mobile > button > svg {
+    width: 1.6rem;
+    height: auto;
+    color: #9A7412;
+    transition: color 0.3s ease-in-out;
+  }
+  .header__mobile-hamburger {
+    width: 1.6rem;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+  }
+  .header__mobile-hamburger > span {
+    width: 100%;
+    height: 2px;
+    background-color: #9A7412;
+    transition: color 0.3s ease-in-out;
+  }
 }
 
 .footer {
@@ -15767,8 +15772,13 @@ body main {
   font-size: 1.6rem;
   font-weight: 400;
   font-family: "Noto Sans TC", "Helvetica Neue", "Helvetica", -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
-  display: flex;
-  flex-direction: column;
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-box-decoration-break: clone;
+          box-decoration-break: clone;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
   color: #9A7412;
 }
 .news-card > hr {

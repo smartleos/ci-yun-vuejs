@@ -79,8 +79,8 @@
                 <div class="page-index__information-btn">
                     <?php 
                         $tag="a";
-                        $url="https://www.google.com/";
-                        $target="_blank";
+                        $url="/news";
+                        $target="";
                         $text="更多法會";
                         $style="";
                         include ("components/button.php");

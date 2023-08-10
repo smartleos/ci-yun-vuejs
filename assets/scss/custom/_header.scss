@@ -266,31 +266,35 @@
     }
 
     &__mobile {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+        display: none;
 
-        > button {
-            > svg {
-                @include size(1.6rem, auto);
-
-                color: map-get($colors, brand-1);
-                transition: color .3s ease-in-out;
-            }
-        }
-
-        &-hamburger {
-            @include size(1.6rem, auto);
-
+        @include media-breakpoint-down(medium) {
             display: flex;
-            flex-direction: column;
-            gap: .2rem;
-
-            > span {
-                @include size(100%, 2px);
-
-                background-color: map-get($colors, brand-1);
-                transition: color .3s ease-in-out;
+            align-items: center;
+            justify-content: space-between;
+    
+            > button {
+                > svg {
+                    @include size(1.6rem, auto);
+    
+                    color: map-get($colors, brand-1);
+                    transition: color .3s ease-in-out;
+                }
+            }
+    
+            &-hamburger {
+                @include size(1.6rem, auto);
+    
+                display: flex;
+                flex-direction: column;
+                gap: .2rem;
+    
+                > span {
+                    @include size(100%, 2px);
+    
+                    background-color: map-get($colors, brand-1);
+                    transition: color .3s ease-in-out;
+                }
             }
         }
     }

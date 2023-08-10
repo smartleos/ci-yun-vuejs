@@ -62,9 +62,8 @@
 
     > p {
         @include typo('body', 16);
+        @include text-ellipsis(3);
 
-        display: flex;
-        flex-direction: column;
         color: map-get($colors, brand-1);
     }
 
