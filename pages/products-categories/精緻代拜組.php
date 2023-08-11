@@ -13,7 +13,7 @@
         <?php get_svg('down') ?>
     </div>
     <div class="container grid">
-        <div class="page-products-categories__products col-3-11-medium">
+        <div class="page-products-categories__products col-3-11-teblet col-1-5-mobile">
             <section class="page-products-categories__products-section">
                 <div class="page-products-categories__products-section-title">
                     <?php 
