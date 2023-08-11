@@ -6,12 +6,21 @@
     align-items: center;
     padding-top: 8.2rem;
     padding-bottom: 23.2rem;
+    
+    @include media-breakpoint-down(medium) {
+        padding-top: 4.4rem;
+        padding-bottom: 8rem;
+    }
 
     &__select {
         position: relative;
         display: flex;
         align-items: center;
         margin-bottom: 10rem;
+
+        @include media-breakpoint-down(medium) {
+            margin-bottom: 8rem;
+        }
         
         > select {
             @include typo('body', 16);
@@ -36,20 +45,84 @@
         flex-direction: column;
         gap: 10rem;
 
+        @include media-breakpoint-down(medium) {
+            gap: 8rem;
+        }
+
         &-section {
             display: none;
             flex-direction: column;
             align-items: center;
             gap: 6rem;
 
+            @include media-breakpoint-down(medium) {
+                gap: 3.6rem;
+            }
+
             &.-show {
                 display: flex;
             }
 
             &-list {
-                display: grid;
-                grid-template-columns: repeat(3, 1fr);
-                gap: 8rem 4rem;
+                @include size(100%, auto);
+
+                position: relative;
+
+                @include media-breakpoint-down(medium) {
+                    @include size(100vw, auto);
+
+                    margin-left: -2.4rem;
+                    padding: 0 2.4rem;
+                }
+
+                &-wrapper {
+                    display: grid;
+                    grid-template-columns: repeat(3, 1fr);
+                    gap: 8rem 4rem;
+
+                    @include media-breakpoint-down(medium) {
+                        display: flex;
+                        gap: 0;
+                    }
+                }
+
+                &-card {
+                    @include media-breakpoint-down(medium) {
+                        @include size(calc(50vw - 2.4rem - .8rem), auto);
+                    }
+                }
+
+                &-btn {
+                    display: none;
+                    @include media-breakpoint-down(medium) {
+                        @include size(4rem);
+
+                        position: absolute;
+                        top: 30%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        transform: translateY(-50%);
+                        border: 1px solid map-get($colors, brand-2);
+                        background-color: rgba(#F9F5EE, .6);
+                        border-radius: 50%;
+                        z-index: 1;
+
+                        &.-prev {
+                            left: 1rem;
+                        }
+
+                        &.-next {
+                            right: 1rem;
+                        }
+
+                        > svg {
+                            @include size(1.7rem, auto);
+
+                            color: map-get($colors, brand-1);
+                        }
+                    }
+                }
             }
 
             &-btn {

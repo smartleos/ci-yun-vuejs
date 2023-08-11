@@ -117,10 +117,18 @@ $font-family-body:
             // body.language-en &, &.-en {
             //     font-family: map-get($font-family, en);
             // }
+
+            @include media-breakpoint-down(medium) {
+                font-size: 1.4rem;
+            }
         } @else if $type == 14 {
             font-size: 1.4rem;
             font-weight: $font-weight-normal;
             font-family: $font-family-body;
+
+            @include media-breakpoint-down(medium) {
+                font-size: 1.2rem;
+            }
 
         } @else if $type == 12 {
             font-size: 1.2rem;

@@ -11,6 +11,10 @@
     border-radius: 5rem;
     transition: background-color .3s ease-in-out, color .3s ease-in-out, border-color .3s ease-in-out;
 
+    @include media-breakpoint-down(medium) {
+        padding: 0.4rem 1.2rem;
+    }
+
     &.-red {
         background-color: map-get($colors, red);
 

@@ -5,6 +5,10 @@
     flex-direction: column;
     gap: 1.2rem;
 
+    @include media-breakpoint-down(medium) {
+        gap: .6rem;
+    }
+
     > figure {
         @include size(100%, auto);
         @include aspect(1);
@@ -40,6 +44,11 @@
             background-color: map-get($colors, brand-1);
             color: map-get($colors, white);
             border-radius: .4rem;
+
+            @include media-breakpoint-down(medium) {
+                padding: 0 .8rem;
+                font-weight: bold;
+            }
         }
 
         &-promote {
@@ -53,16 +62,35 @@
             display: flex;
             border-radius: 5rem;
             font-weight: bold;
+
+            @include media-breakpoint-down(medium) {
+                @include typo('body', 14);
+
+                padding: 0 .8rem;
+                font-weight: bold;
+            }
         }
     }
 
     > h4 {
         @include typo('head', 3);
+
+        @include media-breakpoint-down(medium) {
+            @include typo('body', 16);
+
+            font-weight: bold;
+        }
     }
 
     &__price {
         display: flex;
         flex-direction: column;
+
+        @include media-breakpoint-down(medium) {
+            flex-direction: row;
+            align-items: center;
+            gap: .4rem;
+        }
 
         &-original {
             @include typo('body', 14);
@@ -77,6 +105,12 @@
 
             color: map-get($colors, red);
             font-weight: bold;
+
+            @include media-breakpoint-down(medium) {
+                @include typo('body', 16);
+
+                font-weight: bold;
+            }
         }
     }
 
@@ -84,5 +118,9 @@
         @include typo('body', 16);
 
         color: map-get($colors, brand-3);
+
+        @include media-breakpoint-down(medium) {
+            display: none;
+        }
     }
 }

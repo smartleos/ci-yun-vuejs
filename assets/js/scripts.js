@@ -122,8 +122,6 @@ $(function() {
 
     // ------------- about -------------
     if ($('.page-about').length) {
-
-
         new Swiper('.page-about__navigation', {
             slidesPerView: 'auto',
             spaceBetween: 24,
@@ -236,6 +234,19 @@ $(function() {
                     break;
             }
         })
+
+        if (window.innerWidth < 768) {
+            $('.swiper').each(function() {
+                new Swiper($(this)[0], {
+                    slidesPerView: 'auto',
+                    spaceBetween: 16,
+                    navigation: {
+                        nextEl: $(this).find('.-next')[0],
+                        prevEl: $(this).find('.-prev')[0],
+                    },
+                })
+            })
+        }
     }
     // ------------- products -------------
 

@@ -19,7 +19,7 @@
         <?php get_svg('down') ?>
     </div>
     <div class="container grid">
-        <div class="page-products__products col-3-11-medium">
+        <div class="page-products__products col-3-11-tablet col-1-5-mobile">
             <section class="page-products__products-section -show" data-category="精緻代拜組">
                 <div class="page-products__products-section-title">
                     <?php 
@@ -27,36 +27,44 @@
                         include ("../components/title.php");
                     ?>
                 </div>
-                <div class="page-products__products-section-list">
-                    <div class="page-products__products-section-list-card">
-                        <?php
-                            include ("../components/products/card.php");
-                        ?>
+                <div class="page-products__products-section-list swiper">
+                    <div class="page-products__products-section-list-wrapper swiper-wrapper">
+                        <div class="page-products__products-section-list-card swiper-slide">
+                            <?php
+                                include ("../components/products/card.php");
+                            ?>
+                        </div>
+                        <div class="page-products__products-section-list-card swiper-slide">
+                            <?php
+                                include ("../components/products/card.php");
+                            ?>
+                        </div>
+                        <div class="page-products__products-section-list-card swiper-slide">
+                            <?php
+                                include ("../components/products/card.php");
+                            ?>
+                        </div>
+                        <div class="page-products__products-section-list-card swiper-slide">
+                            <?php
+                                include ("../components/products/card.php");
+                            ?>
+                        </div>
+                        <div class="page-products__products-section-list-card swiper-slide">
+                            <?php
+                                include ("../components/products/card.php");
+                            ?>
+                        </div>
+                        <div class="page-products__products-section-list-card swiper-slide">
+                            <?php
+                                include ("../components/products/card.php");
+                            ?>
+                        </div>
                     </div>
-                    <div class="page-products__products-section-list-card">
-                        <?php
-                            include ("../components/products/card.php");
-                        ?>
+                    <div class="page-products__products-section-list-btn -prev">
+                        <?php get_svg('arrow_left') ?>
                     </div>
-                    <div class="page-products__products-section-list-card">
-                        <?php
-                            include ("../components/products/card.php");
-                        ?>
-                    </div>
-                    <div class="page-products__products-section-list-card">
-                        <?php
-                            include ("../components/products/card.php");
-                        ?>
-                    </div>
-                    <div class="page-products__products-section-list-card">
-                        <?php
-                            include ("../components/products/card.php");
-                        ?>
-                    </div>
-                    <div class="page-products__products-section-list-card">
-                        <?php
-                            include ("../components/products/card.php");
-                        ?>
+                    <div class="page-products__products-section-list-btn -next">
+                        <?php get_svg('arrow_right') ?>
                     </div>
                 </div>
                 <a
@@ -76,21 +84,29 @@
                         include ("../components/title.php");
                     ?>
                 </div>
-                <div class="page-products__products-section-list">
-                    <div class="page-products__products-section-list-card">
-                        <?php
-                            include ("../components/products/card.php");
-                        ?>
+                <div class="page-products__products-section-list swiper">
+                    <div class="page-products__products-section-list-wrapper swiper-wrapper">
+                        <div class="page-products__products-section-list-card swiper-slide">
+                            <?php
+                                include ("../components/products/card.php");
+                            ?>
+                        </div>
+                        <div class="page-products__products-section-list-card swiper-slide">
+                            <?php
+                                include ("../components/products/card.php");
+                            ?>
+                        </div>
+                        <div class="page-products__products-section-list-card swiper-slide">
+                            <?php
+                                include ("../components/products/card.php");
+                            ?>
+                        </div>
                     </div>
-                    <div class="page-products__products-section-list-card">
-                        <?php
-                            include ("../components/products/card.php");
-                        ?>
+                    <div class="page-products__products-section-list-btn -prev">
+                        <?php get_svg('arrow_left') ?>
                     </div>
-                    <div class="page-products__products-section-list-card">
-                        <?php
-                            include ("../components/products/card.php");
-                        ?>
+                    <div class="page-products__products-section-list-btn -next">
+                        <?php get_svg('arrow_right') ?>
                     </div>
                 </div>
                 <a
