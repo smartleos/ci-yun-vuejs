@@ -9,7 +9,7 @@
         <img src="<?php image_dir() ?>testimg/01.jpg" alt="">
     </figure>
     <div class="container grid">
-        <div class="news-single__wrapper col-3-11-medium">
+        <div class="news-single__wrapper col-3-11-tablet col-1-5-mobile">
             <div class="news-single__wrapper-top">
                 <h1>112年度新春法會</h1>
                 <div class="news-single__wrapper-top-tags">

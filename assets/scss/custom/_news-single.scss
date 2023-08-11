@@ -8,6 +8,12 @@
     padding-top: 8.2rem;
     padding-bottom: 23.2rem;
 
+    @include media-breakpoint-down(medium) {
+        padding-top: 4.4rem;
+        padding-bottom: 8rem;
+        gap:  3.2rem;
+    }
+
     > figure {
         @include size(100vw, auto);
 
@@ -25,6 +31,10 @@
         flex-direction: column;
         align-items: center;
         gap: 6rem;
+
+        @include media-breakpoint-down(medium) {
+            gap: 3.6rem;
+        }
 
         &-top {
             @include size(100%, auto);
@@ -165,6 +175,10 @@
             align-items: center;
             gap: 1.6rem;
 
+            @include media-breakpoint-down(medium) {
+                padding: 3.2rem 0;
+            }
+
             > p {
                 @include typo('body', 16);
 
@@ -179,6 +193,12 @@
                 > button {
                     @include size(3.6rem);
                 }
+            }
+        }
+
+        &-btn {
+            @include media-breakpoint-down(medium) {
+                @include size(100%, auto);
             }
         }
     }
