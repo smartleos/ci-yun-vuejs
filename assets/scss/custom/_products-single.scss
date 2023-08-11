@@ -7,8 +7,23 @@
     padding-top: 11.8rem;
     padding-bottom: 23.2rem;
 
+    @include media-breakpoint-down(medium) {
+        padding-top: 4.4rem;
+        padding-bottom: 8rem;
+    }
+
     &__swiper {
+        @include size(100%, auto);
+
         overflow: hidden;
+        
+        @include media-breakpoint-down(medium) {
+            @include size(100vw, auto);
+
+            position: relative;
+            margin-left: -2.4rem;
+            padding: 0 2.4rem;
+        }
 
         &-wrapper {
             > figure {
@@ -39,16 +54,35 @@
             align-items: center;
             margin-top: 3.2rem;
 
+            @include media-breakpoint-down(medium) {
+                margin-top: 1.6rem;
+            }
+
             > span {
                 @include size(4rem);
 
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                border: 1px solid map-get($colors, brand-1);
+                border: 1px solid map-get($colors, brand-2);
                 border-radius: 50%;
+                background-color: rgba(#F9F5EE, .6);
                 color: map-get($colors, brand-1);
                 cursor: pointer;
+
+                @include media-breakpoint-down(medium) {
+                    position: absolute;
+                    top: 40%;
+                    z-index: 1;
+
+                    &:first-child {
+                        left: .5rem;
+                    }
+
+                    &:last-child {
+                        right: .5rem;
+                    }
+                }
 
                 > svg {
                     @include size(1.8rem, auto);
@@ -58,6 +92,7 @@
             &-pagination {
                 display: flex;
                 justify-content: center;
+                flex: 1;
 
                 > span {
                     @include size(1.6rem);
@@ -66,6 +101,10 @@
                     border-radius: 50%;
                     background-color: transparent;
                     opacity: 1;
+
+                    @include media-breakpoint-down(medium) {
+                        @include size(1.2rem);
+                    }
 
                     &.swiper-pagination-bullet-active {
                         background-color: map-get($colors, brand-1);
@@ -79,6 +118,18 @@
         display: flex;
         flex-direction: column;
         gap: 2.4rem;
+
+        @include media-breakpoint-down(medium) {
+            gap: 1.6rem;
+        }
+
+        > h1 {
+            @include typo('head', 2);
+
+            @include media-breakpoint-down(medium) {
+                @include typo('head', 3);
+            }
+        }
 
         &-tags {
             display: flex;
@@ -94,6 +145,12 @@
                 color: map-get($colors, white);
                 padding: 0.4rem 1.2rem;
                 border-radius: .4rem;
+
+                @include media-breakpoint-down(medium) {
+                    @include typo('body', 16);
+
+                    font-weight: bold;
+                }
             }
 
             &-promote {
@@ -107,6 +164,12 @@
                 color: map-get($colors, red);
                 border-radius: 5rem;
                 font-weight: bold;
+
+                @include media-breakpoint-down(medium) {
+                    @include typo('body', 16);
+
+                    font-weight: bold;
+                }
             }
         }
 
@@ -129,6 +192,16 @@
         > hr {
             border-top: 1px solid map-get($colors, brand-1);
             margin: 0;
+
+            @include media-breakpoint-down(medium) {
+                &.-first {
+                    order: 2;
+                }
+
+                &.-second {
+                    order: 4;
+                }
+            }
         }
 
         &-payment {
@@ -136,8 +209,18 @@
             flex-direction: column;
             gap: .8rem;
 
+            @include media-breakpoint-down(medium) {
+                order: 3;
+            }
+
             > h3 {
                 @include typo('head', 5);
+
+                @include media-breakpoint-down(medium) {
+                    @include typo('body', 16);
+
+                    font-weight: bold;
+                }
             }
 
             > p {
@@ -151,6 +234,10 @@
             display: flex;
             flex-direction: column;
 
+            @include media-breakpoint-down(medium) {
+                order: 1;
+            }
+
             &-original {
                 @include typo('body', 16);
 
@@ -162,17 +249,39 @@
                 @include typo('head', 1);
 
                 color: map-get($colors, red);
+
+                @include media-breakpoint-down(medium) {
+                    @include typo('head', 2);
+                }
             }
         }
 
         &-btns {
             display: flex;
             gap: 1.6rem;
+
+            @include media-breakpoint-down(medium) {
+                @include size(100vw, auto);
+
+                position: fixed;
+                bottom: 0;
+                left: 0;
+                justify-content: center;
+                background-color: map-get($colors, white);
+                padding: 2.4rem;
+                gap: 1.4rem;
+                box-shadow: 0px -3px 3px 0px rgba(map-get($colors, black-1), 0.15);
+                z-index: 98;
+            }
         }
     }
 
     &__description {
         margin-top: 8.2rem;
+
+        @include media-breakpoint-down(medium) {
+            margin-top: 0;
+        }
 
         &-wrapper {
             display: flex;
@@ -188,16 +297,34 @@
                 flex-direction: column;
                 gap: 1.6rem;
 
-                > h2 {
+                > h1 {
                     @include typo('head', 1);
 
                     color: map-get($colors, brand-1);
+
+                    @include media-breakpoint-down(medium) {
+                        @include typo('head', 3);
+                    }
                 }
 
-                > h3 {
+                > h2 {
                     @include typo('head', 2);
 
                     color: map-get($colors, brand-1);
+
+                    @include media-breakpoint-down(medium) {
+                        @include typo('head', 4);
+                    }
+                }
+
+                > h3 {
+                    @include typo('head', 3);
+
+                    color: map-get($colors, brand-1);
+
+                    @include media-breakpoint-down(medium) {
+                        @include typo('head', 5);
+                    }
                 }
 
                 > p {
@@ -238,7 +365,7 @@
 
                 > li {
                     display: flex;
-                    align-items: center;
+                    align-items: flex-start;
                     gap: 1.2rem;
                     counter-increment: item;
 
@@ -259,7 +386,7 @@
 
                 > li {
                     display: flex;
-                    align-items: center;
+                    align-items: flex-start;
                     gap: 1.2rem;
 
                     &::before {
@@ -268,6 +395,7 @@
                         content: '';
                         display: block;
                         border-radius: 50%;
+                        margin-top: 1rem;
                         margin-left: 1.2rem;
                         background-color: map-get($colors, red);
                     }
@@ -305,16 +433,84 @@
     }
 
     &__recommend {
+        @include size(100%, auto);
+        
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: 6rem;
         padding: 3.2rem 0;
 
+        @include media-breakpoint-down(medium) {
+            padding-bottom: 0;
+        }
+
+        &-wrapper {
+            @include size(calc(100% + 4.8rem), auto);
+
+            overflow: hidden;
+            padding: 0 2.4rem;
+
+            @include media-breakpoint-down(medium) {
+                @include size(100%, auto);
+
+                padding: 0;
+                overflow: visible;
+            }
+        }
+
         &-swiper {
             @include size(100%, auto);
 
-            overflow: hidden;
+            position: relative;
+
+            @include media-breakpoint-down(medium) {
+                @include size(100vw, auto);
+    
+                overflow: hidden;
+                padding: 0 2.4rem;
+                margin-left: -2.4rem;
+            }
+
+            > button {
+                @include size(4rem);
+    
+                position: absolute;
+                top: 22%;
+                z-index: 1;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border: 1px solid map-get($colors, brand-2);
+                border-radius: 50%;
+                background-color: rgba(#F9F5EE, .6);
+                color: map-get($colors, brand-1);
+                cursor: pointer;
+
+                &.products-single__recommend-swiper-navigation-prev{
+                    left: 0;
+                    transform: translateX(-50%);
+
+                    @include media-breakpoint-down(medium) {
+                        left: .5rem;
+                        transform: translateX(0);
+                    }
+                }
+
+                &.products-single__recommend-swiper-navigation-next {
+                    right: 0;
+                    transform: translateX(50%);
+
+                    @include media-breakpoint-down(medium) {
+                        right: .5rem;
+                        transform: translateX(0);
+                    }
+                }
+
+                > svg {
+                    @include size(1.8rem, auto);
+                }
+            }
         }
     }
 }

@@ -263,6 +263,7 @@ $(function() {
         new Swiper('.products-single__swiper', {
             loop: true,
             slidesPerView: 1,
+            spaceBetween: 24,
             autoplay: {
                 delay: 5000,
             },
@@ -278,8 +279,18 @@ $(function() {
 
         new Swiper('.products-single__recommend-swiper', {
             loop: true,
-            slidesPerView: 3,
-            spaceBetween: 40,
+            slidesPerView: 2,
+            spaceBetween: 16,
+            breakpoints: {
+                768: {
+                    slidesPerView: 3,
+                    spaceBetween: 40,
+                },
+            },
+            navigation: {
+                nextEl: '.products-single__recommend-swiper-navigation-next',
+                prevEl: '.products-single__recommend-swiper-navigation-prev',
+            },
         })
 
         new Plyr('#products-player')

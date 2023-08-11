@@ -86,6 +86,10 @@
 
     &.-head {
         @include typo('head', 4);
+
+        @include media-breakpoint-down(medium) {
+            @include typo('body', 16);
+        }
     }
 
     &.-disabled {
