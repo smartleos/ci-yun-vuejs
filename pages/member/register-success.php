@@ -6,7 +6,7 @@
 <?php include('../../components/bg.php'); ?>
 <main class="page-member-register-success">
     <div class="container grid">
-        <div class="page-member-register-success__wrapper col-5-9-medium">
+        <div class="page-member-register-success__wrapper col-5-9-tablet col-1-5-mobile">
             <div class="page-member-register-success__content">
                 <h2>您已成功註冊！</h2>
                 <div class="page-member-register-success__content-btn">

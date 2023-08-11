@@ -6,7 +6,7 @@
 <?php include('../../components/bg.php'); ?>
 <main class="page-member-register">
     <div class="container grid">
-        <div class="page-member-register__wrapper col-5-9-medium">
+        <div class="page-member-register__wrapper col-5-9-tablet col-1-5-mobile">
             <div class="page-member-register__content">
                 <div class="page-member-register__content-title">
                     <?php 

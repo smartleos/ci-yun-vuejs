@@ -8,6 +8,11 @@
     padding-top: 10rem;
     padding-bottom: 8.2rem;
 
+    @include media-breakpoint-down(medium) {
+        padding-top: 12rem;
+        padding-bottom: 7.2rem;
+    }
+
     &__wrapper {
         display: flex;
         flex-direction: column;
@@ -24,6 +29,11 @@
         padding: 4rem 0;
         gap: 2rem;
         z-index: 1;
+
+        @include media-breakpoint-down(medium) {
+            gap: 1.6rem;
+            padding: 0;
+        }
 
         > h2 {
             @include typo('head', 1);
