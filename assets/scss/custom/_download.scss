@@ -7,6 +7,11 @@
     padding-top: 8.2rem;
     padding-bottom: 23.2rem;
 
+    @include media-breakpoint-down(medium) {
+        padding-top: 4.4rem;
+        padding-bottom: 8rem;
+    }
+
     &__wrapper {
         display: flex;
         flex-direction: column;
@@ -23,6 +28,11 @@
         padding: 4rem 0;
         gap: 6rem;
         z-index: 1;
+
+        @include media-breakpoint-down(medium) {
+            padding: 0;
+            gap: 3.6rem;
+        }
 
         &-list {
             @include size(100%, auto);
@@ -42,6 +52,8 @@
 
                 > p {
                     @include typo('head', 4);
+
+                    color: map-get($colors, brand-1);
                 }
             }
         }
