@@ -7,6 +7,11 @@
     padding-top: 12rem;
     padding-bottom: 8.2rem;
 
+    @include media-breakpoint-down(medium) {
+        padding-top: 8.8rem;
+        padding-bottom: 5.2rem;
+    }
+
     &__wrapper {
         display: flex;
         flex-direction: column;
@@ -46,8 +51,16 @@
         gap: 2.4rem;
         z-index: 1;
 
+        @include media-breakpoint-down(medium) {
+            flex-direction: column;
+        }
+
         &.-active {
             display: grid;
+
+            @include media-breakpoint-down(medium) {
+                display: flex;
+            }
         }
 
         &-card {
@@ -147,6 +160,11 @@
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             gap: 2.4rem;
+
+            @include media-breakpoint-down(medium) {
+                display: flex;
+                flex-direction: column;
+            }
 
             &-card {
                 display: flex;

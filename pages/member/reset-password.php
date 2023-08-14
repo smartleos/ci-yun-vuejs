@@ -6,10 +6,9 @@
 <?php include('../../components/bg.php'); ?>
 <main class="page-member-reset-password">
     <div class="container grid">
-        <div class="page-member-reset-password__wrapper col-5-9-medium">
+        <div class="page-member-reset-password__wrapper col-5-9-tablet col-1-5-mobile">
             <div class="page-member-reset-password__content">
-                <h2>忘記密碼</h2>
-                <p>請輸入您的手機號碼，我們將會寄送修改密碼信件到您的手機簡訊</p>
+                <h2>重設密碼</h2>
                 <form class="form">
                     <div class="form__input -require">
                         <label for="password">新密碼</label>

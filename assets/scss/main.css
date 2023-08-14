@@ -11550,6 +11550,12 @@ body main {
   padding-top: 12rem;
   padding-bottom: 8.2rem;
 }
+@media (max-width: 1023.98px) {
+  .page-member-coupon {
+    padding-top: 8.8rem;
+    padding-bottom: 5.2rem;
+  }
+}
 .page-member-coupon__wrapper {
   display: flex;
   flex-direction: column;
@@ -11592,8 +11598,18 @@ body main {
   gap: 2.4rem;
   z-index: 1;
 }
+@media (max-width: 1023.98px) {
+  .page-member-coupon__my {
+    flex-direction: column;
+  }
+}
 .page-member-coupon__my.-active {
   display: grid;
+}
+@media (max-width: 1023.98px) {
+  .page-member-coupon__my.-active {
+    display: flex;
+  }
 }
 .page-member-coupon__my-card {
   display: flex;
@@ -11698,6 +11714,12 @@ body main {
   grid-template-columns: repeat(2, 1fr);
   gap: 2.4rem;
 }
+@media (max-width: 1023.98px) {
+  .page-member-coupon__get-list {
+    display: flex;
+    flex-direction: column;
+  }
+}
 .page-member-coupon__get-list-card {
   display: flex;
   align-items: flex-start;
@@ -11770,6 +11792,12 @@ body main {
   align-items: center;
   padding-top: 12rem;
   padding-bottom: 8.2rem;
+}
+@media (max-width: 1023.98px) {
+  .page-member-common {
+    padding-top: 8.8rem;
+    padding-bottom: 5.2rem;
+  }
 }
 .page-member-common__tab {
   display: flex;
@@ -11962,6 +11990,12 @@ body main {
   padding-top: 12rem;
   padding-bottom: 8.2rem;
 }
+@media (max-width: 1023.98px) {
+  .page-member-level {
+    padding-top: 8.8rem;
+    padding-bottom: 5.2rem;
+  }
+}
 .page-member-level__tab {
   display: flex;
   justify-content: center;
@@ -12067,6 +12101,12 @@ body main {
   padding-top: 12rem;
   padding-bottom: 8.2rem;
 }
+@media (max-width: 1023.98px) {
+  .page-member-privacy {
+    padding-top: 8.8rem;
+    padding-bottom: 5.2rem;
+  }
+}
 .page-member-privacy__tab {
   display: flex;
   justify-content: center;
@@ -12132,6 +12172,12 @@ body main {
   padding-top: 12rem;
   padding-bottom: 8.2rem;
 }
+@media (max-width: 1023.98px) {
+  .page-member-information {
+    padding-top: 8.8rem;
+    padding-bottom: 5.2rem;
+  }
+}
 .page-member-information__tab {
   display: flex;
   justify-content: center;
@@ -12183,6 +12229,11 @@ body main {
   gap: 6rem;
   z-index: 1;
 }
+@media (max-width: 1023.98px) {
+  .page-member-information__content {
+    gap: 1.6rem;
+  }
+}
 
 .page-member-order {
   width: 100vw;
@@ -12192,6 +12243,12 @@ body main {
   align-items: center;
   padding-top: 12rem;
   padding-bottom: 8.2rem;
+}
+@media (max-width: 1023.98px) {
+  .page-member-order {
+    padding-top: 8.8rem;
+    padding-bottom: 5.2rem;
+  }
 }
 .page-member-order__wrapper {
   display: flex;
@@ -12244,6 +12301,12 @@ body main {
   grid-template-columns: repeat(2, 1fr);
   gap: 2.4rem;
 }
+@media (max-width: 1023.98px) {
+  .page-member-order__order-list {
+    display: flex;
+    flex-direction: column;
+  }
+}
 
 .page-member-order-information {
   width: 100vw;
@@ -12253,6 +12316,12 @@ body main {
   align-items: center;
   padding-top: 12rem;
   padding-bottom: 8.2rem;
+}
+@media (max-width: 1023.98px) {
+  .page-member-order-information {
+    padding-top: 8.8rem;
+    padding-bottom: 5.2rem;
+  }
 }
 .page-member-order-information__wrapper {
   display: flex;
@@ -12641,6 +12710,12 @@ body main {
   padding-top: 10rem;
   padding-bottom: 8.2rem;
 }
+@media (max-width: 1023.98px) {
+  .page-member-reset-password {
+    padding-top: 12rem;
+    padding-bottom: 7.2rem;
+  }
+}
 .page-member-reset-password__wrapper {
   display: flex;
   flex-direction: column;
@@ -12657,6 +12732,12 @@ body main {
   gap: 2rem;
   z-index: 1;
 }
+@media (max-width: 1023.98px) {
+  .page-member-reset-password__content {
+    gap: 1.6rem;
+    padding: 0;
+  }
+}
 .page-member-reset-password__content > h2 {
   font-size: 3.6rem;
   font-weight: 700;
@@ -12668,19 +12749,6 @@ body main {
     font-size: 2rem;
     font-weight: 700;
     font-family: "Noto Sans TC", "Helvetica Neue", "Helvetica", -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
-  }
-}
-.page-member-reset-password__content > p {
-  line-height: 1.6;
-  font-size: 1.6rem;
-  font-weight: 400;
-  font-family: "Noto Sans TC", "Helvetica Neue", "Helvetica", -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
-  color: #9A7412;
-  text-align: center;
-}
-@media (max-width: 1023.98px) {
-  .page-member-reset-password__content > p {
-    font-size: 1.4rem;
   }
 }
 
@@ -12733,6 +12801,12 @@ body main {
   padding-top: 10rem;
   padding-bottom: 8.2rem;
 }
+@media (max-width: 1023.98px) {
+  .page-member-forgot {
+    padding-top: 12rem;
+    padding-bottom: 7.2rem;
+  }
+}
 .page-member-forgot__wrapper {
   display: flex;
   flex-direction: column;
@@ -12748,6 +12822,12 @@ body main {
   padding: 4rem 0;
   gap: 2rem;
   z-index: 1;
+}
+@media (max-width: 1023.98px) {
+  .page-member-forgot__content {
+    gap: 1.6rem;
+    padding: 0;
+  }
 }
 .page-member-forgot__content > h2 {
   font-size: 3.6rem;
@@ -12786,6 +12866,12 @@ body main {
   padding-top: 10rem;
   padding-bottom: 8.2rem;
 }
+@media (max-width: 1023.98px) {
+  .page-member-forgot-send {
+    padding-top: 12rem;
+    padding-bottom: 7.2rem;
+  }
+}
 .page-member-forgot-send__wrapper {
   display: flex;
   flex-direction: column;
@@ -12801,6 +12887,12 @@ body main {
   padding: 4rem 0;
   gap: 2rem;
   z-index: 1;
+}
+@media (max-width: 1023.98px) {
+  .page-member-forgot-send__content {
+    gap: 1.6rem;
+    padding: 0;
+  }
 }
 .page-member-forgot-send__content > h2 {
   font-size: 3.6rem;
@@ -12838,6 +12930,12 @@ body main {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 2.4rem;
+}
+@media (max-width: 1023.98px) {
+  .form.-grid {
+    display: flex;
+    flex-direction: column;
+  }
 }
 .form__input {
   display: flex;
@@ -17642,9 +17740,20 @@ body main {
 }
 @media (max-width: 1023.98px) {
   .member-tab {
-    align-items: flex-start;
+    width: 100vw;
+    height: auto;
+    justify-content: flex-start;
     overflow: scroll;
+    padding: 0 2.4rem;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
   }
+  .member-tab::-webkit-scrollbar {
+    display: none;
+  }
+}
+.member-tab > li {
+  flex: 0 0 auto;
 }
 
 .member-top {

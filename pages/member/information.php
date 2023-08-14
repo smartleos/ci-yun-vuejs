@@ -6,7 +6,7 @@
 <?php include('../../components/bg.php'); ?>
 <main class="page-member-information">
     <div class="container grid">
-        <div class="page-member-information__wrapper col-3-11-medium">
+        <div class="page-member-information__wrapper col-3-11-tablet col-1-5-mobile">
             <?php 
                 $active="information";
                 include ("../../components/member/tab.php");

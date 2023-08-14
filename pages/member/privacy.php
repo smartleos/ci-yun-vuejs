@@ -6,7 +6,7 @@
 <?php include('../../components/bg.php'); ?>
 <main class="page-member-privacy">
     <div class="container grid">
-        <div class="page-member-privacy__wrapper col-3-11-medium">
+        <div class="page-member-privacy__wrapper col-3-11-tablet col-1-5-mobile">
             <?php 
                 $active="privacy";
                 include ("../../components/member/tab.php");

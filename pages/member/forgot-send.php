@@ -6,7 +6,7 @@
 <?php include('../../components/bg.php'); ?>
 <main class="page-member-forgot-send">
     <div class="container grid">
-        <div class="page-member-forgot-send__wrapper col-5-9-medium">
+        <div class="page-member-forgot-send__wrapper col-5-9-tablet col-1-5-mobile">
             <div class="page-member-forgot-send__content">
                 <h2>忘記密碼</h2>
                 <p>成功送出修改密碼簡訊，請點擊修改密碼連結</p>
