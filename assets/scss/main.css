@@ -13823,7 +13823,7 @@ body main {
   .header__service {
     width: 8rem;
     height: 8rem;
-    bottom: 2.4rem;
+    bottom: 10rem;
   }
 }
 .header__service > svg {
