@@ -15486,6 +15486,7 @@ body main {
   border: 1px solid #9A7412;
   border-radius: 0.4rem;
   background-color: #ffffff;
+  min-height: 3.6rem;
 }
 .page-cart-information__form-wrapper-col > span {
   display: flex;
