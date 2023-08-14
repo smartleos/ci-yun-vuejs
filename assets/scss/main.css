@@ -16002,7 +16002,7 @@ body main {
   min-height: calc(100vh - 42rem);
   padding-top: 8.2rem;
   padding-bottom: 10.6rem;
-  z-index: 99;
+  z-index: 1;
 }
 @media (max-width: 1023.98px) {
   .page-cart-completed {
