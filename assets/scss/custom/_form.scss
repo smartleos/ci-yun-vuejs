@@ -112,6 +112,7 @@
                 border: 1px solid rgba(map-get($colors, brand-1), .6);
                 border-radius: 4px;
                 color: map-get($colors, brand-1);
+                min-height: 3.6rem;
             }
 
             > div {
