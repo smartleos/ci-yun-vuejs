@@ -1,0 +1,52 @@
+.cart-common {
+    @include size(100%, auto);
+
+    display: flex;
+    padding: 1.6rem 2.4rem;
+    gap: 2.4rem;
+    background-color: map-get($colors, white);
+    box-shadow: 5px 5px 5px 0px rgba(map-get($colors, black-1), 0.15);
+    border-radius: .4rem;
+
+    @include media-breakpoint-down(medium) {
+        padding: 1.6rem 1.2rem;
+        gap: .8rem;
+        flex-wrap: wrap;
+    }
+
+    &.-selected {
+        border: 1px solid map-get($colors, red);
+    }
+
+    &__information {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        gap: .6rem;
+
+        > h4 {
+            @include typo('head', 4);
+
+            @include media-breakpoint-down(medium) {
+                @include typo('body', 16);
+
+                font-weight: bold;
+            }
+        }
+
+        > p {
+            @include typo('body', 16);
+
+            color: map-get($colors, brand-1);
+
+            @include media-breakpoint-down(medium) {
+                @include typo('body', 14);
+            }
+        }
+    }
+
+    &__btn {
+        display: flex;
+        align-items: center;
+    }
+}

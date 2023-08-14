@@ -1,8 +1,7 @@
-.cart-product {
+.cart-product-complete {
     @include size(100%, auto);
 
     display: flex;
-    align-items: flex-start;
     padding: 1.6rem 2.4rem;
     gap: 2.4rem;
     background-color: map-get($colors, white);
@@ -11,6 +10,7 @@
     @include media-breakpoint-down(medium) {
         padding: 1.6rem 1.2rem;
         gap: .8rem;
+        flex-wrap: wrap;
     }
 
     > figure {
@@ -41,6 +41,12 @@
         flex-direction: column;
         flex: 1;
         gap: .6rem;
+
+        @include media-breakpoint-down(medium) {
+            @include size(calc(100% - 8.2rem - .8rem), auto);
+
+            flex: 0 0 auto;
+        }
 
         > h4 {
             @include typo('head', 4);
@@ -73,10 +79,12 @@
         }
     }
 
-    > p {
-        @include typo('body', 16);
+    &__btn {
+        display: flex;
+        align-items: center;
 
-        color: map-get($colors, red);
-        cursor: pointer;
+        @include media-breakpoint-down(medium) {
+            @include size(100%, auto);
+        }
     }
 }

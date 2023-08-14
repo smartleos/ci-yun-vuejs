@@ -42,8 +42,8 @@
                         <?php get_svg('logo') ?>
                     </a>
                 </div>
-                <div class="col-1-3-mobile col-10-13-tablet header__membcart">
-                    <a href="/member/account" class="header__membcart-member">
+                <div class="col-1-3-mobile col-9-13-tablet header__membcart">
+                    <a href="/member/login" class="header__membcart-member">
                         <?php get_svg('person_outline') ?>
                         <p>會員</p>
                     </a>
@@ -114,5 +114,9 @@
             </form>
         </div>
     </header>
+    <div class="header__service">
+        <?php get_svg('service') ?>
+        <p>智能客服</p>
+    </div>
 
     

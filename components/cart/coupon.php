@@ -1,4 +1,4 @@
-<div class="cart-coupon">
+<div class="cart-coupon <?php echo $selected ? "-selected" : "";?>">
     <figure>
         <img src="<?php echo image_dir();?>testimg/08.jpeg" alt="">
     </figure>
@@ -12,8 +12,8 @@
             $tag="button";
             $url="";
             $target="";
-            $text="已選";
-            $style="-red";
+            $text=$selected ? "已選" : "選擇";
+            $style=$selected ? "-gray" : "-red";
             include ("../../components/button.php");
         ?>
     </div>

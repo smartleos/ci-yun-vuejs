@@ -6,7 +6,7 @@
 <?php include('../../components/bg.php'); ?>
 <div class="page-cart-confirm">
     <div class="container grid">
-        <div class="col-3-11-medium">
+        <div class="col-3-11-tablet col-1-5-mobile">
             <div class="page-cart-confirm__progress">
                 <span class="-active -progress">
                     <p>確認購物車</p>
@@ -53,8 +53,14 @@
                 <div class="page-cart-confirm__cart-coupon">
                     <h3>優惠券</h3>
                     <p>選擇可用的優惠券</p>
-                    <?php include('../../components/cart/coupon.php'); ?>
-                    <?php include('../../components/cart/coupon.php'); ?>
+                    <?php
+                        $selected=true;
+                        include('../../components/cart/coupon.php');
+                    ?>
+                    <?php
+                        $selected=false;
+                        include('../../components/cart/coupon.php');
+                    ?>
                     <div class="page-cart-confirm__cart-coupon-code">
                         <p>輸入優惠代碼</p>
                         <div class="page-cart-confirm__cart-coupon-code-input">
@@ -83,9 +89,9 @@
                     <p>共計<span>6</span>項商品</p>
                     <span>$16200</span>
                 </div>
-                <hr>
+                <hr class="-desktop">
                 <div class="page-cart-confirm__cart-bottom">
-                    <div class="page-cart-confirm__cart-bottom-btn">
+                    <div class="page-cart-confirm__cart-bottom-btn -desktop">
                         <?php 
                             $tag="a";
                             $url="/products";
@@ -95,7 +101,7 @@
                             include ("../../components/button.php");
                         ?>
                     </div>
-                    <div class="page-cart-confirm__cart-bottom-btn">
+                    <div class="page-cart-confirm__cart-bottom-btn -desktop">
                         <?php 
                             $tag="a";
                             $url="/cart/information";
@@ -105,6 +111,32 @@
                             include ("../../components/button.php");
                         ?>
                     </div>
+                    <div class="page-cart-confirm__cart-bottom-btn -mobile">
+                        <?php 
+                            $tag="a";
+                            $url="/products";
+                            $target="";
+                            $text="繼續購物";
+                            $style="";
+                            include ("../../components/button.php");
+                        ?>
+                    </div>
+                </div>
+            </div>
+            <div class="page-cart-confirm__mobile container">
+                <div class="page-cart-confirm__mobile-text">
+                    <p>總計</p>
+                    <span>＄16200</span>
+                </div>
+                <div class="page-cart-confirm__mobile-btn">
+                    <?php 
+                        $tag="a";
+                        $url="/cart/information";
+                        $target="";
+                        $text="下一步";
+                        $style="-red";
+                        include ("../../components/button.php");
+                    ?>
                 </div>
             </div>
         </div>

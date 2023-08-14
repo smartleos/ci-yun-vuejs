@@ -6,7 +6,7 @@
 <?php include('../../components/bg.php'); ?>
 <div class="page-cart-completed">
     <div class="container grid">
-        <div class="col-3-11-medium">
+        <div class="col-3-11-tablet col-1-5-mobile">
             <div class="page-cart-completed__progress">
                 <span class="-progress">
                     <p>確認購物車</p>
@@ -42,11 +42,11 @@
                     <div class="page-cart-completed__receipt-wrapper">
                         <?php
                             $button=true;
-                            include('../../components/cart/product.php');
+                            include('../../components/cart/productComplete.php');
                         ?>
                         <?php
                             $button=true;
-                            include('../../components/cart/product.php');
+                            include('../../components/cart/productComplete.php');
                         ?>
                         <ul>
                             <li>
@@ -132,13 +132,23 @@
                         include ("../../components/button.php");
                     ?>
                 </div>
-                <div class="page-cart-completed__bottom-btn">
+                <div class="page-cart-completed__bottom-btn -desktop">
                     <?php 
                         $tag="a";
                         $url="/";
                         $target="";
                         $text="回到首頁";
                         $style="";
+                        include ("../../components/button.php");
+                    ?>
+                </div>
+                <div class="page-cart-completed__bottom-btn -mobile">
+                    <?php 
+                        $tag="a";
+                        $url="/";
+                        $target="";
+                        $text="回到首頁";
+                        $style="-transparent";
                         include ("../../components/button.php");
                     ?>
                 </div>
@@ -162,18 +172,18 @@
             </div>
             <div class="page-cart-completed__popup container">
                 <div class="grid">
-                    <div class="page-cart-completed__popup-wrapper col-3-11-medium">
+                    <div class="page-cart-completed__popup-wrapper col-3-11-tablet col-1-5-mobile">
                         <div class="page-cart-completed__popup-wrapper-close">
                             <?php get_svg('close') ?>
                         </div>
                         <h3>訂單成功送出！<br>訂單內有未填寫的祈福資訊，請立即填寫</h3>
                         <?php
                             $button=true;
-                            include('../../components/cart/product.php');
+                            include('../../components/cart/productComplete.php');
                         ?>
                         <?php
                             $button=true;
-                            include('../../components/cart/product.php');
+                            include('../../components/cart/productComplete.php');
                         ?>
                         <div class="page-cart-completed__popup-wrapper-btn">
                             <?php 

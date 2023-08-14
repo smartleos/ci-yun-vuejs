@@ -109,7 +109,7 @@
 
                 position: relative;
                 padding: .6rem 1.2rem;
-                border: 1px solid map-get($colors, brand-1);
+                border: 1px solid rgba(map-get($colors, brand-1), .6);
                 border-radius: 4px;
                 color: map-get($colors, brand-1);
             }
@@ -330,6 +330,12 @@
         align-items: center;
         gap: 2.4rem;
 
+        @include media-breakpoint-down(medium) {
+            @include size(100%, auto);
+
+            gap: 1.6rem;
+        }
+
         .-grid & {
             grid-column: 1 / -1;
             justify-content: center;
@@ -340,6 +346,10 @@
 
             .-grid & {
                 flex: none;
+
+                @include media-breakpoint-down(medium) {
+                    flex: 1;
+                }
             }
         }
     }

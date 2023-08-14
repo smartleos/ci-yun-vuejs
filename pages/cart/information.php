@@ -6,7 +6,7 @@
 <?php include('../../components/bg.php'); ?>
 <div class="page-cart-information">
     <div class="container grid">
-        <div class="col-3-11-medium">
+        <div class="col-3-11-tablet col-1-5-mobile">
             <div class="page-cart-information__progress">
                 <span class="-progress">
                     <p>確認購物車</p>
@@ -121,7 +121,7 @@
                 </div>
             </form>
             <div class="page-cart-information__bottom">
-                <div class="page-cart-information__bottom-btn">
+                <div class="page-cart-information__bottom-btn -desktop">
                     <?php 
                         $tag="a";
                         $url="/cart/confirm";
@@ -131,7 +131,7 @@
                         include ("../../components/button.php");
                     ?>
                 </div>
-                <div class="page-cart-information__bottom-btn">
+                <div class="page-cart-information__bottom-btn -desktop">
                     <?php 
                         $tag="a";
                         $url="/cart/checkout";
@@ -141,6 +141,32 @@
                         include ("../../components/button.php");
                     ?>
                 </div>
+                <div class="page-cart-information__bottom-btn -mobile">
+                    <?php 
+                        $tag="a";
+                        $url="/cart/confirm";
+                        $target="";
+                        $text="上一步";
+                        $style="";
+                        include ("../../components/button.php");
+                    ?>
+                </div>
+            </div>
+        </div>
+        <div class="page-cart-information__mobile container">
+            <div class="page-cart-information__mobile-text">
+                <p>總計</p>
+                <span>＄16200</span>
+            </div>
+            <div class="page-cart-information__mobile-btn">
+                <?php 
+                    $tag="a";
+                    $url="/cart/checkout";
+                    $target="";
+                    $text="下一步";
+                    $style="-red";
+                    include ("../../components/button.php");
+                ?>
             </div>
         </div>
     </div>

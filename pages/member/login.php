@@ -59,7 +59,8 @@
                         </div>
                         <div class="form__btns-item">
                             <?php 
-                                $tag="button";
+                                $tag="a";
+                                $url="/member/information";
                                 $text="立即登入";
                                 $style="";
                                 include ("../../components/button.php");

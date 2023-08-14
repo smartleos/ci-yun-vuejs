@@ -13,6 +13,7 @@
 
     @include media-breakpoint-down(medium) {
         padding: 1.2rem 0;
+        border-bottom: 0px;
 
         &.-active {
             .header__membcart {
@@ -42,6 +43,44 @@
                     color: map-get($colors, white);
                 }
             }
+        }
+    }
+
+    &__service {
+        @include size(9.6rem);
+
+        position: fixed;
+        bottom: 5rem;
+        right: 2.4rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: map-get($colors, brand-1);
+        border-radius: 50%;
+        color: map-get($colors, white);
+        z-index: 99;
+        cursor: pointer;
+        transition: transform .3s ease-in-out;
+
+        @include media-breakpoint-up(medium) {
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+
+        @include media-breakpoint-down(medium) {
+            @include size(8rem);
+
+            bottom: 2.4rem;
+        }
+
+        > svg {
+            @include size(2.6rem, auto);
+        }
+
+        > p {
+            @include typo('body', 16);
         }
     }
 
@@ -271,7 +310,8 @@
         @include media-breakpoint-down(medium) {
             display: flex;
             align-items: center;
-            justify-content: space-between;
+            justify-content: flex-end;
+            gap: 1.2rem;
     
             > button {
                 > svg {

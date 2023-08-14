@@ -1,11 +1,29 @@
 .cart-coupon {
     @include size(100%, auto);
 
+    position: relative;
     display: flex;
+    align-items: flex-start;
     padding: 1.6rem 2.4rem;
     gap: 2.4rem;
     background-color: map-get($colors, white);
     box-shadow: 5px 5px 5px 0px rgba(map-get($colors, black-1), 0.15);
+    border-radius: .4rem;
+
+    @include media-breakpoint-down(medium) {
+        padding: 1.6rem 1.2rem;
+        gap: 1.2rem;
+        flex-wrap: wrap;
+    }
+
+    &.-selected {
+        border: 1px solid map-get($colors, red);
+
+        .cart-coupon__btn {
+            pointer-events: none;
+            cursor: not-allowed;
+        }
+    }
 
     > figure {
         @include size(14.2rem, auto);
@@ -17,6 +35,10 @@
         align-items: center;
         overflow: hidden;
         border-radius: .4rem;
+
+        @include media-breakpoint-down(medium) {
+            @include size(7rem, auto);
+        }
 
         > img {
             @include size(100%);
@@ -32,25 +54,51 @@
         flex: 1;
         gap: .6rem;
 
+        @include media-breakpoint-down(medium) {
+            @include size(calc(100% - 7rem - 1.2rem), auto);
+
+            flex: 0 0 auto;
+        }
+
         > h4 {
             @include typo('head', 4);
+
+            @include media-breakpoint-down(medium) {
+                @include typo('body', 16);
+
+                font-weight: bold;
+            }
         }
 
         > p {
             @include typo('body', 16);
 
             color: map-get($colors, gray-1);
+
+            @include media-breakpoint-down(medium) {
+                @include typo('body', 14);
+            }
         }
 
         > span {
             @include typo('body', 16);
             
             color: map-get($colors, brand-1);
+
+            @include media-breakpoint-down(medium) {
+                margin-top: 3.2rem;
+            }
         }
     }
 
-    &-btn {
+    &__btn {
         display: flex;
         align-items: center;
+
+        @include media-breakpoint-down(medium) {
+            position: absolute;
+            right: 1.2rem;
+            bottom: 4rem;
+        }
     }
 }

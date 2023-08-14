@@ -9,6 +9,27 @@
     padding-bottom: 10.6rem;
     z-index: 1;
 
+    @include media-breakpoint-down(medium) {
+        padding-top: 8.8rem;
+        padding-bottom: 5.2rem;
+    }
+
+    .-desktop {
+        display: block;
+
+        @include media-breakpoint-down(medium) {
+            display: none;
+        }
+    }
+
+    .-mobile {
+        display: none;
+
+        @include media-breakpoint-down(medium) {
+            display: block;
+        }
+    }
+
     &__progress {
         @include size(100%, auto);
 
@@ -17,11 +38,19 @@
         margin-top: 6rem;
         margin-bottom: 4rem;
 
+        @include media-breakpoint-down(medium) {
+            margin-top: 0;
+        }
+
         > span {
             display: flex;
             flex-direction: column;
             align-items: center;
             gap: 2rem;
+
+            @include media-breakpoint-down(medium) {
+                gap: 1.2rem;
+            }
 
             &:first-child {
                 > span {
@@ -69,6 +98,12 @@
 
             > p {
                 @include typo('head', 5);
+
+                color: map-get($colors, gray-1);
+
+                @include media-breakpoint-down(medium) {
+                    @include typo('body', 16);
+                }
             }
 
             > span {
@@ -90,6 +125,10 @@
                     left: 0;
                     background-color: map-get($colors, gray-1);
                     z-index: -1;
+
+                    @include media-breakpoint-down(medium) {
+                        @include size(20vw, .2rem);
+                    }
                 }
 
                 &::before {
@@ -101,6 +140,10 @@
                     border-radius: 50%;
                     background-color: map-get($colors, gray-1);
                     z-index: -1;
+
+                    @include media-breakpoint-down(medium) {
+                        @include size(20vw, .2rem);
+                    }
                 }
             }
         }
@@ -164,6 +207,11 @@
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             gap: 2.4rem;
+
+            @include media-breakpoint-down(medium) {
+                display: flex;
+                flex-direction: column;
+            }
 
             &-col {
                 display: flex;
@@ -239,5 +287,51 @@
         justify-content: center;
         gap: 1.6rem;
         padding: 2.4rem 0;
+
+        @include media-breakpoint-down(medium) {
+            padding: 0;
+        }
+
+        &-btn {
+            @include media-breakpoint-down(medium) {
+                @include size(100%, auto);
+            }
+        }
+    }
+
+    &__mobile {
+        display: none;
+
+        @include media-breakpoint-down(medium) {
+            @include size(100vw, auto);
+
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: map-get($colors, white);
+            padding-top: 2.4rem;
+            padding-bottom: 2.4rem;
+            box-shadow: 0px -3px 3px 0px rgba(map-get($colors, black-1), 0.15);
+
+
+            &-text {
+                display: flex;
+                align-items: center;
+                gap: .8rem;
+
+                > p {
+                    @include typo('body', 12);
+                }
+
+                > span {
+                    @include typo('head', 4);
+
+                    color: map-get($colors, red);
+                }
+            }
+        }
     }
 }
