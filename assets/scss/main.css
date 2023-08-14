@@ -16002,7 +16002,7 @@ body main {
   min-height: calc(100vh - 42rem);
   padding-top: 8.2rem;
   padding-bottom: 10.6rem;
-  z-index: 1;
+  z-index: 99;
 }
 @media (max-width: 1023.98px) {
   .page-cart-completed {
@@ -16355,7 +16355,7 @@ body main {
   padding-top: 12rem;
   padding-bottom: 12rem;
   overflow: scroll;
-  z-index: 999;
+  z-index: 1000;
   opacity: 0;
   transform: translateY(4.8rem);
   transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
