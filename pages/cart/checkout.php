@@ -164,21 +164,23 @@
                     ?>
                 </div>
             </div>
-            <div class="page-cart-checkout__mobile container">
-                <div class="page-cart-checkout__mobile-text">
-                    <p>總計</p>
-                    <span>＄16200</span>
-                </div>
-                <div class="page-cart-checkout__mobile-btn">
-                    <?php 
-                        $tag="a";
-                        $url="/cart/completed";
-                        $target="";
-                        $text="下一步";
-                        $style="-red";
-                        include ("../../components/button.php");
-                    ?>
-                </div>
+        </div>
+    </div>
+    <div class="page-cart-checkout__mobile">
+        <div class="page-cart-checkout__mobile-wrapper container">
+            <div class="page-cart-checkout__mobile-text">
+                <p>總計</p>
+                <span>＄16200</span>
+            </div>
+            <div class="page-cart-checkout__mobile-btn">
+                <?php 
+                    $tag="a";
+                    $url="/cart/completed";
+                    $target="";
+                    $text="下一步";
+                    $style="-red";
+                    include ("../../components/button.php");
+                ?>
             </div>
         </div>
     </div>

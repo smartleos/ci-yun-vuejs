@@ -120,21 +120,23 @@
                     </div>
                 </div>
             </div>
-            <div class="page-cart-confirm__mobile container">
-                <div class="page-cart-confirm__mobile-text">
-                    <p>總計</p>
-                    <span>＄16200</span>
-                </div>
-                <div class="page-cart-confirm__mobile-btn">
-                    <?php 
-                        $tag="a";
-                        $url="/cart/information";
-                        $target="";
-                        $text="下一步";
-                        $style="-red";
-                        include ("../../components/button.php");
-                    ?>
-                </div>
+        </div>
+    </div>
+    <div class="page-cart-confirm__mobile">
+        <div class="page-cart-confirm__mobile-wrapper container">
+            <div class="page-cart-confirm__mobile-text">
+                <p>總計</p>
+                <span>＄16200</span>
+            </div>
+            <div class="page-cart-confirm__mobile-btn">
+                <?php 
+                    $tag="a";
+                    $url="/cart/information";
+                    $target="";
+                    $text="下一步";
+                    $style="-red";
+                    include ("../../components/button.php");
+                ?>
             </div>
         </div>
     </div>

@@ -72,7 +72,8 @@
         @include media-breakpoint-down(medium) {
             @include size(8rem);
 
-            bottom: 10rem;
+            right: 1.4rem;
+            bottom: 1.4rem;
         }
 
         > svg {

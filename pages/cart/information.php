@@ -150,7 +150,9 @@
                 </div>
             </div>
         </div>
-        <div class="page-cart-information__mobile container">
+    </div>
+    <div class="page-cart-information__mobile">
+        <div class="page-cart-information__mobile-wrapper container">
             <div class="page-cart-information__mobile-text">
                 <p>總計</p>
                 <span>＄16200</span>
