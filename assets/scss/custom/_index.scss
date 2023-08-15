@@ -10,13 +10,9 @@
     }
 
     &__kv {
-        @include size(100vw, 100vh);
+        @include size(100vw, auto);
 
         position: relative;
-
-        @include media-breakpoint-down(medium) {
-            @include size(100vw, auto);
-        }
 
         &-swiper {
             @include size(100vw, 42vw);
