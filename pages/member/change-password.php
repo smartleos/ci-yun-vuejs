@@ -54,7 +54,8 @@
                     <div class="form__btns">
                         <div class="form__btns-item">
                             <?php 
-                                $tag="button";
+                                $tag="a";
+                                $url="/member/information";
                                 $text="取消編輯";
                                 $style="-transparent -outline";
                                 include ("../../components/button.php");
@@ -62,14 +63,15 @@
                         </div>
                         <div class="form__btns-item">
                             <?php 
-                                $tag="button";
+                                $tag="a";
+                                $url="/member/information";
                                 $text="儲存編輯";
                                 $style="";
                                 include ("../../components/button.php");
                             ?>
                         </div>
                     </div>
-                    <a href="">忘記密碼</a>
+                    <a href="/member/forgot">忘記密碼</a>
                 </form>
             </div>
         </div>

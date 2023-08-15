@@ -100,7 +100,7 @@
                         <span>
                             <?php get_svg('notice') ?>您尚未輸入...
                         </span>
-                        <a href="">忘記密碼</a>
+                        <a href="/member/change-password">修改密碼</a>
                     </div>
                     <div class="form__btns">
                         <div class="form__btns-item">
