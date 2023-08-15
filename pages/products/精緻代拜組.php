@@ -1,8 +1,5 @@
 <?php include('../../function.php'); ?>
 <?php include('../../components/header.php'); ?>
-<style>
-    <?php include('../../assets/scss/main.css'); ?>
-</style>
 <?php include('../../components/bg.php'); ?>
 <div class="products-single">
     <div class="container grid">

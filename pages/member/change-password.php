@@ -1,8 +1,5 @@
 <?php include('../../function.php'); ?>
 <?php include('../../components/header.php'); ?>
-<style>
-    <?php include('../../assets/scss/main.css'); ?>
-</style>
 <?php include('../../components/bg.php'); ?>
 <main class="page-member-change-password">
     <div class="container grid">

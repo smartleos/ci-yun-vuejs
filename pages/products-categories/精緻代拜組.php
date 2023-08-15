@@ -1,8 +1,5 @@
 <?php include('../../function.php'); ?>
 <?php include('../../components/header.php'); ?>
-<style>
-    <?php include('../../assets/scss/main.css'); ?>
-</style>
 <?php include('../../components/bg.php'); ?>
 <div class="page-products-categories">
 <div class="page-products-categories__select">
