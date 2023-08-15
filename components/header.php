@@ -117,8 +117,10 @@
         </div>
     </header>
     <div class="header__service">
-        <?php get_svg('service') ?>
-        <p>智能客服</p>
+        <div class="header__service-btn">
+            <?php get_svg('service') ?>
+            <p>智能客服</p>
+        </div>
     </div>
 
     

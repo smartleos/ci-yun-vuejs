@@ -122,7 +122,7 @@
             </div>
         </div>
     </div>
-    <div class="page-cart-confirm__mobile">
+    <div class="page-cart-confirm__mobile" id="cart-bottom">
         <div class="page-cart-confirm__mobile-wrapper container">
             <div class="page-cart-confirm__mobile-text">
                 <p>總計</p>

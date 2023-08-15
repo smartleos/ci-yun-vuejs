@@ -22,6 +22,10 @@ $(function() {
         })
     })
 
+    if ($('#cart-bottom').length) {
+        $('.header__service').addClass('-cart')
+    }
+
     const createPopup = (url) => {
         const popup = document.createElement('div')
         popup.classList.add('popup', 'container')

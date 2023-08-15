@@ -166,7 +166,7 @@
             </div>
         </div>
     </div>
-    <div class="page-cart-checkout__mobile">
+    <div class="page-cart-checkout__mobile" id="cart-bottom">
         <div class="page-cart-checkout__mobile-wrapper container">
             <div class="page-cart-checkout__mobile-text">
                 <p>總計</p>
