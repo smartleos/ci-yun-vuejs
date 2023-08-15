@@ -20,7 +20,8 @@
                     <div class="form__btns">
                         <div class="form__btns-item">
                             <?php 
-                                $tag="button";
+                                $tag="a";
+                                $url="/member/forgot-send";
                                 $text="送出";
                                 include ("../../components/button.php");
                             ?>

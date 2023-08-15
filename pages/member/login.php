@@ -33,7 +33,7 @@
                         <span>
                             <?php get_svg('notice') ?>您尚未輸入...
                         </span>
-                        <a href="">忘記密碼</a>
+                        <a href="/member/forgot">忘記密碼</a>
                     </div>
                     <div class="form__checkbox -alert">
                         <div>
@@ -82,7 +82,7 @@
                             <p>LINE 登入</p>
                         </div>
                     </div>
-                    <p><?php get_svg('notice') ?>擁有帳號即表示你同意 <a href="">會員隱私條款</a></p>
+                    <p><?php get_svg('notice') ?>擁有帳號即表示你同意 <a href="/member/privacy">會員隱私條款</a></p>
                 </form>
             </div>
         </div>
