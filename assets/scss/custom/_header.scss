@@ -323,18 +323,27 @@
             }
     
             &-hamburger {
-                @include size(1.6rem, auto);
+                @include size(2.4rem);
     
                 display: flex;
-                flex-direction: column;
-                gap: .2rem;
+                justify-content: center;
+                align-items: center;
+
+                &-wrapper {
+                    @include size(1.6rem, auto);
     
-                > span {
-                    @include size(100%, 2px);
-    
-                    background-color: map-get($colors, brand-1);
-                    transition: color .3s ease-in-out;
+                    display: flex;
+                    flex-direction: column;
+                    gap: .2rem;
+
+                    > span {
+                        @include size(100%, 2px);
+        
+                        background-color: map-get($colors, brand-1);
+                        transition: color .3s ease-in-out;
+                    }
                 }
+
             }
         }
     }

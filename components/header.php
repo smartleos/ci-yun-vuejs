@@ -62,8 +62,10 @@
                         <?php get_svg('search') ?>
                     </button>
                     <div class="header__mobile-hamburger">
-                        <span></span>
-                        <span></span>
+                        <div class="header__mobile-hamburger-wrapper">
+                            <span></span>
+                            <span></span>
+                        </div>
                     </div>
                 </div>
                 <div class="header__nav">
