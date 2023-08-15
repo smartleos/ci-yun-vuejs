@@ -229,7 +229,7 @@
                         <?php 
                             $tag="button";
                             $url="";
-                            $text="展開祈福人資訊";
+                            $text="查看祈福人資訊";
                             $style="";
                             include ("../../components/button.php");
                         ?>

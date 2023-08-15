@@ -361,8 +361,15 @@ $(function() {
             const height = $('.page-cart-completed__receipt-wrapper').outerHeight()
             $('.page-cart-completed__receipt-wrapper').css('max-height', height)
             $('.page-cart-completed__receipt-top-btn').on('click', function() {
-                $('.page-cart-completed__receipt-top-btn').toggleClass('-active')
-                $('.page-cart-completed__receipt-wrapper').toggleClass('-hide')
+                if ($(this).hasClass('-active')) {
+                    $(this).find('p')[0].innerHTML = '展開'
+                    $(this).removeClass('-active')
+                    $('.page-cart-completed__receipt-wrapper').addClass('-hide')
+                } else {
+                    $(this).find('p')[0].innerHTML = '收合'
+                    $(this).addClass('-active')
+                    $('.page-cart-completed__receipt-wrapper').removeClass('-hide')
+                }
             })
         }
     }
@@ -396,10 +403,12 @@ $(function() {
                 if ($(this).hasClass('-active')) {
                     $(this).removeClass('-active')
                     $(this).siblings('.page-member-order-information__card-item-list').css('max-height', 0)
+                    $(this).find('p')[0].innerHTML = '查看祈福人資訊'
                 } else {
                     $(this).addClass('-active')
                     const height = $(this).siblings('.page-member-order-information__card-item-list').prop('scrollHeight')
                     $(this).siblings('.page-member-order-information__card-item-list').css('max-height', height)
+                    $(this).find('p')[0].innerHTML = '收合祈福人資訊'
                 }
             })
         })
