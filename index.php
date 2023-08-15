@@ -138,7 +138,7 @@
                 <div class="page-index__service-btn">
                     <?php 
                         $tag="a";
-                        $url="/service";
+                        $url="/products";
                         $target="";
                         $text="服務一覽";
                         $style="";
