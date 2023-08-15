@@ -296,39 +296,51 @@
     }
 
     &__search {
+        @include size(100vw, 100vh);
+
         position: fixed;
-        top: 10rem;
-        z-index: 99;
-        transition: transform .3s ease-in-out, opacity .3s ease-in-out;
-        transform: translateY(-100%);
+        top: 0;
+        left: 0;
+        z-index: 9999;
+        background-color: rgba(map-get($colors, black-1), .8);
+        transition: opacity .3s ease-in-out;
         opacity: 0;
         pointer-events: none;
 
-        @include media-breakpoint-down(medium) {
-            top: 5rem;
-        }
-
         &.-active {
-            transform: translateY(0);
             opacity: 1;
             pointer-events: all;
         }
 
         &-wrapper {
             display: flex;
-            background-color: map-get($colors, white);
-            padding: 0.8rem 1.6rem;
-            border-radius: 5rem;
-            border: 1px solid map-get($colors, brand-1);
-        }
+            flex-direction: column;
+            justify-content: center;
 
-        &-btn {
-            @include size(1.6rem, auto);
+            > label {
+                @include typo('body', 16);
 
-            > svg {
+                color: map-get($colors, white);
+                margin-bottom: 0.4rem;
+            }
+
+            > input {
+                background-color: map-get($colors, white);
+                padding: 0.8rem 1.6rem;
+                border-radius: .4rem;
+                border: 1px solid map-get($colors, brand-1);
+                margin-bottom: 1.6rem;
+            }
+
+            &-btns {
                 @include size(100%, auto);
-    
-                color: map-get($colors, brand-1);
+
+                display: flex;
+                gap: 1.4rem;
+
+                &-item {
+                    flex: 1;
+                }
             }
         }
     }

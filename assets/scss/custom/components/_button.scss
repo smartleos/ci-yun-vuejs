@@ -57,7 +57,7 @@
     }
 
     &.-outline {
-        background-color: transparent;
+        background-color: map-get($colors, white);
         border: 1px solid map-get($colors, brand-2);
         color: map-get($colors, brand-2);
 

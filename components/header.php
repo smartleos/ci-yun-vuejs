@@ -107,15 +107,47 @@
                 </div>
             </div>
         </div>
-        <div class="header__search container grid">
-            <form class="header__search-wrapper col-9-12-tablet col-1-5-mobile">
-                <input type="text">
-                <button class="header__search-btn">
-                    <?php get_svg('search') ?>
-                </button>
-            </form>
-        </div>
     </header>
+    <div class="header__search container grid">
+        <form class="header__search-wrapper col-5-9-tablet col-1-5-mobile">
+            <label for="seach">全站搜尋</label>
+            <input type="text" id="seach" name="seach" placeholder="請輸入 ...">
+            <div class="header__search-wrapper-btns">
+                <div class="header__search-wrapper-btns-item" id="cancel_search">
+                    <?php 
+                        $tag="button";
+                        $url="";
+                        $target="";
+                        $text="取消";
+                        $style="-outline";
+                        if (file_exists('./components/button.php')) {
+                            include('./components/button.php');
+                        } elseif (file_exists('../components/button.php')) {
+                            include('../components/button.php');
+                        } elseif (file_exists('../../components/button.php')) {
+                            include('../../components/button.php');
+                        }
+                    ?>
+                </div>
+                <div class="header__search-wrapper-btns-item">
+                    <?php 
+                        $tag="a";
+                        $url="/search";
+                        $target="";
+                        $text="送出";
+                        $style="";
+                        if (file_exists('./components/button.php')) {
+                            include('./components/button.php');
+                        } elseif (file_exists('../components/button.php')) {
+                            include('../components/button.php');
+                        } elseif (file_exists('../../components/button.php')) {
+                            include('../../components/button.php');
+                        }
+                    ?>
+                </div>
+            </div>
+        </form>
+    </div>
     <div class="header__service">
         <div class="header__service-btn">
             <?php get_svg('service') ?>
