@@ -170,5 +170,5 @@
         </div>
     </div>
 </div>
-<?php include('../../components/dev.php'); ?>
+<!-- <?php include('../../components/dev.php'); ?> -->
 <?php include('../../components/footer.php'); ?>
