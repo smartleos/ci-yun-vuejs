@@ -9,6 +9,8 @@
     background-color: map-get($colors, white);
     box-shadow: 5px 5px 5px 0px rgba(map-get($colors, black-1), 0.15);
     border-radius: .4rem;
+    border: 1px solid map-get($colors, white);
+    transition: border-color .3s ease-in-out;
 
     @include media-breakpoint-down(medium) {
         padding: 1.6rem 1.2rem;
@@ -16,7 +18,7 @@
         flex-wrap: wrap;
     }
 
-    &.-selected {
+    &:has(input:checked) {
         border: 1px solid map-get($colors, red);
 
         .cart-coupon__btn {
@@ -92,13 +94,40 @@
     }
 
     &__btn {
-        display: flex;
-        align-items: center;
+        position: relative;
 
         @include media-breakpoint-down(medium) {
             position: absolute;
             right: 1.2rem;
             bottom: 4rem;
+        }
+
+        > input {
+            @include size(100%);
+
+            position: absolute;
+            top: 0;
+            left: 0;
+            cursor: pointer;
+
+            &:checked ~ .cart-coupon__btn-item {
+                &:nth-child(2) {
+                    display: none;
+                }
+
+                &:last-child {
+                    display: flex;
+                }
+            }
+        }
+        
+        &-item {
+            display: flex;
+            align-items: center;
+
+            &:last-child {
+                display: none;
+            }
         }
     }
 }

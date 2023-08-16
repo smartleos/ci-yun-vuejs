@@ -234,6 +234,20 @@
                 @include typo('body', 16);
             }
 
+            // > form {
+            //     > span {
+            //         position: relative;
+
+            //         > input {
+            //             @include size(100%);
+
+            //             position: absolute;
+            //             top: 0;
+            //             left: 0;
+            //         }
+            //     }
+            // }
+
             &-code {
                 display: flex;
                 flex-direction: column;

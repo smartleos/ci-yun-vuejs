@@ -50,14 +50,8 @@
                 <div class="page-cart-confirm__cart-coupon">
                     <h3>優惠券</h3>
                     <p>選擇可用的優惠券</p>
-                    <?php
-                        $selected=true;
-                        include('../../components/cart/coupon.php');
-                    ?>
-                    <?php
-                        $selected=false;
-                        include('../../components/cart/coupon.php');
-                    ?>
+                    <?php include('../../components/cart/coupon.php');?>
+                    <?php include('../../components/cart/coupon.php');?>
                     <div class="page-cart-confirm__cart-coupon-code">
                         <p>輸入優惠代碼</p>
                         <div class="page-cart-confirm__cart-coupon-code-input">
