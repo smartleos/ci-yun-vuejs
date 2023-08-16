@@ -94,8 +94,8 @@
                                 </ul>
                             </div>
                             <div class="page-member-order-information__card-item-list-item-btn">
-                                <button>刪除</button>
-                                <button>編輯</button>
+                                <a href="/member/common">刪除</a>
+                                <a href="/member/common">編輯</a>
                             </div>
                         </li>
                         <li class="page-member-order-information__card-item-list-item">
@@ -109,8 +109,8 @@
                                 </ul>
                             </div>
                             <div class="page-member-order-information__card-item-list-item-btn">
-                                <button>刪除</button>
-                                <button>編輯</button>
+                                <a href="/member/common">刪除</a>
+                                <a href="/member/common">編輯</a>
                             </div>
                         </li>
                         <li class="page-member-order-information__card-item-list-item">
@@ -124,8 +124,8 @@
                                 </ul>
                             </div>
                             <div class="page-member-order-information__card-item-list-item-btn">
-                                <button>刪除</button>
-                                <button>編輯</button>
+                                <a href="/member/common">刪除</a>
+                                <a href="/member/common">編輯</a>
                             </div>
                         </li>
                         <button>
@@ -172,8 +172,8 @@
                                 </ul>
                             </div>
                             <div class="page-member-order-information__card-item-list-item-btn">
-                                <button>刪除</button>
-                                <button>編輯</button>
+                                <a href="/member/common">刪除</a>
+                                <a href="/member/common">編輯</a>
                             </div>
                         </li>
                         <li class="page-member-order-information__card-item-list-item">
@@ -187,8 +187,8 @@
                                 </ul>
                             </div>
                             <div class="page-member-order-information__card-item-list-item-btn">
-                                <button>刪除</button>
-                                <button>編輯</button>
+                                <a href="/member/common">刪除</a>
+                                <a href="/member/common">編輯</a>
                             </div>
                         </li>
                         <li class="page-member-order-information__card-item-list-item">
@@ -202,8 +202,8 @@
                                 </ul>
                             </div>
                             <div class="page-member-order-information__card-item-list-item-btn">
-                                <button>刪除</button>
-                                <button>編輯</button>
+                                <a href="/member/common">刪除</a>
+                                <a href="/member/common">編輯</a>
                             </div>
                         </li>
                         <button>
@@ -250,8 +250,8 @@
                                 </ul>
                             </div>
                             <div class="page-member-order-information__card-item-list-item-btn">
-                                <button>刪除</button>
-                                <button>編輯</button>
+                                <a href="/member/common">刪除</a>
+                                <a href="/member/common">編輯</a>
                             </div>
                         </li>
                         <li class="page-member-order-information__card-item-list-item">
@@ -265,8 +265,8 @@
                                 </ul>
                             </div>
                             <div class="page-member-order-information__card-item-list-item-btn">
-                                <button>刪除</button>
-                                <button>編輯</button>
+                                <a href="/member/common">刪除</a>
+                                <a href="/member/common">編輯</a>
                             </div>
                         </li>
                         <li class="page-member-order-information__card-item-list-item">
@@ -280,8 +280,8 @@
                                 </ul>
                             </div>
                             <div class="page-member-order-information__card-item-list-item-btn">
-                                <button>刪除</button>
-                                <button>編輯</button>
+                                <a href="/member/common">刪除</a>
+                                <a href="/member/common">編輯</a>
                             </div>
                         </li>
                         <button>

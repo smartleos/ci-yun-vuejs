@@ -207,7 +207,7 @@
                         flex-direction: column;
                         gap: 1.2rem;
 
-                        > button {
+                        > a {
                             @include typo('body', 14);
 
                             color: map-get($colors, red);
