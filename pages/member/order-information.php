@@ -128,9 +128,9 @@
                                 <a href="/member/common">編輯</a>
                             </div>
                         </li>
-                        <button>
+                        <a href="/member/common">
                             ＋ 新增祈福人資訊
-                        </button>
+                        </a>
                     </ul>
                 </li>
                 <li class="page-member-order-information__card-item -success">
@@ -206,9 +206,9 @@
                                 <a href="/member/common">編輯</a>
                             </div>
                         </li>
-                        <button>
+                        <a href="/member/common">
                             ＋ 新增祈福人資訊
-                        </button>
+                        </a>
                     </ul>
                 </li>
                 <li class="page-member-order-information__card-item -alert">
@@ -284,9 +284,9 @@
                                 <a href="/member/common">編輯</a>
                             </div>
                         </li>
-                        <button>
+                        <a href="/member/common">
                             ＋ 新增祈福人資訊
-                        </button>
+                        </a>
                     </ul>
                 </li>
             </ul>
