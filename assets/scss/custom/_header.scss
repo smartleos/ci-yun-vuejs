@@ -32,8 +32,18 @@
                 }
 
                 &-hamburger {
-                    > span {
-                        background: map-get($colors, white);
+                    &-wrapper {
+                        > span {
+                            background: map-get($colors, white);
+                            
+                            &:first-child {
+                                transform: rotate(45deg) translate(0.2rem, 0.1rem);
+                            }
+
+                            &:last-child {
+                                transform: rotate(-45deg) translate(0.2rem, -0.1rem);
+                            }
+                        }
                     }
                 }
             }
@@ -299,6 +309,7 @@
         @include size(100vw, 100vh);
 
         position: fixed;
+        display: flex;
         top: 0;
         left: 0;
         z-index: 9999;
@@ -381,7 +392,7 @@
                         @include size(100%, 2px);
         
                         background-color: map-get($colors, brand-1);
-                        transition: color .3s ease-in-out;
+                        transition: color .3s ease-in-out, transform .3s ease-in-out;
                     }
                 }
 
