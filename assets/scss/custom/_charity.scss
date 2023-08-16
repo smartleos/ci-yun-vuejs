@@ -28,7 +28,6 @@
             align-items: center;
             padding: 4rem 0;
             gap: 6rem;
-            color: map-get($colors, brand-1);
 
             @include media-breakpoint-down(medium) {
                 gap: 2.4rem;
@@ -37,6 +36,7 @@
             &-list {
                 display: flex;
                 flex-direction: column;
+                color: map-get($colors, brand-1);
                 
                 > li {
                     display: flex;
