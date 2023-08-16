@@ -152,12 +152,12 @@
         </div>
     </div>
     <div class="page-cart-information__mobile" id="cart-bottom">
-        <div class="page-cart-information__mobile-wrapper container">
-            <div class="page-cart-information__mobile-text">
+        <div class="page-cart-information__mobile-wrapper container grid">
+            <div class="page-cart-information__mobile-text col-1-3-mobile">
                 <p>總計</p>
                 <span>＄16200</span>
             </div>
-            <div class="page-cart-information__mobile-btn">
+            <div class="page-cart-information__mobile-btn col-3-5-mobile">
                 <?php 
                     $tag="a";
                     $url="/cart/checkout";

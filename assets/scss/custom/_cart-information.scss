@@ -318,9 +318,6 @@
                 position: sticky;
                 left: 0;
                 top: calc(100vh - 8.1rem);
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
                 background-color: map-get($colors, white);
                 padding-top: 2.4rem;
                 padding-bottom: 2.4rem;
