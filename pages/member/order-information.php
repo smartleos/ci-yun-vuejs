@@ -94,8 +94,8 @@
                                 </ul>
                             </div>
                             <div class="page-member-order-information__card-item-list-item-btn">
-                                <a href="/member/common">刪除</a>
-                                <a href="/member/common">編輯</a>
+                                <a href="/cart/common">刪除</a>
+                                <a href="/cart/common">編輯</a>
                             </div>
                         </li>
                         <li class="page-member-order-information__card-item-list-item">
@@ -109,8 +109,8 @@
                                 </ul>
                             </div>
                             <div class="page-member-order-information__card-item-list-item-btn">
-                                <a href="/member/common">刪除</a>
-                                <a href="/member/common">編輯</a>
+                                <a href="/cart/common">刪除</a>
+                                <a href="/cart/common">編輯</a>
                             </div>
                         </li>
                         <li class="page-member-order-information__card-item-list-item">
@@ -124,11 +124,11 @@
                                 </ul>
                             </div>
                             <div class="page-member-order-information__card-item-list-item-btn">
-                                <a href="/member/common">刪除</a>
-                                <a href="/member/common">編輯</a>
+                                <a href="/cart/common">刪除</a>
+                                <a href="/cart/common">編輯</a>
                             </div>
                         </li>
-                        <a href="/member/common">
+                        <a href="/cart/common">
                             ＋ 新增祈福人資訊
                         </a>
                     </ul>
@@ -172,8 +172,8 @@
                                 </ul>
                             </div>
                             <div class="page-member-order-information__card-item-list-item-btn">
-                                <a href="/member/common">刪除</a>
-                                <a href="/member/common">編輯</a>
+                                <a href="/cart/common">刪除</a>
+                                <a href="/cart/common">編輯</a>
                             </div>
                         </li>
                         <li class="page-member-order-information__card-item-list-item">
@@ -187,8 +187,8 @@
                                 </ul>
                             </div>
                             <div class="page-member-order-information__card-item-list-item-btn">
-                                <a href="/member/common">刪除</a>
-                                <a href="/member/common">編輯</a>
+                                <a href="/cart/common">刪除</a>
+                                <a href="/cart/common">編輯</a>
                             </div>
                         </li>
                         <li class="page-member-order-information__card-item-list-item">
@@ -202,11 +202,11 @@
                                 </ul>
                             </div>
                             <div class="page-member-order-information__card-item-list-item-btn">
-                                <a href="/member/common">刪除</a>
-                                <a href="/member/common">編輯</a>
+                                <a href="/cart/common">刪除</a>
+                                <a href="/cart/common">編輯</a>
                             </div>
                         </li>
-                        <a href="/member/common">
+                        <a href="/cart/common">
                             ＋ 新增祈福人資訊
                         </a>
                     </ul>
@@ -250,8 +250,8 @@
                                 </ul>
                             </div>
                             <div class="page-member-order-information__card-item-list-item-btn">
-                                <a href="/member/common">刪除</a>
-                                <a href="/member/common">編輯</a>
+                                <a href="/cart/common">刪除</a>
+                                <a href="/cart/common">編輯</a>
                             </div>
                         </li>
                         <li class="page-member-order-information__card-item-list-item">
@@ -265,8 +265,8 @@
                                 </ul>
                             </div>
                             <div class="page-member-order-information__card-item-list-item-btn">
-                                <a href="/member/common">刪除</a>
-                                <a href="/member/common">編輯</a>
+                                <a href="/cart/common">刪除</a>
+                                <a href="/cart/common">編輯</a>
                             </div>
                         </li>
                         <li class="page-member-order-information__card-item-list-item">
@@ -280,11 +280,11 @@
                                 </ul>
                             </div>
                             <div class="page-member-order-information__card-item-list-item-btn">
-                                <a href="/member/common">刪除</a>
-                                <a href="/member/common">編輯</a>
+                                <a href="/cart/common">刪除</a>
+                                <a href="/cart/common">編輯</a>
                             </div>
                         </li>
-                        <a href="/member/common">
+                        <a href="/cart/common">
                             ＋ 新增祈福人資訊
                         </a>
                     </ul>
