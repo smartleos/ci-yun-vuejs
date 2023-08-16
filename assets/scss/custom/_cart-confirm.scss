@@ -11,7 +11,7 @@
 
     @include media-breakpoint-down(medium) {
         padding-top: 8.8rem;
-        padding-bottom: 13.4rem;
+        padding-bottom: 15rem;
     }
 
     .-desktop {
@@ -322,6 +322,8 @@
 
             &-btn {
                 @include media-breakpoint-down(medium) {
+                    @include size(100%, auto);
+
                     display: none;
                 }
             }
