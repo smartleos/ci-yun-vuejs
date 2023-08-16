@@ -86,7 +86,8 @@
                         </div>
                         <div class="form__btns-item">
                             <?php 
-                                $tag="button";
+                                $tag="a";
+                                $url="/member/verify";
                                 $text="立即註冊";
                                 $style="";
                                 include ("../../components/button.php");

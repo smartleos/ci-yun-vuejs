@@ -24,7 +24,8 @@
                     <div class="form__btns">
                         <div class="form__btns-item">
                             <?php 
-                                $tag="button";
+                                $tag="a";
+                                $url="/member/register-success";
                                 $text="送出";
                                 $style="";
                                 include ("../../components/button.php");
