@@ -48,26 +48,28 @@
                     <span class="products-single__information-price-original">＄5,000</span>
                     <span class="products-single__information-price-now">＄4,000</span>
                 </div>
-                <div class="products-single__information-btns">
-                    <div class="products-single__information-btns-btn">
-                        <?php 
-                            $tag="button";
-                            $url="";
-                            $target="";
-                            $text="加入購物車";
-                            $style="-red -outline -head";
-                            include ("../../components/button.php");
-                        ?>
-                    </div>
-                    <div class="products-single__information-btns-btn">
-                        <?php 
-                            $tag="a";
-                            $url="/cart/confirm";
-                            $target="";
-                            $text="立即結帳";
-                            $style="-red -head";
-                            include ("../../components/button.php");
-                        ?>
+                <div class="products-single__information-btns" id="cart-bottom">
+                    <div class="products-single__information-btns-wrapper">
+                        <div class="products-single__information-btns-item">
+                            <?php 
+                                $tag="button";
+                                $url="";
+                                $target="";
+                                $text="加入購物車";
+                                $style="-red -outline -head";
+                                include ("../../components/button.php");
+                            ?>
+                        </div>
+                        <div class="products-single__information-btns-item">
+                            <?php 
+                                $tag="a";
+                                $url="/cart/confirm";
+                                $target="";
+                                $text="立即結帳";
+                                $style="-red -head";
+                                include ("../../components/button.php");
+                            ?>
+                        </div>
                     </div>
                 </div>
             </div>
