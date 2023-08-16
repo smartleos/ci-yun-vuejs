@@ -50,7 +50,7 @@
                         <div class="page-cart-search__btns-item">
                             <?php 
                                 $tag="a";
-                                $url="/cart/comfirm";
+                                $url="/cart/confirm";
                                 $text="返回購物車";
                                 $style="-red -transparent";
                                 include ("../../components/button.php");
@@ -59,7 +59,7 @@
                         <div class="page-cart-search__btns-item">
                             <?php 
                                 $tag="a";
-                                $url="/cart/comfirm";
+                                $url="/cart/information";
                                 $text="繼續結帳";
                                 $style="-red";
                                 include ("../../components/button.php");

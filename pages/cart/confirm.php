@@ -95,7 +95,7 @@
                     <div class="page-cart-confirm__cart-bottom-btn -desktop">
                         <?php 
                             $tag="a";
-                            $url="/cart/information";
+                            $url="/cart/search";
                             $target="";
                             $text="下一步";
                             $style="-red";
@@ -125,7 +125,7 @@
             <div class="page-cart-confirm__mobile-btn">
                 <?php 
                     $tag="a";
-                    $url="/cart/information";
+                    $url="/cart/search";
                     $target="";
                     $text="下一步";
                     $style="-red";
