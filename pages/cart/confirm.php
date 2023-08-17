@@ -35,11 +35,11 @@
                     <h3>寄送方式</h3>
                     <label for="method1">
                         <input type="radio" id="method1" name="shipment">
-                        方法1
+                        黑貓宅急便
                     </label>
                     <label for="method2">
                         <input type="radio" id="method2" name="shipment">
-                        方法2
+                        郵局
                     </label>
                     <p>
                         <span>運費</span>

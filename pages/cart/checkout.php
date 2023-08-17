@@ -88,13 +88,25 @@
                     <span>
                         <input type="radio" id="payment1" name="payment" value="payment1">
                         <label for="payment1">
-                            方式1
+                            信用卡付款
                         </label>
                     </span>
                     <span>
                         <input type="radio" id="payment2" name="payment" value="payment2">
                         <label for="payment2">
-                            方式2
+                            ATM轉帳
+                        </label>
+                    </span>
+                    <span>
+                        <input type="radio" id="payment2" name="payment" value="payment2">
+                        <label for="payment2">
+                            超商代碼
+                        </label>
+                    </span>
+                    <span>
+                        <input type="radio" id="payment2" name="payment" value="payment2">
+                        <label for="payment2">
+                            貨到付款
                         </label>
                     </span>
                 </div>
@@ -104,13 +116,13 @@
                     <span>
                         <input type="radio" id="invoice1" name="invoice" value="invoice1">
                         <label for="invoice1">
-                            方式1
+                            捐贈發票
                         </label>
                     </span>
                     <span>
                         <input type="radio" id="invoice2" name="invoice" value="invoice2">
                         <label for="invoice2">
-                            方式2
+                            電子發票
                         </label>
                     </span>
                     <input type="text" id="carrier" name="carrier" placeholder="請輸入載具條碼">
@@ -122,7 +134,7 @@
                     </label>
                     <label for="agreement2">
                         <input type="checkbox" id="agreement2" name="agreement2">
-                        我同意XXXX
+                        我同意OOOOOOO
                     </label>
                 </div>
                 <hr>
