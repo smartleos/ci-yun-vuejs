@@ -12,12 +12,23 @@
                 $title="我的優惠券";
                 include ("../../components/member/top.php");
             ?>
-            <div class="page-member-coupon__select">
-                <select name="coupon">
-                    <option value="我的優惠券" selected>我的優惠券</option>
-                    <option value="領取優惠券">領取優惠券</option>
-                </select>
-                <?php get_svg('down') ?>
+            <div class="page-member-coupon__tab">
+                <div class="page-member-coupon__tab-btn" id="my_btn">
+                    <?php 
+                        $tag="button";
+                        $text="我的優惠券";
+                        $style="";
+                        include ("../../components/button.php");
+                    ?>
+                </div>
+                <div class="page-member-coupon__tab-btn" id="get_btn">
+                    <?php 
+                        $tag="button";
+                        $text="領取優惠券";
+                        $style="-transparent -outline";
+                        include ("../../components/button.php");
+                    ?>
+                </div>
             </div>
             <section class="page-member-coupon__my -active">
                 <div class="page-member-coupon__my-card">

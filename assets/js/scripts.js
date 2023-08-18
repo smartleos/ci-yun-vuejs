@@ -400,21 +400,22 @@ $(function() {
 
     // ------------- member-coupon -------------
     if ($('.page-member-coupon').length) {
-        $('select[name="coupon"]').on('change', function() {
-            switch ($(this).val()) {
-                case '我的優惠券':
-                    $('section').each(function() {
-                        $(this).removeClass('-active')
-                    })
-                    $('.page-member-coupon__my').addClass('-active')
-                    break;
-                case '領取優惠券':
-                    $('section').each(function() {
-                        $(this).removeClass('-active')
-                    })
-                    $('.page-member-coupon__get').addClass('-active')
-                break;
-            }
+        $('#my_btn').on('click', function() {
+            $(this).find('button')[0].classList.remove('-transparent')
+            $(this).find('button')[0].classList.remove('-outline')
+            $('#get_btn').find('button')[0].classList.add('-transparent')
+            $('#get_btn').find('button')[0].classList.add('-outline')
+            $('.page-member-coupon__my').addClass('-active')
+            $('.page-member-coupon__get').removeClass('-active')
+        })
+
+        $('#get_btn').on('click', function() {
+            $(this).find('button')[0].classList.remove('-transparent')
+            $(this).find('button')[0].classList.remove('-outline')
+            $('#my_btn').find('button')[0].classList.add('-transparent')
+            $('#my_btn').find('button')[0].classList.add('-outline')
+            $('.page-member-coupon__my').removeClass('-active')
+            $('.page-member-coupon__get').addClass('-active')
         })
     }
     // ------------- member-order-information -------------
