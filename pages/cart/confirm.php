@@ -19,18 +19,37 @@
                 ?>
                 <div class="page-cart-confirm__cart-shipment">
                     <h3>寄送方式</h3>
-                    <label for="method1">
-                        <input type="radio" id="method1" name="shipment">
-                        黑貓宅急便
+                    <label for="none">
+                        <input type="radio" id="none" name="shipment">
+                        不需寄送
                     </label>
-                    <label for="method2">
-                        <input type="radio" id="method2" name="shipment">
-                        郵局
+                    <label for="pickup">
+                        <input type="radio" id="pickup" name="shipment">
+                        現場取貨
                     </label>
+                    <label for="delivery">
+                        <input type="radio" id="delivery" name="shipment">
+                        宅配
+                    </label>
+                    <label for="convenience">
+                        <input type="radio" id="convenience" name="shipment">
+                        超商取貨
+                    </label>
+                    <span><?php get_svg('notice') ?>您尚未選擇取貨門市</span>
                     <p>
                         <span>運費</span>
                         <span>$0</span>
                     </p>
+                    <div class="page-cart-confirm__cart-shipment-btn">
+                        <?php 
+                            $tag="button";
+                            $url="";
+                            $target="";
+                            $text="選擇取貨門市";
+                            $style="";
+                            include ("../../components/button.php");
+                        ?>
+                    </div>
                 </div>
                 <hr>
                 <div class="page-cart-confirm__cart-coupon">
@@ -98,6 +117,37 @@
                             include ("../../components/button.php");
                         ?>
                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="page-cart-confirm__popup">
+        <div class="page-cart-confirm__popup-wrapper">
+            <div class="page-cart-confirm__popup-wrapper-close">
+                <?php get_svg('close') ?>
+            </div>
+            <p>您選擇的取貨門市：</p>
+            <p>711 亞東門市</p>
+            <div class="page-cart-confirm__popup-wrapper-btns">
+                <div class="page-cart-confirm__popup-wrapper-btns-item">
+                    <?php 
+                        $tag="button";
+                        $url="";
+                        $target="";
+                        $text="重新選擇";
+                        $style="-white";
+                        include ("../../components/button.php");
+                    ?>
+                </div>
+                <div class="page-cart-confirm__popup-wrapper-btns-item" id="shipment_confirm">
+                    <?php 
+                        $tag="button";
+                        $url="";
+                        $target="";
+                        $text="確認";
+                        $style="";
+                        include ("../../components/button.php");
+                    ?>
                 </div>
             </div>
         </div>

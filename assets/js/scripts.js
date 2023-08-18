@@ -337,6 +337,21 @@ $(function() {
     }
     // ------------- news-single -------------
 
+    // ------------- cart-confirm -------------
+    if ($('.page-cart-confirm').length) {
+        $('.page-cart-confirm__cart-shipment-btn').on('click', function() {
+            $('.page-cart-confirm__popup').addClass('-active')
+            $(this).find('p').text('重選取貨門市')
+        })
+        $('.page-cart-confirm__popup-wrapper-close').on('click', function() {
+            $('.page-cart-confirm__popup').removeClass('-active')
+        })
+        $('#shipment_confirm').on('click', function() {
+            $('.page-cart-confirm__popup').removeClass('-active')
+        })
+    }
+    // ------------- cart-confirm -------------
+
     // ------------- cart-information -------------
     if ($('.page-cart-information').length) {
         $('input[name="same"]').on('change', function() {

@@ -42,6 +42,7 @@
         }
 
         &-shipment {
+            position: relative;
             display: flex;
             flex-direction: column;
             align-items: flex-start;
@@ -91,9 +92,27 @@
                 }
             }
 
+            > span {
+                @include typo('body', 14);
+
+                display: flex;
+                color: map-get($colors, red);
+                gap: .4rem;
+
+                > svg {
+                    @include size(1.2rem, auto);
+                }
+            }
+
             > p {
                 display: flex;
                 gap: 1.2rem;
+            }
+
+            &-btn {
+                position: absolute;
+                bottom: 4.5rem;
+                right: 0;
             }
         }
 
@@ -216,6 +235,68 @@
                     @include size(100%, auto);
 
                     display: block;
+                }
+            }
+        }
+    }
+
+    &__popup {
+        @include size(100vw, 100dvh);
+
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        transition: opacity .3s ease-in-out;
+        pointer-events: none;
+        z-index: 999;
+
+        &.-active {
+            opacity: 1;
+            pointer-events: auto;
+        }
+
+        &-wrapper {
+            @include size(100%, auto);
+
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 3.2rem 2.4rem;
+            background-color: map-get($colors, brand-1);
+            color: map-get($colors, white);
+            border-radius: .8rem;
+
+            &-close {
+                position: absolute;
+                top: 1.2rem;
+                right: 1.2rem;
+
+                > svg {
+                    @include size(1.6rem, auto);
+                }
+            }
+
+            > p {
+                @include typo('body', 16);
+
+                font-weight: bold;
+            }
+
+            &-btns {
+                @include size(100%, auto);
+
+                display: flex;
+                gap: 1.6rem;
+                margin-top: 2rem;
+
+                &-item {
+                    flex: 1;
                 }
             }
         }
