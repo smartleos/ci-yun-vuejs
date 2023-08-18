@@ -4,24 +4,10 @@
 <div class="page-cart-confirm">
     <div class="container grid">
         <div class="col-3-11-tablet col-1-5-mobile">
-            <div class="page-cart-confirm__progress">
-                <span class="-active -progress">
-                    <p>確認購物車</p>
-                    <span></span>
-                </span>
-                <span class="">
-                    <p>填寫資料</p>
-                    <span></span>
-                </span>
-                <span class="">
-                    <p>確認結帳</p>
-                    <span></span>
-                </span>
-                <span class="">
-                    <p>完成訂單</p>
-                    <span></span>
-                </span>
-            </div>
+            <?php
+                $active='confirm';
+                include('../../components/cart/progress.php');
+            ?>
             <div class="page-cart-confirm__cart">
                 <?php
                     $delete=true;
