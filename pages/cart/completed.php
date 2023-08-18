@@ -31,10 +31,6 @@
                 <div class="page-cart-completed__receipt">
                     <div class="page-cart-completed__receipt-top">
                         <p>商品詳細內容</p>
-                        <div class="page-cart-completed__receipt-top-btn -active">
-                            <p>收合</p>
-                            <svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 9"><path d="M10.59 8.205 6 3.625l-4.59 4.58L0 6.795l6-6 6 6-1.41 1.41Z" fill="#C6A80E"/></svg>
-                        </div>
                     </div>
                     <div class="page-cart-completed__receipt-wrapper">
                         <?php

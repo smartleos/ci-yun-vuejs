@@ -379,21 +379,6 @@ $(function() {
             $('.page-cart-completed__popup-wrapper-btn').on('click', function() {
                 $('.page-cart-completed__popup').removeClass('-active')
             })
-    
-            // accordion
-            const height = $('.page-cart-completed__receipt-wrapper').outerHeight()
-            $('.page-cart-completed__receipt-wrapper').css('max-height', height)
-            $('.page-cart-completed__receipt-top-btn').on('click', function() {
-                if ($(this).hasClass('-active')) {
-                    $(this).find('p')[0].innerHTML = '展開'
-                    $(this).removeClass('-active')
-                    $('.page-cart-completed__receipt-wrapper').addClass('-hide')
-                } else {
-                    $(this).find('p')[0].innerHTML = '收合'
-                    $(this).addClass('-active')
-                    $('.page-cart-completed__receipt-wrapper').removeClass('-hide')
-                }
-            })
         }
     }
     // ------------- cart-completed -------------

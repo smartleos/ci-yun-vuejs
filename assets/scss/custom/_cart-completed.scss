@@ -191,31 +191,12 @@
             @include size(100%, auto);
 
             display: flex;
-            justify-content: space-between;
+            justify-content: center;
             margin-bottom: 2.4rem;
+            color: map-get($colors, gray-1);
 
-            &-btn {
-                display: flex;
-                gap: 1.6rem;
-                cursor: pointer;
-
-                &.-active {
-                    > svg {
-                        transform: rotateX(180deg);
-                    }
-                }
-
-                > p {
-                    @include typo('body', 16);
-
-                    color: map-get($colors, brand-1);
-                }
-
-                > svg {
-                    @include size(1.2rem, auto);
-
-                    transition: transform .6s ease-in-out;
-                }
+            @include media-breakpoint-down(medium) {
+                margin-bottom: 1.6rem;
             }
         }
 
