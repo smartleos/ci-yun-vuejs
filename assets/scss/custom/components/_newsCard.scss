@@ -20,6 +20,16 @@
         }
     }
 
+    &.-tiny {
+        > figure {
+            display: none;
+        }
+
+        > p {
+            display: none;
+        }
+    }
+
     > figure {
         @include size(100%, auto);
         @include aspect(0.5);

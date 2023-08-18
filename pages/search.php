@@ -23,15 +23,15 @@
                 <h2>共 <span>3</span> 則消息</h2>
                 <div class="page-search__section-news">
                     <?php 
-                        $size="large";
+                        $size="tiny";
                         include ("../components/news/card.php");
                     ?>
                     <?php 
-                        $size="large";
+                        $size="tiny";
                         include ("../components/news/card.php");
                     ?>
                     <?php 
-                        $size="large";
+                        $size="tiny";
                         include ("../components/news/card.php");
                     ?>
                 </div>
