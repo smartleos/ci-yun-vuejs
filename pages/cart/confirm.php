@@ -121,8 +121,8 @@
             </div>
         </div>
     </div>
-    <div class="page-cart-confirm__popup">
-        <div class="page-cart-confirm__popup-wrapper">
+    <div class="page-cart-confirm__popup grid container">
+        <div class="page-cart-confirm__popup-wrapper col-5-9-tablet col-1-5-mobile">
             <div class="page-cart-confirm__popup-wrapper-close">
                 <?php get_svg('close') ?>
             </div>
