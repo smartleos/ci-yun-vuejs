@@ -10,7 +10,7 @@
 
     @include media-breakpoint-down(medium) {
         padding-top: 4.4rem;
-        padding-bottom: 12rem;
+        padding-bottom: 18rem;
     }
 
     &__swiper {
@@ -264,6 +264,7 @@
                 position: absolute;
                 top: 0;
                 left: 0;
+                pointer-events: none;
             }
 
             &-wrapper {
@@ -281,6 +282,7 @@
                     gap: 1.4rem;
                     box-shadow: 0px -3px 3px 0px rgba(map-get($colors, black-1), 0.15);
                     z-index: 98;
+                    pointer-events: auto;
                 }
             }
 
@@ -472,6 +474,12 @@
 
                 padding: 0;
                 overflow: visible;
+            }
+        }
+
+        &-btn {
+            @include media-breakpoint-down(medium) {
+                @include size(100%, auto);
             }
         }
 
