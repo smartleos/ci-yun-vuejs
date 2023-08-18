@@ -62,22 +62,6 @@
                             <p>嘉義縣水上鄉南鄉村牛稠埔水上鄉南鄉村牛稠埔 54 號之4</p>
                         </li>
                         <li>
-                            <p>付款方式</p>
-                            <p>ATM付款</p>
-                        </li>
-                        <li>
-                            <p>訂單狀態</p>
-                            <p>已完成</p>
-                        </li>
-                        <li>
-                            <p>付款狀態</p>
-                            <p>已付款</p>
-                        </li>
-                        <li>
-                            <p>訂購日期</p>
-                            <p>2022/04/18</p>
-                        </li>
-                        <li>
                             <p>訂購總金額（含運費）</p>
                             <p>$200</p>
                         </li>
@@ -86,27 +70,33 @@
                 <div class="page-cart-checkout__checkout-payment">
                     <h3>付款方式</h3>
                     <span>
-                        <input type="radio" id="payment1" name="payment" value="payment1">
-                        <label for="payment1">
-                            信用卡付款
+                        <input type="radio" id="credit" name="payment" value="credit">
+                        <label for="credit">
+                            信用卡
                         </label>
                     </span>
                     <span>
-                        <input type="radio" id="payment2" name="payment" value="payment2">
-                        <label for="payment2">
+                        <input type="radio" id="atm" name="payment" value="atm">
+                        <label for="atm">
                             ATM轉帳
                         </label>
                     </span>
                     <span>
-                        <input type="radio" id="payment2" name="payment" value="payment2">
-                        <label for="payment2">
-                            超商代碼
+                        <input type="radio" id="line" name="payment" value="line">
+                        <label for="line">
+                            LINE PAY
                         </label>
                     </span>
                     <span>
-                        <input type="radio" id="payment2" name="payment" value="payment2">
-                        <label for="payment2">
-                            貨到付款
+                        <input type="radio" id="convenience" name="payment" value="convenience">
+                        <label for="convenience">
+                            超商代碼付款
+                        </label>
+                    </span>
+                    <span>
+                        <input type="radio" id="cash" name="payment" value="cash">
+                        <label for="cash">
+                            現金
                         </label>
                     </span>
                 </div>
@@ -116,16 +106,30 @@
                     <span>
                         <input type="radio" id="invoice1" name="invoice" value="invoice1">
                         <label for="invoice1">
-                            捐贈發票
+                            會員載具
                         </label>
                     </span>
                     <span>
                         <input type="radio" id="invoice2" name="invoice" value="invoice2">
                         <label for="invoice2">
-                            電子發票
+                            手機條碼
                         </label>
                     </span>
-                    <input type="text" id="carrier" name="carrier" placeholder="請輸入載具條碼">
+                    <input type="text" id="carrier" name="carrier" placeholder="輸入手機條碼">
+                    <span>
+                        <input type="radio" id="invoice3" name="invoice" value="invoice3">
+                        <label for="invoice3">
+                            三聯式發票
+                        </label>
+                    </span>
+                    <input type="text" id="carrier" name="carrier" placeholder="輸入公司抬頭及統編">
+                    <span>
+                        <input type="radio" id="invoice4" name="invoice" value="invoice4">
+                        <label for="invoice4">
+                            捐贈發票
+                        </label>
+                    </span>
+                    <input type="text" id="carrier" name="carrier" placeholder="輸入愛心碼">
                 </div>
                 <div class="page-cart-checkout__checkout-agreement">
                     <label for="agreement1">
@@ -134,7 +138,7 @@
                     </label>
                     <label for="agreement2">
                         <input type="checkbox" id="agreement2" name="agreement2">
-                        我同意OOOOOOO
+                        我同意ＯＯＯＯＯＯ
                     </label>
                 </div>
                 <hr>
