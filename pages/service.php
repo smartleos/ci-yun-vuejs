@@ -36,7 +36,7 @@
             <div class="page-service__content">
                 <div class="page-service__content-title">
                     <?php 
-                        $title="聯絡我們";
+                        $title="常見問題";
                         include ("../components/title.php");
                     ?>
                 </div>
