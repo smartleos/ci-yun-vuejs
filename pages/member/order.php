@@ -13,12 +13,8 @@
                 include ("../../components/member/top.php");
             ?>
             <div class="page-member-order__order">
-                <div class="page-member-order__order-select">
-                    <select name="products_categories">
-                        <option value="日期區間" selected disabled>日期區間</option>
-                        <option value="日期區間1">日期區間</option>
-                    </select>
-                    <?php get_svg('down') ?>
+                <div class="page-member-order__order-date">
+                    <input type="date" name="order_date" id="order_date">
                 </div>
                 <div class="page-member-order__order-list">
                     <?php  include ("../../components/member/orderCard.php");?>
