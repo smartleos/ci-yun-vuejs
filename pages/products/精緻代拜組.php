@@ -62,8 +62,8 @@
                         </div>
                         <div class="products-single__information-btns-item">
                             <?php 
-                                $tag="a";
-                                $url="/cart/confirm";
+                                $tag="button";
+                                $url="";
                                 $target="";
                                 $text="立即結帳";
                                 $style="-red -head";
@@ -170,6 +170,7 @@
             </div>
         </div>
     </div>
+    <?php include('../../components/products/addCart.php'); ?>
 </div>
 <!-- <?php include('../../components/dev.php'); ?> -->
 <?php include('../../components/footer.php'); ?>

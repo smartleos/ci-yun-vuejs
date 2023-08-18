@@ -1,0 +1,220 @@
+.products-add-cart {
+    @include size(100vw, 100vh);
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    align-items: center;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    pointer-events: none;
+    z-index: 99;
+
+    @include media-breakpoint-down(medium) {
+        @include size(100vw, 100%);
+
+        position: absolute;
+        padding: 0;
+        display: flex;
+        align-items: flex-start;
+    }
+
+    &.-active {
+        opacity: 1;
+        pointer-events: auto;
+
+        .products-add-cart__wrapper {
+            transform: translateY(0);
+        }
+    }
+
+    &__wrapper {
+        background-color: map-get($colors, white);
+        padding: 2.4rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1.2rem;
+        box-shadow: 5px 5px 5px 0px rgba(map-get($colors, black-1), 0.15);
+        transform: translateY(100%);
+        transition: transform .3s ease-in-out;
+
+        @include media-breakpoint-down(medium) {
+            @include size(100vw, auto);
+
+            position: sticky;
+            top: calc(100% - 34.3rem);
+            box-shadow: 5px -5px 5px 0px rgba(map-get($colors, black-1), 0.15);
+        }
+    }
+
+    &__close {
+        position: absolute;
+        top: 2.4rem;
+        right: 2.4rem;
+        cursor: pointer;
+
+        > svg {
+            @include size(1.6rem, auto);
+
+            color: map-get($colors, black-1);
+        }
+    }
+
+    &__top {
+        display: flex;
+        align-items: flex-start;
+        padding-right: 2.4rem;
+        padding-bottom: 1.2rem;
+        gap: 1.4rem;
+        border-bottom: 1px solid map-get($colors, brand-1);
+
+        > figure {
+            @include size(8.2rem, auto);
+            @include aspect(1);
+
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            border-radius: .4rem;
+
+            > img {
+                @include size(100%);
+
+                position: absolute;
+                object-fit: cover;
+            }
+        }
+
+        &-information {
+            display: flex;
+            flex-direction: column;
+            gap: 1.2rem;
+            flex: 1;
+
+            > h4 {
+                @include typo('head', 4);
+            }
+
+            &-tags {
+                display: flex;
+                justify-content: space-between;
+
+                &-category {
+                    @include typo('body', 14);
+
+                    color: map-get($colors, brand-1);
+                    border: 1px solid map-get($colors, brand-1);
+                    padding: .2rem .8rem;
+                    border-radius: .4rem;
+                }
+
+                &-promote {
+                    @include typo('body', 14);
+
+                    font-weight: bold;
+                    padding: .2rem 1.2rem;
+                    border-radius: 5rem;
+                    background-color: map-get($colors, promote);
+                    color: map-get($colors, red);
+                }
+            }
+
+            &-price {
+                display: flex;
+                align-items: center;
+                gap: .4rem;
+
+                &-original {
+                    @include typo('body', 12);
+
+                    color: map-get($colors, gray-1);
+                    text-decoration: line-through;
+                }
+
+                &-now {
+                    @include typo('body', 16);
+
+                    font-weight: bold;
+                    color: map-get($colors, red);
+                }
+            }
+        }
+    }
+
+    > p {
+        @include typo('body', 14);
+
+        color: map-get($colors, brand-1);
+    }
+
+    &__specification {
+        display: flex;
+        gap: 1rem;
+
+        > span {
+            position: relative;
+
+            > input {
+                @include size(100%);
+
+                position: absolute;
+                cursor: pointer;
+
+                &:checked + label {
+                    background-color: map-get($colors, brand-2);
+                    color: map-get($colors, white);
+                    border: 1px solid map-get($colors, brand-2);
+                }
+            }
+
+            > label {
+                @include typo('body', 16);
+
+                padding: 0.4rem 1.2rem;
+                border-radius: .4rem;
+                background-color: map-get($colors, gray-2);
+                color: map-get($colors, gray-1);
+                border: 1px solid map-get($colors, gray-1);
+            }
+        }
+    }
+
+    &__bottom {
+        display: flex;
+        gap: 1.6rem;
+        padding-top: 2rem;
+
+        &-item {
+            position: relative;
+            display: flex;
+            align-items: center;
+            flex: 1;
+
+            > svg {
+                @include size(2.4rem, auto);
+
+                color: map-get($colors, brand-1);
+                position: absolute;
+                z-index: 2;
+                cursor: pointer;
+
+                &:first-child {
+                    left: 1.2rem;
+                }
+
+                &:last-child {
+                    right: 1.2rem;
+                }
+            }
+
+            > input {
+                padding: .4rem 3.6rem;
+                border: 1px solid map-get($colors, brand-1);
+                border-radius: 5rem;
+                text-align: center;
+            }
+        }
+    }
+}

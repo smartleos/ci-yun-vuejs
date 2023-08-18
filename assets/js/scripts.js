@@ -317,6 +317,34 @@ $(function() {
         })
 
         new Plyr('#products-player')
+
+        $('.products-single__information-btns-item:first-child').on('click', function() {
+            $('.products-add-cart').addClass('-active')
+            $('.products-add-cart__bottom-item:last-child > a > p')[0].innerText = '加入購物車'
+        })
+
+        $('.products-single__information-btns-item:last-child').on('click', function() {
+            $('.products-add-cart').addClass('-active')
+            $('.products-add-cart__bottom-item:last-child > a > p')[0].innerText = '立即結帳'
+        })
+
+        $('.products-add-cart__close').on('click', function() {
+            $('.products-add-cart').removeClass('-active')
+        })
+
+        $('.products-add-cart__bottom-item > svg:first-child').on('click', function() {
+            let num = parseInt($(this).siblings('input').val())
+            if (num > 1) {
+                num--
+                $(this).siblings('input').val(num)
+            }
+        })
+
+        $('.products-add-cart__bottom-item > svg:last-child').on('click', function() {
+            let num = parseInt($(this).siblings('input').val())
+            num++
+            $(this).siblings('input').val(num)
+        })
     }
     // ------------- products-single -------------
 
