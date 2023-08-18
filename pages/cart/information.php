@@ -4,24 +4,10 @@
 <div class="page-cart-information">
     <div class="container grid">
         <div class="col-3-11-tablet col-1-5-mobile">
-            <div class="page-cart-information__progress">
-                <span class="-progress">
-                    <p>確認購物車</p>
-                    <span></span>
-                </span>
-                <span class="-active">
-                    <p>填寫資料</p>
-                    <span></span>
-                </span>
-                <span class="">
-                    <p>確認結帳</p>
-                    <span></span>
-                </span>
-                <span class="">
-                    <p>完成訂單</p>
-                    <span></span>
-                </span>
-            </div>
+            <?php
+                $progress=3;
+                include('../../components/cart/progress.php');
+            ?>
             <form class="page-cart-information__information">
                 <div class="page-cart-information__form" id="buyer">
                     <h2>購買者資料</h2>

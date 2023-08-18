@@ -4,6 +4,10 @@
 <div class="page-cart-search">
     <div class="container grid">
         <div class="col-3-11-tablet col-1-5-mobile">
+            <?php
+                $progress=2;
+                include('../../components/cart/progress.php');
+            ?>
             <div class="page-cart-search__wrapper">
                 <div class="page-cart-search__content">
                     <h2>請先查詢報名資料，以避免重覆報名造成您的困擾。</h2>

@@ -5,7 +5,7 @@
     <div class="container grid">
         <div class="col-3-11-tablet col-1-5-mobile">
             <?php
-                $active='confirm';
+                $progress=1;
                 include('../../components/cart/progress.php');
             ?>
             <div class="page-cart-confirm__cart">

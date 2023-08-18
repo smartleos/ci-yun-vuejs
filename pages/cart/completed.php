@@ -4,24 +4,10 @@
 <div class="page-cart-completed">
     <div class="container grid">
         <div class="col-3-11-tablet col-1-5-mobile">
-            <div class="page-cart-completed__progress">
-                <span class="-progress">
-                    <p>確認購物車</p>
-                    <span></span>
-                </span>
-                <span class="-progress">
-                    <p>填寫資料</p>
-                    <span></span>
-                </span>
-                <span class="-progress">
-                    <p>確認結帳</p>
-                    <span></span>
-                </span>
-                <span class="-active">
-                    <p>完成訂單</p>
-                    <span></span>
-                </span>
-            </div>
+            <?php
+                $progress=5;
+                include('../../components/cart/progress.php');
+            ?>
             <div class="page-cart-completed__wrapper">
                 <div class="page-cart-completed__wrapper-top">
                     <p>訂單成功送出，感謝您的訂購！</p>
