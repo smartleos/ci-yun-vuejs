@@ -11,7 +11,7 @@
                 <h1>112年度新春法會</h1>
                 <div class="news-single__wrapper-top-tags">
                     <span class="news-single__wrapper-top-tags-category">祈福法會</span>
-                    <span class="news-single__wrapper-top-tags-date">國曆｜03.31 -  04.02</span>
+                    <span class="news-single__wrapper-top-tags-date">國曆｜2023.03.31 -  04.02</span>
             </div>
             </div>
             <div class="news-single__wrapper-paragraph">

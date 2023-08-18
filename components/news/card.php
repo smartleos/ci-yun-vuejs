@@ -4,7 +4,7 @@
     </figure>
     <div class="news-card-row">
         <span>祈福法會</span>
-        <p>國曆｜03.31 -  04.02</p>
+        <p>國曆｜2023.03.31 -  04.02</p>
     </div>
     <h4>112年度清明祭祀法會</h4>
     <hr class="-mobile">
