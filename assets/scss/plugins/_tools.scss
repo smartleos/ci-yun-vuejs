@@ -68,6 +68,22 @@
         }
     }
 
+    &.-notice {
+        .es-notification__inner {
+            color: map-get($colors, white);
+            background-color: map-get($colors, brand-1);
+
+            &-btns {
+                > button {
+                    &.confirm {
+                        background-color: map-get($colors, brand-2);
+                        color: map-get($colors, white);
+                    }
+                }
+            }
+        }
+    }
+
 
     &.-success {
         .es-notification__inner {

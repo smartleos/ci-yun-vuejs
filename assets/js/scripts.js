@@ -112,7 +112,7 @@ $(function() {
             } else {
                 $('.header__membcart-cart > span')[0].innerText = parseInt($('.header__membcart-cart > span')[0].innerText) + parseInt(val)
             }
-            esNotification('success', '成功', '已加入購物車')
+            esNotification('notice', '', '已加入購物車！', '', '確認')
         })
 
         $('.products-card > button').each(function() {
