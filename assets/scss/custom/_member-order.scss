@@ -33,15 +33,32 @@
         &-date {
             position: relative;
             display: flex;
+            flex-direction: column;
             align-items: center;
-            
-            > input {
-                @include typo('body', 16);
-                
-                border: 1px solid map-get($colors, brand-1);
-                border-radius: 3rem;
-                padding: 0.4rem 2rem;
-                cursor: pointer;
+            gap: 1.6rem;
+
+            &-row {
+                display: flex;
+                align-items: center;
+                gap: 1.6rem;
+
+                @include media-breakpoint-down(medium) {
+                    gap: 0;
+                    justify-content: space-between;
+                }
+
+                > input {
+                    @include typo('body', 16);
+                    
+                    border: 1px solid map-get($colors, brand-1);
+                    border-radius: 3rem;
+                    padding: 0.4rem 2rem;
+                    cursor: pointer;
+                }
+            }
+
+            &-btn {
+                @include size(15rem, auto);
             }
         }
 

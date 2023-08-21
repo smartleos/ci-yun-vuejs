@@ -14,7 +14,20 @@
             ?>
             <div class="page-member-order__order">
                 <div class="page-member-order__order-date">
-                    <input type="date" name="order_date" id="order_date">
+                    <div class="page-member-order__order-date-row">
+                        <input type="date" name="order_form_date" id="order_form_date">
+                        <p>～</p>
+                        <input type="date" name="order_to_date" id="order_to_date">
+                    </div>
+                    <div class="page-member-order__order-date-btn">
+                        <?php 
+                            $tag="button";
+                            $url="";
+                            $text="查詢";
+                            $style="";
+                            include ("../../components/button.php");
+                        ?>
+                    </div>
                 </div>
                 <div class="page-member-order__order-list">
                     <?php  include ("../../components/member/orderCard.php");?>
