@@ -5,6 +5,16 @@
     color: map-get($colors, brand-1);
     gap: 1.6rem;
 
+    @include media-breakpoint-up(medium) {
+        &:hover {
+            > figure {
+                > img {
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+
     > figure {
         @include size(100%, auto);
         @include aspect(1);
@@ -16,6 +26,10 @@
         overflow: hidden;
         border-radius: 50%;
         border: 2px solid map-get($colors, brand-2);
+
+        > img {
+            transition: transform .3s ease-in-out;
+        }
     }
 
     > h3 {
