@@ -85,6 +85,45 @@ $(function() {
     }
     // ------------- form -------------
 
+    // ------------- add-cart -------------
+    if ($('.products-add-cart').length) {
+        $('.products-add-cart__close').on('click', function() {
+            $('.products-add-cart').removeClass('-active')
+        })
+
+        $('.products-add-cart__bottom-item > svg:first-child').on('click', function() {
+            let num = parseInt($(this).siblings('input').val())
+            if (num > 1) {
+                num--
+                $(this).siblings('input').val(num)
+            }
+        })
+
+        $('.products-add-cart__bottom-item > svg:last-child').on('click', function() {
+            let num = parseInt($(this).siblings('input').val())
+            num++
+            $(this).siblings('input').val(num)
+        })
+
+        $('.products-add-cart__bottom-item:last-child > button').on('click', function() {
+            const val = $('.products-add-cart__bottom-item > input').val()
+            if (!$('.header__membcart-cart').find('span').length) {
+                $('.header__membcart-cart').append(`<span>${val}</span>`)
+            } else {
+                $('.header__membcart-cart > span')[0].innerText = parseInt($('.header__membcart-cart > span')[0].innerText) + parseInt(val)
+            }
+            esNotification('success', '成功', '已加入購物車')
+        })
+
+        $('.products-card > button').each(function() {
+            $(this).on('click', function() {
+                $('.products-add-cart').addClass('-active')
+                $('.products-add-cart__bottom-item:last-child > button > p')[0].innerText = '加入購物車'
+            })
+        })
+    }
+    // ------------- add-cart -------------
+
     // ------------- search -------------
     if ($('.page-search').length) {
         $noResult = false;
@@ -322,30 +361,12 @@ $(function() {
 
         $('.products-single__information-btns-item:first-child').on('click', function() {
             $('.products-add-cart').addClass('-active')
-            $('.products-add-cart__bottom-item:last-child > a > p')[0].innerText = '加入購物車'
+            $('.products-add-cart__bottom-item:last-child > button > p')[0].innerText = '加入購物車'
         })
 
         $('.products-single__information-btns-item:last-child').on('click', function() {
             $('.products-add-cart').addClass('-active')
-            $('.products-add-cart__bottom-item:last-child > a > p')[0].innerText = '立即結帳'
-        })
-
-        $('.products-add-cart__close').on('click', function() {
-            $('.products-add-cart').removeClass('-active')
-        })
-
-        $('.products-add-cart__bottom-item > svg:first-child').on('click', function() {
-            let num = parseInt($(this).siblings('input').val())
-            if (num > 1) {
-                num--
-                $(this).siblings('input').val(num)
-            }
-        })
-
-        $('.products-add-cart__bottom-item > svg:last-child').on('click', function() {
-            let num = parseInt($(this).siblings('input').val())
-            num++
-            $(this).siblings('input').val(num)
+            $('.products-add-cart__bottom-item:last-child > button').replaceWith('<a class="button -red" href="/cart/confirm"><p>立即結帳</p></a>')
         })
     }
     // ------------- products-single -------------

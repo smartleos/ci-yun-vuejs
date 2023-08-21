@@ -9,118 +9,140 @@
         gap: .6rem;
     }
 
-    > figure {
-        @include size(100%, auto);
-        @include aspect(1);
-
-        position: relative;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: .6rem;
-        overflow: hidden;
-        
-        > img {
-            @include size(100%);
-
-            position: absolute;
-            object-fit: cover;
-        }
-    }
-
-    &__row {
-        @include size(100%, auto);
-        
-        display: flex;
-        justify-content: space-between;
-
-        &-category {
-            @include typo('body', 14);
-
-            padding: 0.4rem 1.2rem;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: map-get($colors, brand-1);
-            color: map-get($colors, white);
-            border-radius: .4rem;
-
-            @include media-breakpoint-down(medium) {
-                padding: 0 .8rem;
-                font-weight: bold;
-            }
-        }
-
-        &-promote {
-            @include typo('body', 16);
-
-            padding: 0.4rem 1.6rem;
-            justify-content: center;
-            align-items: center;
-            background-color: map-get($colors, promote);
-            color: map-get($colors, red);
-            display: flex;
-            border-radius: 5rem;
-            font-weight: bold;
-
-            @include media-breakpoint-down(medium) {
-                @include typo('body', 14);
-
-                padding: 0 .8rem;
-                font-weight: bold;
-            }
-        }
-    }
-
-    > h4 {
-        @include typo('head', 3);
-
-        @include media-breakpoint-down(medium) {
-            @include typo('body', 16);
-
-            font-weight: bold;
-        }
-    }
-
-    &__price {
+    &__wrapper {
         display: flex;
         flex-direction: column;
+        gap: 1.2rem;
 
         @include media-breakpoint-down(medium) {
-            flex-direction: row;
-            align-items: center;
-            gap: .4rem;
+            gap: .6rem;
         }
 
-        &-original {
-            @include typo('body', 14);
+        @include media-breakpoint-up(medium) {
+            &:hover {
+                > figure {
+                    > img {
+                        transform: scale(1.1);
+                    }
+                }
+            }
+        }
 
-            color: map-get($colors, gray-1);
-            text-decoration: line-through;
+        > figure {
+            @include size(100%, auto);
+            @include aspect(1);
+    
+            position: relative;
             display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: .6rem;
+            overflow: hidden;
+            
+            > img {
+                @include size(100%);
+    
+                position: absolute;
+                object-fit: cover;
+                transition: transform .3s ease-in-out;
+            }
         }
-
-        &-now {
+    
+        &-row {
+            @include size(100%, auto);
+            
+            display: flex;
+            justify-content: space-between;
+    
+            &-category {
+                @include typo('body', 14);
+    
+                padding: 0.4rem 1.2rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: map-get($colors, brand-1);
+                color: map-get($colors, white);
+                border-radius: .4rem;
+    
+                @include media-breakpoint-down(medium) {
+                    padding: 0 .8rem;
+                    font-weight: bold;
+                }
+            }
+    
+            &-promote {
+                @include typo('body', 16);
+    
+                padding: 0.4rem 1.6rem;
+                justify-content: center;
+                align-items: center;
+                background-color: map-get($colors, promote);
+                color: map-get($colors, red);
+                display: flex;
+                border-radius: 5rem;
+                font-weight: bold;
+    
+                @include media-breakpoint-down(medium) {
+                    @include typo('body', 14);
+    
+                    padding: 0 .8rem;
+                    font-weight: bold;
+                }
+            }
+        }
+    
+        > h4 {
             @include typo('head', 3);
-
-            color: map-get($colors, red);
-            font-weight: bold;
-
+    
             @include media-breakpoint-down(medium) {
                 @include typo('body', 16);
-
+    
                 font-weight: bold;
+            }
+        }
+    
+        &__price {
+            display: flex;
+            flex-direction: column;
+    
+            @include media-breakpoint-down(medium) {
+                flex-direction: row;
+                align-items: center;
+                gap: .4rem;
+            }
+    
+            &-original {
+                @include typo('body', 14);
+    
+                color: map-get($colors, gray-1);
+                text-decoration: line-through;
+                display: flex;
+            }
+    
+            &-now {
+                @include typo('head', 3);
+    
+                color: map-get($colors, red);
+                font-weight: bold;
+    
+                @include media-breakpoint-down(medium) {
+                    @include typo('body', 16);
+    
+                    font-weight: bold;
+                }
+            }
+        }
+    
+        > p {
+            @include typo('body', 16);
+    
+            color: map-get($colors, brand-3);
+    
+            @include media-breakpoint-down(medium) {
+                display: none;
             }
         }
     }
 
-    > p {
-        @include typo('body', 16);
-
-        color: map-get($colors, brand-3);
-
-        @include media-breakpoint-down(medium) {
-            display: none;
-        }
-    }
 }

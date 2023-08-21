@@ -48,12 +48,18 @@
             </div>
             <div class="products-add-cart__bottom-item">
                 <?php 
-                    $tag="a";
-                    $url="/cart/confirm";
+                    $tag="button";
+                    $url="";
                     $target="";
                     $text="立即結帳";
                     $style="-red";
-                    include ("../../components/button.php");
+                    if (file_exists('./components/button.php')) {
+                        include('./components/button.php');
+                    } elseif (file_exists('../components/button.php')) {
+                        include('../components/button.php');
+                    } elseif (file_exists('../../components/button.php')) {
+                        include('../../components/button.php');
+                    }
                 ?>
             </div>
         </div>

@@ -54,7 +54,6 @@
                     <a href="/cart/confirm" class="header__membcart-cart">
                         <?php get_svg('shopping_cart') ?>
                         <p>購物車</p>
-                        <span>1</span>
                     </a>
                 </div>
                 <div class="header__mobile col-4-5-mobile">

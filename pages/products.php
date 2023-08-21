@@ -118,6 +118,7 @@
             </section>
         </div>
     </div>
+    <?php include('../components/products/addCart.php'); ?>
 </main>
 <!-- <?php include('../components/dev.php'); ?> -->
 <?php include('../components/footer.php'); ?>
