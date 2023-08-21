@@ -359,8 +359,8 @@
                 <div class="page-charity__wrapper-content-btn">
                     <?php 
                         $tag="a";
-                        $url="https://www.google.com/";
-                        $target="_blank";
+                        $url="/news";
+                        $target="";
                         $text="更多活動";
                         $style="";
                         include ("../components/button.php");
