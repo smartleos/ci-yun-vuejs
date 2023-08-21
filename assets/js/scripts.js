@@ -449,6 +449,17 @@ $(function() {
     }
     // ------------- cart-completed -------------
 
+    // ------------- cart-common -------------
+    if ($('.page-cart-common').length) {
+        $('.form__btns-item').each(function() {
+            $(this).find('button').on('click', function(event) {
+                event.preventDefault()
+                window.history.back()
+            })
+        })
+    }
+    // ------------- cart-common -------------
+
     // ------------- member-coupon -------------
     if ($('.page-member-coupon').length) {
         $('#my_btn').on('click', function() {
