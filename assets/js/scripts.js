@@ -133,13 +133,8 @@ $(function() {
         })
 
         new Plyr('#index-player')
-    
-        $('.announcement-card__btn').each(function() {
-            $(this).on('click', function() {
-                const url = $(this).attr('data-url')
-                createPopup(url)
-            })
-        })
+        
+        createPopup('https://source.unsplash.com/random/1024x768?color=white')
     }
     // ------------- index -------------
 
