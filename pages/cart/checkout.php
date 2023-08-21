@@ -108,7 +108,8 @@
                             三聯式發票
                         </label>
                     </span>
-                    <input type="text" id="carrier" name="carrier" placeholder="輸入公司抬頭及統編">
+                    <input type="text" id="carrier" name="carrier" placeholder="輸入公司抬頭">
+                    <input type="text" id="carrier" name="carrier" placeholder="輸入統一編號">
                     <span>
                         <input type="radio" id="invoice4" name="invoice" value="invoice4">
                         <label for="invoice4">
