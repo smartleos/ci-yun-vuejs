@@ -5,6 +5,6 @@
         <span>
             <?php get_svg('arrow_right') ?>
         </span>
-        <p>查看圖片</p>
+        <p>閱讀更多</p>
     </div>
 </div>
