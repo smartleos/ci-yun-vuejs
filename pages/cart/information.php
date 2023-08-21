@@ -80,10 +80,10 @@
                             <input type="text" id="receiver_address" name="receiver_address" placeholder="請輸入...">
                         </div>
                     </div>
-                    <label for="save">
+                    <!-- <label for="save">
                         <input type="checkbox" id="save" name="save">
                         將收貨人資料儲存到我的通訊錄
-                    </label>
+                    </label> -->
                 </div>
                 <div class="page-cart-information__form">
                     <h2>現場取貨</h2>
