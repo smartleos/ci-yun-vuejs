@@ -73,7 +73,7 @@
                     <div class="form__input">
                         <label for="birthday">生日</label>
                         <div>
-                            <input type="text" id="birthday" placeholder="請輸入...">
+                            <input type="date" id="birthday" placeholder="請輸入...">
                         </div>
                         <span>
                             <?php get_svg('notice') ?>您尚未輸入...

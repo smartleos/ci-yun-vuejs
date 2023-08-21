@@ -24,7 +24,7 @@
                         <div class="form__input">
                             <label for="ancestor_birthday">先人生日（農曆）</label>
                             <div>
-                                <input type="text" id="ancestor_birthday" placeholder="請輸入...">
+                                <input type="date" id="ancestor_birthday" placeholder="請輸入...">
                             </div>
                             <span>
                                 <?php get_svg('notice') ?>您尚未輸入...
