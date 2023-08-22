@@ -26,10 +26,12 @@ $(function() {
         $('.header__service').addClass('-cart')
     }
 
+    // ------------- pop-up -------------
     const createPopup = (url) => {
         const popup = document.createElement('div')
         popup.classList.add('popup', 'container')
         popup.innerHTML = `
+            <div class="popup__bg"></div>
             <div class="grid">
                 <figure class="col-2-12-medium col-2-8-tablet col-1-5-mobile">
                     <svg class="pop__close" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18"><path d="M15.364 17.485 9 11.121l-6.364 6.364-2.121-2.121L6.879 9 .515 2.636 2.636.515 9 6.879 15.364.515l2.121 2.121L11.121 9l6.364 6.364-2.121 2.121Z" fill="#000"/></svg>
@@ -50,6 +52,15 @@ $(function() {
                 $('.popup').remove()
                 document.body.style.overflow = 'auto'
             }, 301);
+        })
+
+        $('.popup__bg').on('click', function() {
+            popup.classList.remove('-active')
+            setTimeout(() => {
+                $('.popup').remove()
+                document.body.style.overflow = 'auto'
+            }, 301);
+            console.log('click')
         })
     }
 

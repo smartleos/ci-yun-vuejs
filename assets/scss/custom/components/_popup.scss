@@ -12,8 +12,17 @@
     overflow: scroll;
     z-index: 999;
     opacity: 0;
-    transform: translateY(4.8rem);
-    transition: opacity .3s ease-in-out, transform .3s ease-in-out;
+    transition: opacity .3s ease-in-out;
+
+    &__bg {
+        @include size(100%);
+
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: rgba(map-get($colors, black-1), .8);
+        cursor: pointer;
+    }
 
     @include media-breakpoint-down(medium) {
         padding: 0;
@@ -26,12 +35,12 @@
 
     &.-active {
         opacity: 1;
-        transform: translateY(0);
     }
 
     .grid {
         > figure {
             position: relative;
+            z-index: 1;
     
             > svg {
                 @include size(2.4rem, auto);
