@@ -108,7 +108,7 @@
         </div>
     </header>
     <div class="header__search container grid">
-        <form class="header__search-wrapper col-5-9-medium col-1-5-mobile">
+        <form class="header__search-wrapper col-5-9-medium col-2-8-tablet col-1-5-mobile">
             <label for="seach">全站搜尋</label>
             <input type="text" id="seach" name="seach" placeholder="請輸入 ...">
             <div class="header__search-wrapper-btns">

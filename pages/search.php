@@ -3,7 +3,7 @@
 <?php include('../components/bg.php'); ?>
 <main class="page-search">
     <div class="container grid">
-        <div class="page-search__wrapper col-3-11-tablet col-1-5-mobile">
+        <div class="page-search__wrapper col-3-11-medium col-1-9-tablet col-1-5-mobile">
             <h1>關於「<span>法會</span>」的搜尋資料：</h1>
             <section class="page-search__section" id="products">
                 <h2>共 <span>3</span> 項產品</h2>

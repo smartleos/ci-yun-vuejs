@@ -9,8 +9,12 @@
     padding-bottom: 23.2rem;
 
     @include media-breakpoint-down(medium) {
-        padding-top: 4.4rem;
+        padding-top: 7.2rem;
         padding-bottom: 12rem;
+    }
+
+    @include media-breakpoint-down(tablet) {
+        padding-top: 4.8rem;
     }
 
     &__wrapper {
