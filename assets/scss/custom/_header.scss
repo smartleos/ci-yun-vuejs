@@ -150,14 +150,20 @@
             transform: translate(-50%, -50%);
         }
 
-        svg {
+        > a {
             @include size(17rem, auto);
 
-            color: map-get($colors, brand-1);
-            transition: color .3s ease-in-out;
-    
+            display: block;
+
             @include media-breakpoint-down(tablet) {
                 @include size(12rem, auto);
+            }
+
+            > svg {
+                @include size(100%, auto);
+    
+                color: map-get($colors, brand-1);
+                transition: color .3s ease-in-out;
             }
         }
     }
