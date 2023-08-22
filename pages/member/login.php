@@ -12,6 +12,10 @@
                     ?>
                 </div>
                 <form class="page-member-login__form form">
+                    <!-- 使用 '-require' '-notice' '-alert' 控制input樣式 -->
+                    <!-- '-require' 會在 <label> 後面加上紅色星號 -->
+                    <!-- '-notice' 會顯示 <span> 灰色提示文字 -->
+                    <!-- '-alert' 會顯示 <span> 紅色提示文字並在 <input> 顯示紅色框線 -->
                     <div class="form__input -require -notice">
                         <label for="username">手機號碼/E-mail 信箱</label>
                         <div>
@@ -23,6 +27,7 @@
                     </div>
                     <div class="form__input -alert">
                         <label for="password">密碼</label>
+                        <!-- 密碼欄位格式 -->
                         <div class="-password">
                             <?php get_svg('lock') ?>
                             <input type="password" id="password" placeholder="請輸入您的密碼 ...">
@@ -35,6 +40,7 @@
                         </span>
                         <a href="/member/forgot">忘記密碼</a>
                     </div>
+                    <!-- Checkbox -->
                     <div class="form__checkbox -alert">
                         <div>
                             <input type="checkbox" id="remember">
@@ -44,6 +50,28 @@
                             <?php get_svg('notice') ?>請勾選...
                         </span>
                     </div>
+                    <!-- Radio -->
+                    <div class="form__radio -require">
+                        <label>Radio範例</label>
+                        <div>
+                            <div>
+                                <input type="radio" id="radio1" name="radio_demo" value="male">
+                                <label for="radio1">
+                                    範例1
+                                </label>
+                            </div>
+                            <div>
+                                <input type="radio" id="radio2" name="radio_demo" value="female">
+                                <label for="radio2">
+                                    範例2
+                                </label>
+                            </div>
+                        </div>
+                        <span>
+                            <?php get_svg('notice') ?>您尚未輸入...
+                        </span>
+                    </div>
+                    <!-- 按鈕區塊 -->
                     <div class="form__btns">
                         <div class="form__btns-item">
                             <?php 
@@ -64,10 +92,12 @@
                             ?>
                         </div>
                     </div>
+                    <!-- 分隔線 -->
                     <div class="form__or">
                         <p>OR</p>
                     </div>
                     <h3>以其他方式登入</h3>
+                    <!-- 社群區塊 -->
                     <div class="form__social">
                         <div class="form__social-btn -google">
                             <svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21 20"><path d="M10.5 8.182v3.873h5.382a4.61 4.61 0 0 1-2.01 3.009l3.246 2.518c1.891-1.745 2.982-4.31 2.982-7.355 0-.709-.064-1.39-.182-2.045H10.5Z" fill="#4285F4"/><path d="m4.896 11.903-.732.56-2.591 2.019C3.218 17.745 6.59 20 10.5 20c2.7 0 4.963-.89 6.618-2.418l-3.246-2.518c-.89.6-2.027.963-3.372.963-2.6 0-4.81-1.754-5.6-4.118l-.004-.006Z" fill="#34A853"/><path d="M1.573 5.518A9.877 9.877 0 0 0 .5 10c0 1.618.39 3.136 1.073 4.482C1.573 14.49 4.9 11.9 4.9 11.9c-.2-.6-.318-1.236-.318-1.9 0-.664.118-1.3.318-1.9L1.573 5.518Z" fill="#FBBC05"/><path d="M10.5 3.982c1.473 0 2.782.509 3.827 1.49l2.864-2.863C15.455.991 13.2 0 10.5 0 6.59 0 3.218 2.245 1.573 5.518L4.9 8.1c.79-2.364 3-4.118 5.6-4.118Z" fill="#EA4335"/></svg>
