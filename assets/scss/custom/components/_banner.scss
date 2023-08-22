@@ -8,7 +8,7 @@
     margin-bottom: 9.2rem;
     overflow: hidden;
 
-    @include media-breakpoint-down(medium) {
+    @include media-breakpoint-down(tablet) {
         @include size(100vw, 21.2rem);
 
         margin-bottom: 7rem;

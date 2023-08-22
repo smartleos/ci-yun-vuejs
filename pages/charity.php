@@ -8,7 +8,7 @@
         include ("../components/banner.php");
     ?>
     <div class="container grid">
-        <div class="page-charity__wrapper col-4-10-tablet col-1-5-mobile">
+        <div class="page-charity__wrapper col-4-10-medium col-1-9-tablet col-1-5-mobile">
             <div class="page-charity__wrapper-content">
                 <div class="page-charity__wrapper-content-title">
                     <?php 
@@ -19,7 +19,7 @@
                 <ul class="page-charity__wrapper-content-list">
                     <li>
                         <div class="page-charity__wrapper-content-list-top">
-                            <span class="grid -cols-6-tablet -cols-4-mobile">
+                            <span class="grid -cols-6-medium -cols-4-mobile">
                                 <div>
                                     <p>捐贈日期</p>
                                 </div>
@@ -27,7 +27,7 @@
                                     <p>111.06.14</p>
                                 </div>
                             </span>
-                            <span class="grid -cols-6-tablet -cols-4-mobile">
+                            <span class="grid -cols-6-medium -cols-4-mobile">
                                 <div>
                                     <p>捐贈者</p>
                                 </div>
@@ -41,7 +41,7 @@
                             </div>
                         </div>
                         <div class="page-charity__wrapper-content-list-accordion">
-                            <span class="grid -cols-6-tablet -cols-4-mobile">
+                            <span class="grid -cols-6-medium -cols-4-mobile">
                                 <div>
                                     <p>權狀編號/ 塔位方向</p>
                                 </div>
@@ -51,7 +51,7 @@
                                     <p>1117975-001/坐東（已使用）</p>
                                 </div>
                             </span>
-                            <span class="grid -cols-6-tablet -cols-4-mobile">
+                            <span class="grid -cols-6-medium -cols-4-mobile">
                                 <div>
                                     <p>捐贈明細</p>
                                 </div>
@@ -59,7 +59,7 @@
                                     <p>由捐贈者捐贈慈雲寶塔骨灰位6座</p>
                                 </div>
                             </span>
-                            <span class="grid -cols-6-tablet -cols-4-mobile">
+                            <span class="grid -cols-6-medium -cols-4-mobile">
                                 <div>
                                     <p>備註</p>
                                 </div>
@@ -81,7 +81,7 @@
                     </li>
                     <li>
                         <div class="page-charity__wrapper-content-list-top">
-                            <span class="grid -cols-6-tablet -cols-4-mobile">
+                            <span class="grid -cols-6-medium -cols-4-mobile">
                                 <div>
                                     <p>捐贈日期</p>
                                 </div>
@@ -89,7 +89,7 @@
                                     <p>111.06.14</p>
                                 </div>
                             </span>
-                            <span class="grid -cols-6-tablet -cols-4-mobile">
+                            <span class="grid -cols-6-medium -cols-4-mobile">
                                 <div>
                                     <p>捐贈者</p>
                                 </div>
@@ -103,7 +103,7 @@
                             </div>
                         </div>
                         <div class="page-charity__wrapper-content-list-accordion">
-                            <span class="grid -cols-6-tablet -cols-4-mobile">
+                            <span class="grid -cols-6-medium -cols-4-mobile">
                                 <div>
                                     <p>權狀編號/ 塔位方向</p>
                                 </div>
@@ -113,7 +113,7 @@
                                     <p>1117975-001/坐東（已使用）</p>
                                 </div>
                             </span>
-                            <span class="grid -cols-6-tablet -cols-4-mobile">
+                            <span class="grid -cols-6-medium -cols-4-mobile">
                                 <div>
                                     <p>捐贈明細</p>
                                 </div>
@@ -121,7 +121,7 @@
                                     <p>由捐贈者捐贈慈雲寶塔骨灰位6座</p>
                                 </div>
                             </span>
-                            <span class="grid -cols-6-tablet -cols-4-mobile">
+                            <span class="grid -cols-6-medium -cols-4-mobile">
                                 <div>
                                     <p>備註</p>
                                 </div>
@@ -143,7 +143,7 @@
                     </li>
                     <li>
                         <div class="page-charity__wrapper-content-list-top">
-                            <span class="grid -cols-6-tablet -cols-4-mobile">
+                            <span class="grid -cols-6-medium -cols-4-mobile">
                                 <div>
                                     <p>捐贈日期</p>
                                 </div>
@@ -151,7 +151,7 @@
                                     <p>111.06.14</p>
                                 </div>
                             </span>
-                            <span class="grid -cols-6-tablet -cols-4-mobile">
+                            <span class="grid -cols-6-medium -cols-4-mobile">
                                 <div>
                                     <p>捐贈者</p>
                                 </div>
@@ -165,7 +165,7 @@
                             </div>
                         </div>
                         <div class="page-charity__wrapper-content-list-accordion">
-                            <span class="grid -cols-6-tablet -cols-4-mobile">
+                            <span class="grid -cols-6-medium -cols-4-mobile">
                                 <div>
                                     <p>權狀編號/ 塔位方向</p>
                                 </div>
@@ -175,7 +175,7 @@
                                     <p>1117975-001/坐東（已使用）</p>
                                 </div>
                             </span>
-                            <span class="grid -cols-6-tablet -cols-4-mobile">
+                            <span class="grid -cols-6-medium -cols-4-mobile">
                                 <div>
                                     <p>捐贈明細</p>
                                 </div>
@@ -183,7 +183,7 @@
                                     <p>由捐贈者捐贈慈雲寶塔骨灰位6座</p>
                                 </div>
                             </span>
-                            <span class="grid -cols-6-tablet -cols-4-mobile">
+                            <span class="grid -cols-6-medium -cols-4-mobile">
                                 <div>
                                     <p>備註</p>
                                 </div>
@@ -205,7 +205,7 @@
                     </li>
                     <li>
                         <div class="page-charity__wrapper-content-list-top">
-                            <span class="grid -cols-6-tablet -cols-4-mobile">
+                            <span class="grid -cols-6-medium -cols-4-mobile">
                                 <div>
                                     <p>捐贈日期</p>
                                 </div>
@@ -213,7 +213,7 @@
                                     <p>111.06.14</p>
                                 </div>
                             </span>
-                            <span class="grid -cols-6-tablet -cols-4-mobile">
+                            <span class="grid -cols-6-medium -cols-4-mobile">
                                 <div>
                                     <p>捐贈者</p>
                                 </div>
@@ -227,7 +227,7 @@
                             </div>
                         </div>
                         <div class="page-charity__wrapper-content-list-accordion">
-                            <span class="grid -cols-6-tablet -cols-4-mobile">
+                            <span class="grid -cols-6-medium -cols-4-mobile">
                                 <div>
                                     <p>權狀編號/ 塔位方向</p>
                                 </div>
@@ -237,7 +237,7 @@
                                     <p>1117975-001/坐東（已使用）</p>
                                 </div>
                             </span>
-                            <span class="grid -cols-6-tablet -cols-4-mobile">
+                            <span class="grid -cols-6-medium -cols-4-mobile">
                                 <div>
                                     <p>捐贈明細</p>
                                 </div>
@@ -245,7 +245,7 @@
                                     <p>由捐贈者捐贈慈雲寶塔骨灰位6座</p>
                                 </div>
                             </span>
-                            <span class="grid -cols-6-tablet -cols-4-mobile">
+                            <span class="grid -cols-6-medium -cols-4-mobile">
                                 <div>
                                     <p>備註</p>
                                 </div>
@@ -267,7 +267,7 @@
                     </li>
                     <li>
                         <div class="page-charity__wrapper-content-list-top">
-                            <span class="grid -cols-6-tablet -cols-4-mobile">
+                            <span class="grid -cols-6-medium -cols-4-mobile">
                                 <div>
                                     <p>捐贈日期</p>
                                 </div>
@@ -275,7 +275,7 @@
                                     <p>111.06.14</p>
                                 </div>
                             </span>
-                            <span class="grid -cols-6-tablet -cols-4-mobile">
+                            <span class="grid -cols-6-medium -cols-4-mobile">
                                 <div>
                                     <p>捐贈者</p>
                                 </div>
@@ -289,7 +289,7 @@
                             </div>
                         </div>
                         <div class="page-charity__wrapper-content-list-accordion">
-                            <span class="grid -cols-6-tablet -cols-4-mobile">
+                            <span class="grid -cols-6-medium -cols-4-mobile">
                                 <div>
                                     <p>權狀編號/ 塔位方向</p>
                                 </div>
@@ -299,7 +299,7 @@
                                     <p>1117975-001/坐東（已使用）</p>
                                 </div>
                             </span>
-                            <span class="grid -cols-6-tablet -cols-4-mobile">
+                            <span class="grid -cols-6-medium -cols-4-mobile">
                                 <div>
                                     <p>捐贈明細</p>
                                 </div>
@@ -307,7 +307,7 @@
                                     <p>由捐贈者捐贈慈雲寶塔骨灰位6座</p>
                                 </div>
                             </span>
-                            <span class="grid -cols-6-tablet -cols-4-mobile">
+                            <span class="grid -cols-6-medium -cols-4-mobile">
                                 <div>
                                     <p>備註</p>
                                 </div>
@@ -333,7 +333,7 @@
         </div>
     </div>
     <div class="container grid">
-        <div class="page-charity__wrapper col-3-11-tablet col-1-5-mobile">
+        <div class="page-charity__wrapper col-3-11-medium col-1-9-tablet col-1-5-mobile">
             <div class="page-charity__wrapper-content">
                 <div class="page-charity__wrapper-content-title">
                     <?php 

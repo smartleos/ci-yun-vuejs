@@ -3,7 +3,7 @@
 <?php include('../../components/bg.php'); ?>
 <main class="page-member-change-password">
     <div class="container grid">
-        <div class="page-member-change-password__wrapper col-5-9-tablet col-1-5-mobile">
+        <div class="page-member-change-password__wrapper col-5-9-medium col-3-7-tablet col-1-5-mobile">
             <div class="page-member-change-password__content">
                 <div class="page-member-change-password__content-title">
                     <?php 

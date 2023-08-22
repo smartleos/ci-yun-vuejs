@@ -8,7 +8,7 @@
         include ("../components/banner.php");
     ?>
     <div class="container grid">
-        <div class="page-about__wrapper col-3-11-tablet col-1-5-mobile">
+        <div class="page-about__wrapper col-3-11-midum col-1-9-tablet col-1-5-mobile">
             <div class="page-about__content">
                 <div class="page-about__content-title">
                     <?php 
@@ -56,7 +56,7 @@
             ?>
         </div>
         <div class="grid">
-            <div class="page-about__traffic-wrapper col-3-11-tablet col-1-5-mobile">
+            <div class="page-about__traffic-wrapper col-3-11-midum col-1-9-tablet col-1-5-mobile">
                 <figure>
                     <img src="<?php echo image_dir().'testimg/01.jpg'?>" alt="">
                 </figure>
@@ -104,7 +104,7 @@
         </div>
     </div>
     <div class="container grid">
-        <div class="page-about__list col-3-11-tablet col-1-5-mobile">
+        <div class="page-about__list col-3-11-midum col-1-9-tablet col-1-5-mobile">
             <div class="page-about__list-tab">
                 <span id="scenery_tab">
                     <?php 

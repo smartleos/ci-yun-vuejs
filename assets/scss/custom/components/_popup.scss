@@ -17,7 +17,11 @@
 
     @include media-breakpoint-down(medium) {
         padding: 0;
-        padding-top: 4.4rem;
+        padding-top: 10rem;
+    }
+
+    @include media-breakpoint-down(tablet) {
+        padding-top: 8rem;
     }
 
     &.-active {

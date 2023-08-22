@@ -3,7 +3,7 @@
 <?php include('../../components/bg.php'); ?>
 <main class="page-member-common">
     <div class="container grid">
-        <div class="page-member-common__wrapper col-3-11-tablet col-1-5-mobile">
+        <div class="page-member-common__wrapper col-3-11-medium col-1-9-tablet col-1-5-mobile">
             <?php 
                 $active="common";
                 include ("../../components/member/tab.php");
@@ -12,8 +12,8 @@
                 $title="常用祈福人資訊";
                 include ("../../components/member/top.php");
             ?>
-            <div class="page-member-common__content grid -cols-8-tablet -cols-4-mobile">
-                <ul class="page-member-common__list col-2-8-tablet col-1-5-mobile -active">
+            <div class="page-member-common__content grid -cols-8-medium -cols-4-mobile">
+                <ul class="page-member-common__list col-2-8-medium col-1-5-mobile -active">
                     <?php 
                         $tag="button";
                         $url="";
@@ -139,7 +139,7 @@
                             <?php get_svg('notice') ?>您尚未輸入...
                         </span>
                     </div>
-                    <div class="col-1-3-tablet">
+                    <div class="col-1-3-medium">
                         <?php 
                             $tag="button";
                             $url="";

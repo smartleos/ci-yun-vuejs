@@ -3,7 +3,7 @@
 <?php include('../../components/bg.php'); ?>
 <div class="page-cart-information">
     <div class="container grid">
-        <div class="col-3-11-tablet col-1-5-mobile">
+        <div class="col-3-11-medium col-2-8-tablet col-1-5-mobile">
             <?php
                 $progress=3;
                 include('../../components/cart/progress.php');
@@ -139,11 +139,11 @@
     </div>
     <div class="page-cart-information__mobile" id="cart-bottom">
         <div class="page-cart-information__mobile-wrapper container grid">
-            <div class="page-cart-information__mobile-text col-1-3-mobile">
+            <div class="page-cart-information__mobile-text col-1-5-tablet col-1-3-mobile">
                 <p>總計</p>
                 <span>＄16200</span>
             </div>
-            <div class="page-cart-information__mobile-btn col-3-5-mobile">
+            <div class="page-cart-information__mobile-btn col-5-9-tablet col-3-5-mobile">
                 <?php 
                     $tag="a";
                     $url="/cart/checkout";

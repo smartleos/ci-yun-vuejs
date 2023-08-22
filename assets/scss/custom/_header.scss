@@ -12,7 +12,6 @@
     animation: fadeInDown .3s .3s both;
 
     @include media-breakpoint-down(medium) {
-        padding: 1.2rem 0;
         border-bottom: 0px;
 
         &.-active {
@@ -56,6 +55,10 @@
         }
     }
 
+    @include media-breakpoint-down(tablet) {
+        padding: 1.2rem 0;
+    }
+
     &__service {
         @include size(100vw, calc(100% - 41.9rem));
 
@@ -67,6 +70,22 @@
         pointer-events: none;
 
         @include media-breakpoint-down(medium) {
+            @include size(100vw, calc(100% - 49.9rem));
+
+            padding-bottom: 1.4rem;
+
+            &.-cart {
+                padding-bottom: 9.4rem;
+
+                .header__service {
+                    &-btn {
+                        top: calc(100% - 9.6rem - 8.4rem);
+                    }
+                }
+            }
+        }
+
+        @include media-breakpoint-down(tablet) {
             @include size(100vw, calc(100% - 59.2rem));
 
             padding-bottom: 1.4rem;
@@ -124,7 +143,7 @@
     }
 
     &__logo {
-        @include media-breakpoint-down(tablet) {
+        @include media-breakpoint-down(medium) {
             position: absolute;
             top: 50%;
             left: 50%;

@@ -16,7 +16,7 @@
         <svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 8"><path d="M1.41.59 6 5.17 10.59.59 12 2 6 8 0 2 1.41.59Z" fill="#9A7412"/></svg>
     </div>
     <div class="container grid">
-        <div class="page-news__wrapper col-3-11-tablet col-1-5-mobile">
+        <div class="page-news__wrapper col-3-11-medium col-2-8-tablet col-1-5-mobile">
             <?php 
                 $size="large";
                 include ("../components/news/card.php");

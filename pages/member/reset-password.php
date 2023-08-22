@@ -3,7 +3,7 @@
 <?php include('../../components/bg.php'); ?>
 <main class="page-member-reset-password">
     <div class="container grid">
-        <div class="page-member-reset-password__wrapper col-5-9-tablet col-1-5-mobile">
+        <div class="page-member-reset-password__wrapper col-5-9-medium col-3-7-tablet col-1-5-mobile">
             <div class="page-member-reset-password__content">
                 <h2>重設密碼</h2>
                 <form class="form">

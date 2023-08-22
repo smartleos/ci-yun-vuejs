@@ -3,7 +3,7 @@
 <?php include('../../components/bg.php'); ?>
 <div class="page-cart-common">
     <div class="container grid">
-        <div class="col-3-11-tablet col-1-5-mobile">
+        <div class="col-3-11-medium col-2-8-tablet col-1-5-mobile">
             <div class="page-cart-common__wrapper">
                 <div class="page-cart-common__content">
                     <h2>常用祭拜祈福資訊</h2>

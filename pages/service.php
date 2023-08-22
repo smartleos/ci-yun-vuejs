@@ -8,7 +8,7 @@
         include ("../components/banner.php");
     ?>
     <div class="container grid">
-        <div class="page-service__wrapper col-3-11-tablet col-1-5-mobile">
+        <div class="page-service__wrapper col-3-11-medium col-1-9-tablet col-1-5-mobile">
             <div class="page-service__content">
                 <div class="page-service__content-title">
                     <?php 

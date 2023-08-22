@@ -40,7 +40,7 @@
         align-items: center;
         overflow: hidden;
 
-        @include media-breakpoint-down(medium) {
+        @include media-breakpoint-down(tablet) {
             @include size(100vw, auto);
 
             margin-left: -2.4rem;

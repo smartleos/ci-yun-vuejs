@@ -3,7 +3,7 @@
 <?php include('../../components/bg.php'); ?>
 <main class="page-member-coupon">
     <div class="container grid">
-        <div class="page-member-coupon__wrapper col-3-11-tablet col-1-5-mobile">
+        <div class="page-member-coupon__wrapper col-3-11-medium col-1-9-tablet col-1-5-mobile">
             <?php 
                 $active="coupon";
                 include ("../../components/member/tab.php");
@@ -88,8 +88,8 @@
                 </div>
             </section>
             <section class="page-member-coupon__get">
-                <div class="grid -cols-8-tablet -cols-4-mobile">
-                    <form class="form col-3-7-tablet col-1-5-mobile">
+                <div class="grid -cols-8-medium -cols-4-mobile">
+                    <form class="form col-3-7-medium col-1-5-mobile">
                         <div class="form__input -important">
                             <label for="coupon">輸入專屬優惠代碼序號</label>
                             <div>
@@ -110,8 +110,8 @@
                     </form>
                 </div>
                 <hr>
-                <div class="grid -cols-8-tablet -cols-4-mobile">
-                    <div class="page-member-coupon__get-btn col-3-7-tablet col-1-5-mobile">
+                <div class="grid -cols-8-medium -cols-4-mobile">
+                    <div class="page-member-coupon__get-btn col-3-7-medium col-1-5-mobile">
                         <?php 
                             $tag="button";
                             $text="全部領取";

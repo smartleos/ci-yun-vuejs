@@ -3,7 +3,7 @@
 <?php include('../../components/bg.php'); ?>
 <div class="page-cart-search">
     <div class="container grid">
-        <div class="col-3-11-tablet col-1-5-mobile">
+        <div class="col-3-11-medium col-2-8-tablet col-1-5-mobile">
             <?php
                 $progress=2;
                 include('../../components/cart/progress.php');

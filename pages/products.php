@@ -16,7 +16,7 @@
         <?php get_svg('down') ?>
     </div>
     <div class="container grid">
-        <div class="page-products__products col-3-11-tablet col-1-5-mobile">
+        <div class="page-products__products col-3-11-medium col-1-9-tablet col-1-5-mobile">
             <section class="page-products__products-section -show" data-category="精緻代拜組">
                 <div class="page-products__products-section-title">
                     <?php 

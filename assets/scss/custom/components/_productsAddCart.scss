@@ -9,8 +9,9 @@
     transition: opacity .3s ease-in-out;
     pointer-events: none;
     z-index: 99;
+    
 
-    @include media-breakpoint-down(medium) {
+    @include media-breakpoint-down(tablet) {
         @include size(100vw, 100%);
 
         position: absolute;
@@ -38,7 +39,7 @@
         transform: translateY(100%);
         transition: transform .3s ease-in-out;
 
-        @include media-breakpoint-down(medium) {
+        @include media-breakpoint-down(tablet) {
             @include size(100vw, auto);
 
             position: sticky;

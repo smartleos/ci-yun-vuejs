@@ -37,12 +37,12 @@
     <header class="header">
         <div class="container">
             <div class="grid">
-                <div class="col-2-4-mobile col-1-6-tablet header__logo">
+                <div class="col-1-6-medium col-4-6-tablet col-2-4-mobile header__logo">
                     <a href="<?php site_url() ?>" title="回到首頁">
                         <?php get_svg('logo') ?>
                     </a>
                 </div>
-                <div class="col-1-3-mobile col-9-13-tablet header__membcart">
+                <div class="col-9-13-medium col-1-4-tablet col-1-3-mobile header__membcart">
                     <a href="/member/login" class="header__membcart-member">
                         <?php get_svg('person_outline') ?>
                         <p>會員</p>
@@ -56,7 +56,7 @@
                         <p>購物車</p>
                     </a>
                 </div>
-                <div class="header__mobile col-4-5-mobile">
+                <div class="header__mobile col-6-9-tablet col-4-5-mobile">
                     <button href="/member/account" class="header__mobile-search">
                         <?php get_svg('search') ?>
                     </button>
@@ -108,7 +108,7 @@
         </div>
     </header>
     <div class="header__search container grid">
-        <form class="header__search-wrapper col-5-9-tablet col-1-5-mobile">
+        <form class="header__search-wrapper col-5-9-medium col-1-5-mobile">
             <label for="seach">全站搜尋</label>
             <input type="text" id="seach" name="seach" placeholder="請輸入 ...">
             <div class="header__search-wrapper-btns">

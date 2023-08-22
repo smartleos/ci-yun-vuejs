@@ -3,7 +3,7 @@
 <?php include('../../components/bg.php'); ?>
 <div class="products-single">
     <div class="container grid">
-        <div class="col-1-6-tablet col-1-5-mobile">
+        <div class="col-1-6-medium col-1-9-tablet col-1-5-mobile">
             <div class="products-single__swiper">
                 <div class="products-single__swiper-wrapper swiper-wrapper">
                     <figure class="swiper-slide">
@@ -27,7 +27,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-7-13-tablet col-1-5-mobile">
+        <div class="col-7-13-medium col-1-9-tablet col-1-5-mobile">
             <div class="products-single__information">
                 <h1>忌日精緻代拜組忌日精緻代拜組</h1>
                 <div class="products-single__information-tags">
@@ -74,8 +74,8 @@
                 </div>
             </div>
         </div>
-        <div class="products-single__description col-3-11-tablet grid -cols-8-tablet col-1-5-mobile -cols-4-mobile">
-            <div class="products-single__description-wrapper col-2-8-tablet col-1-5-mobile">
+        <div class="products-single__description col-3-11-medium col-1-9-tablet grid -cols-8-medium col-1-5-mobile -cols-4-mobile">
+            <div class="products-single__description-wrapper col-2-8-medium col-1-5-mobile">
                 <span>詳細介紹</span>
                 <div class="products-single__description-wrapper-text">
                     <h1>對年第二年、第三年代拜 (H1)</h1>
@@ -102,14 +102,14 @@
                     <li>請務必填先寫《精緻代拜》訂購表單後再點選【加入購物車】</li>
                 </ul>
             </div>
-            <figure class="col-1-10-tablet col-1-5-mobile">
+            <figure class="col-1-10-medium col-1-9-tablet col-1-5-mobile">
                 <img src="<?php image_dir() ?>testimg/01.jpg" alt="">
             </figure>
-            <div class="products-single__description-video col-1-10-tablet col-1-5-mobile">
+            <div class="products-single__description-video col-1-10-medium col-1-9-tablet col-1-5-mobile">
                 <div class="plyr__video-embed" id="products-player" data-plyr-provider="youtube" data-plyr-embed-id="dQw4w9WgXcQ"></div>
             </div>
         </div>
-        <div class="products-single__recommend col-3-11-tablet col-1-5-mobile">
+        <div class="products-single__recommend col-3-11-medium col-1-9-tablet col-1-5-mobile">
             <div class="products-single__recommend-title">
                 <?php 
                     $title="推薦商品";

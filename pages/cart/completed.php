@@ -3,7 +3,7 @@
 <?php include('../../components/bg.php'); ?>
 <div class="page-cart-completed">
     <div class="container grid">
-        <div class="col-3-11-tablet col-1-5-mobile">
+        <div class="col-3-11-medium col-2-8-tablet col-1-5-mobile">
             <?php
                 $progress=5;
                 include('../../components/cart/progress.php');
@@ -154,7 +154,7 @@
 </div>
 <div class="page-cart-completed__popup container">
     <div class="grid">
-        <div class="page-cart-completed__popup-wrapper col-3-11-tablet col-1-5-mobile">
+        <div class="page-cart-completed__popup-wrapper col-3-11-medium col-2-8-tablet col-1-5-mobile">
             <div class="page-cart-completed__popup-wrapper-close">
                 <?php get_svg('close') ?>
             </div>

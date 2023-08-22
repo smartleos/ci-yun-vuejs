@@ -3,7 +3,7 @@
 <?php include('../../components/bg.php'); ?>
 <main class="page-member-forgot">
     <div class="container grid">
-        <div class="page-member-forgot__wrapper col-5-9-tablet col-1-5-mobile">
+        <div class="page-member-forgot__wrapper col-5-9-medium col-3-7-tablet col-1-5-mobile">
             <div class="page-member-forgot__content">
                 <h2>忘記密碼</h2>
                 <p>請輸入您的手機號碼，我們將會寄送修改密碼信件到您的手機簡訊</p>

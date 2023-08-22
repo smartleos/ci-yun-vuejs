@@ -1,5 +1,5 @@
 <div class="products-add-cart grid container">
-    <div class="products-add-cart__wrapper col-5-9-tablet col-1-5-mobile">
+    <div class="products-add-cart__wrapper col-5-9-medium col-2-8-tablet col-1-5-mobile">
         <div class="products-add-cart__close">
             <?php get_svg('close') ?>
         </div>
