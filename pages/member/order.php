@@ -15,9 +15,9 @@
             <div class="page-member-order__order">
                 <div class="page-member-order__order-date">
                     <div class="page-member-order__order-date-row">
-                        <input type="date" name="order_form_date" id="order_form_date">
+                        <input type="date" name="order_form_date" id="order_form_date" required>
                         <p>～</p>
-                        <input type="date" name="order_to_date" id="order_to_date">
+                        <input type="date" name="order_to_date" id="order_to_date" required>
                     </div>
                     <div class="page-member-order__order-date-btn">
                         <?php 

@@ -31,6 +31,8 @@
         z-index: 1;
 
         &-date {
+            @include size(100%, auto);
+            
             position: relative;
             display: flex;
             flex-direction: column;
@@ -47,13 +49,44 @@
                     justify-content: space-between;
                 }
 
+                @include media-breakpoint-down(tablet) {
+                    @include size(100%, auto);
+                }
+
                 > input {
                     @include typo('body', 16);
                     
+                    display: flex;
+                    align-items: center;
                     border: 1px solid map-get($colors, brand-1);
                     border-radius: 3rem;
                     padding: 0.4rem 2rem;
                     cursor: pointer;
+                    min-height: 4.2rem;
+                    word-break: keep-all;
+
+                    @include media-breakpoint-down(medium) {
+                        &::-webkit-datetime-edit {
+                            color: transparent;
+                        }
+    
+                        &:not(:invalid) {
+                            &::after {
+                                content: '';
+                            }
+
+                            &::-webkit-datetime-edit {
+                                display: block;
+                            }
+                        }
+    
+                        &::after {
+                            content: '日期區間';
+                            position: absolute;
+                            word-break: keep-all;
+                            pointer-events: none;
+                        }
+                    }
                 }
             }
 
