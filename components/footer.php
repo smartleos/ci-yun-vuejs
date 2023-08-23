@@ -19,7 +19,7 @@
                 <?php get_svg('twitter') ?>
             </a>
         </div>
-        <div class="footer__middle-map col-10-12-medium col-5-9-tablet col-1-5-mobile">
+        <div class="footer__middle-map col-8-12-medium col-5-9-tablet col-1-5-mobile">
             <div class="grid -cols-2-medium -cols-4-mobile">
                 <a href="/about" class="col-1-2-medium col-3-4-tablet col-1-1-mobile">關於慈雲</a>
                 <a href="/charity" class="col-2-3-medium col-4-5-mobile">慈善公益</a>
