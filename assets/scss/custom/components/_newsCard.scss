@@ -13,10 +13,18 @@
     &.-small {
         > p {
             display: none;
+
+            @include media-breakpoint-down(medium) {
+                @include text-ellipsis(3);
+            }
         }
 
         > h4 {
             text-align: center;
+
+            @include media-breakpoint-down(medium) {
+                text-align: left;
+            }
         }
     }
 
