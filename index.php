@@ -29,9 +29,14 @@
     </div>
     <div class="container grid">
         <div class="col-3-11-medium col-1-9-tablet col-1-5-mobile">
-            <div class="page-index__announcement grid -cols-8-medium">
-                <h3 class="col-1-2-medium">重要公告</h3>
-                <div class="page-index__announcement-wrapper col-2-9-medium">
+            <div class="page-index__announcement">
+                <div class="page-index__announcement-title">
+                    <?php 
+                        $title="重要公告";
+                        include ("components/title.php");
+                    ?>
+                </div>
+                <div class="page-index__announcement-wrapper">
                     <?php 
                         $date="2023.02.24";
                         $title="為配合祭拜時間，即日起寶塔營業時段調整為：每日 8:30~16:30";

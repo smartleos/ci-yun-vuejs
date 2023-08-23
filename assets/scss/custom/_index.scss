@@ -154,20 +154,20 @@
 
     &__announcement {
         padding: 8rem 0;
+        margin-top: 4rem;
 
         @include media-breakpoint-down(medium) {
             display: flex;
             flex-direction: column;
             padding-top: 0;
-            padding-bottom: 4rem;
-            margin-top: 1.8rem;
+            padding-bottom: 8rem;
         }
 
-        h3 {
-            @include typo('head', 4);
+        &-title {
+            margin-bottom: 6rem;
 
             @include media-breakpoint-down(medium) {
-                text-align: center;
+                margin-bottom: 3.6rem;
             }
         }
 
