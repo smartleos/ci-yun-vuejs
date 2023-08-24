@@ -372,7 +372,12 @@ $(function() {
 
         $('.products-single__information-btns-item:first-child').on('click', function() {
             $('.products-add-cart').addClass('-active')
-            $('.products-add-cart__bottom-item:last-child > button > p')[0].innerText = '加入購物車'
+            if ($('.products-add-cart__bottom-item:last-child > button > p').length) {
+                $('.products-add-cart__bottom-item:last-child > button > p')[0].innerText = '加入購物車'
+            }
+            if ($('.products-add-cart__bottom-item:last-child > a').length) {
+                $('.products-add-cart__bottom-item:last-child > a').replaceWith('<button class="button -red"><p>加入購物車</p></button>')
+            }
         })
 
         $('.products-single__information-btns-item:last-child').on('click', function() {
