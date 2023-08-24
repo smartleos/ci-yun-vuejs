@@ -1,6 +1,7 @@
 .page-products {
     @include size(100vw, auto);
 
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
