@@ -342,7 +342,7 @@
                     ?>
                 </div>
                 <div class="page-charity__wrapper-content-video">
-                    <div class="plyr__video-embed" id="charity-player" data-plyr-provider="youtube" data-plyr-embed-id="dQw4w9WgXcQ"></div>
+                    <div class="plyr__video-embed" id="charity-player" data-plyr-provider="youtube" data-plyr-embed-id="pXi2vI-OSow"></div>
                 </div>
                 <div class="page-charity__wrapper-content-paragraph">
                     <h2>109年度中元法會 活動紀錄</h2>

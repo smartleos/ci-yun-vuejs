@@ -63,7 +63,7 @@
                             </figure>
                             <div class="page-member-order-information__card-item-information-row-content">
                                 <h4>對年第二、第三年精緻代拜組</h4>
-                                <p>規格：規格 A</p>
+                                <p>規格：品項 A</p>
                                 <p>數量：3</p>
                                 <span>NT＄5000</span>
                             </div>
@@ -141,7 +141,7 @@
                             </figure>
                             <div class="page-member-order-information__card-item-information-row-content">
                                 <h4>對年第二、第三年精緻代拜組</h4>
-                                <p>規格：規格 A</p>
+                                <p>規格：品項 A</p>
                                 <p>數量：3</p>
                                 <span>NT＄5000</span>
                             </div>
@@ -219,7 +219,7 @@
                             </figure>
                             <div class="page-member-order-information__card-item-information-row-content">
                                 <h4>對年第二、第三年精緻代拜組</h4>
-                                <p>規格：規格 A</p>
+                                <p>規格：品項 A</p>
                                 <p>數量：3</p>
                                 <span>NT＄5000</span>
                             </div>

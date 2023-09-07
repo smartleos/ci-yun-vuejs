@@ -24,19 +24,19 @@
             <span>
                 <input type="radio" id="a" name="specification" value="a" checked>
                 <label for="a">
-                    規格 A
+                    品項 A
                 </label>
             </span>
             <span>
                 <input type="radio" id="b" name="specification" value="b">
                 <label for="b">
-                    規格 B
+                    品項 B
                 </label>
             </span>
             <span>
                 <input type="radio" id="c" name="specification" value="c">
                 <label for="c">
-                    規格 C
+                    品項 C
                 </label>
             </span>
         </div>

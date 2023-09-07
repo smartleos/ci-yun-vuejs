@@ -106,7 +106,7 @@
                 <img src="<?php image_dir() ?>testimg/01.jpg" alt="">
             </figure>
             <div class="products-single__description-video col-1-10-medium col-1-9-tablet col-1-5-mobile">
-                <div class="plyr__video-embed" id="products-player" data-plyr-provider="youtube" data-plyr-embed-id="dQw4w9WgXcQ"></div>
+                <div class="plyr__video-embed" id="products-player" data-plyr-provider="youtube" data-plyr-embed-id="pXi2vI-OSow"></div>
             </div>
         </div>
         <div class="products-single__recommend col-3-11-medium col-1-9-tablet col-1-5-mobile">

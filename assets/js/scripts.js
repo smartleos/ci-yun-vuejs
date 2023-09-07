@@ -184,7 +184,7 @@ $(function() {
 
         new Plyr('#index-player')
         
-        createPopup('https://source.unsplash.com/random/1024x768')
+        createPopup('https://www.tonshine.com.tw/upload/product/144/1666511148A2CV2WBQ.jpeg')
     
         $('.announcement-card__btn').each(function() {
             $(this).on('click', function() {
