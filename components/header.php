@@ -70,16 +70,55 @@
                 <div class="header__nav">
                     <ul>
                         <li>
-                            <a href="/about">關於慈雲</a>
+                            <a href="/about">
+                                關於慈雲
+                                <?php get_svg('down') ?>
+                            </a>
+                            <ul>
+                                <li>
+                                    <a href="/about#philosophy">經營理念</a>
+                                </li>
+                                <li>
+                                    <a href="/about#history">歷程沿革</a>
+                                </li>
+                                <li>
+                                    <a href="/about#traffic">交通資訊</a>
+                                </li>
+                                <li>
+                                    <a href="/about#navigation">園區導覽</a>
+                                </li>
+                            </ul>
                         </li>
                         <li>
                             <a href="/news">最新消息</a>
                         </li>
                         <li>
-                            <a href="/products">產品介紹</a>
+                            <a href="/products">
+                                產品介紹
+                                <?php get_svg('down') ?>
+                            </a>
+                            <ul>
+                                <li>
+                                    <a href="/products#category1">精緻代拜組</a>
+                                </li>
+                                <li>
+                                    <a href="/products#category2">精緻代拜組2</a>
+                                </li>
+                            </ul>
                         </li>
                         <li>
-                            <a href="/charity">慈善公益</a>
+                            <a href="/charity">
+                                慈善公益
+                                <?php get_svg('down') ?>
+                            </a>
+                            <ul>
+                                <li>
+                                    <a href="/charity#list">愛心捐贈芳名錄</a>
+                                </li>
+                                <li>
+                                    <a href="/charity#event">慈善活動</a>
+                                </li>
+                            </ul>
                         </li>
                         <li>
                             <a href="/service">常見問題</a>

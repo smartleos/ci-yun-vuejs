@@ -9,7 +9,7 @@
     ?>
     <div class="container grid">
         <div class="page-about__wrapper col-3-11-medium col-1-9-tablet col-1-5-mobile">
-            <div class="page-about__content">
+            <div class="page-about__content" id="philosophy">
                 <div class="page-about__content-title">
                     <?php 
                         $title="經營理念";
@@ -27,7 +27,7 @@
                     我們立志將慈雲寶塔經營為南台灣第一品牌的寶塔，以腳踏實地的做事態度貫徹始終，為企業建立一座傲人的里程碑。
                 </p>
             </div>
-            <div class="page-about__content">
+            <div class="page-about__content" id="history">
                 <div class="page-about__content-title">
                     <?php 
                         $title="歷程沿革";
@@ -47,7 +47,7 @@
             </div>
         </div>
     </div>
-    <div class="page-about__traffic container">
+    <div class="page-about__traffic container" id="traffic">
         <div class="page-about__traffic-title">
             <?php 
                 $style="-white";
@@ -71,7 +71,7 @@
             </div>
         </div>
     </div>
-    <div class="page-about__navigation">
+    <div class="page-about__navigation" id="navigation">
         <div class="page-about__navigation-wrapper swiper-wrapper">
             <figure class="swiper-slide">
                 <img src="<?php image_dir() ?>testimg/01.jpg" alt="">

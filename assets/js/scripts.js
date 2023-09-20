@@ -79,6 +79,32 @@ $(function() {
         $('.header__nav').toggleClass('-active')
         $('.header').toggleClass('-active')
     })
+
+    if (window.innerWidth < 768) {
+        $('.header__nav > ul > li').each(function() {
+            if ($(this).find('ul').length) {
+                $(this).children('a').on('click', function(e) {
+                    e.preventDefault()
+                    if ($(this).hasClass('-active')) {
+                        $(this).removeClass('-active')
+                        $(this).siblings('ul').css('max-height', 0)
+                    } else {
+                        $(this).addClass('-active')
+                        const height = $(this).siblings('ul').prop('scrollHeight')
+                        $(this).siblings('ul').css('max-height', height)
+                    }
+                })
+                $(this).find('ul > li').each(function() {
+                    $(this).on('click', function() {
+                        if ($(this).children('a').attr('href').split('#')[0] === window.location.pathname) {
+                            $('.header__nav').toggleClass('-active')
+                            $('.header').toggleClass('-active')
+                        }
+                    })
+                })
+            }
+        })
+    }
     // ------------- header -------------
 
     // ------------- form -------------

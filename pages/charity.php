@@ -7,7 +7,7 @@
         $title="慈善公益";
         include ("../components/banner.php");
     ?>
-    <div class="container grid">
+    <div class="container grid" id="list">
         <div class="page-charity__wrapper col-4-10-medium col-1-9-tablet col-1-5-mobile">
             <div class="page-charity__wrapper-content">
                 <div class="page-charity__wrapper-content-title">
@@ -332,7 +332,7 @@
             
         </div>
     </div>
-    <div class="container grid">
+    <div class="container grid" id="event">
         <div class="page-charity__wrapper col-3-11-medium col-1-9-tablet col-1-5-mobile">
             <div class="page-charity__wrapper-content">
                 <div class="page-charity__wrapper-content-title">
