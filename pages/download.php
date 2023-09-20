@@ -4,7 +4,7 @@
 <main class="page-download">
     <?php
         $img_url="testimg/01.jpg";
-        $title="常用表單";
+        $title="下載專區";
         include ("../components/banner.php");
     ?>
     <div class="container grid">
@@ -12,7 +12,7 @@
             <div class="page-download__content">
                 <div class="page-download__content-title">
                     <?php 
-                        $title="常用表單";
+                        $title="下載專區";
                         include ("../components/title.php");
                     ?>
                 </div>

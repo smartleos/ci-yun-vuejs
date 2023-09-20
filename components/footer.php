@@ -24,9 +24,9 @@
                 <a href="/about" class="col-1-2-medium col-3-4-tablet col-1-1-mobile">關於慈雲</a>
                 <a href="/charity" class="col-2-3-medium col-4-5-mobile">慈善公益</a>
                 <a href="/news" class="col-1-2-medium col-3-4-tablet col-1-1-mobile">最新消息</a>
-                <a href="/service" class="col-2-3-medium col-4-5-mobile">客服資訊</a>
+                <a href="/service" class="col-2-3-medium col-4-5-mobile">常見問題</a>
                 <a href="/products" class="col-1-2-medium col-3-4-tablet col-1-1-mobile">產品介紹</a>
-                <a href="/download" class="col-2-3-medium col-4-5-mobile">常用表單</a>
+                <a href="/download" class="col-2-3-medium col-4-5-mobile">下載專區</a>
             </div>
         </div>
     </div>

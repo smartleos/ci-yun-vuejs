@@ -35,7 +35,7 @@
                     <span class="products-single__information-tags-promote">限時特價</span>
                 </div>
                 <div class="products-single__information-specification">
-                    <h3>規格</h3>
+                    <h3>品項</h3>
                     <p>飯菜一組（大）／紅圓發粿一份／水果一組／LV保險箱一箱／大箱庫錢一箱／贈送蛋糕（共同祭拜）【此圖為示意圖，菜飯水果內容以現場為主】</p>
                 </div>
                 <hr class="-first">

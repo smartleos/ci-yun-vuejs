@@ -19,7 +19,7 @@
                 </div>
             </div>
         </div>
-        <p>請選擇規格與數量</p>
+        <p>請選擇品項與數量</p>
         <div class="products-add-cart__specification">
             <span>
                 <input type="radio" id="a" name="specification" value="a" checked>

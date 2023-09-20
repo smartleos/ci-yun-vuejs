@@ -4,7 +4,7 @@
 <main class="page-service">
     <?php
         $img_url="testimg/01.jpg";
-        $title="客服資訊";
+        $title="常見問題";
         include ("../components/banner.php");
     ?>
     <div class="container grid">

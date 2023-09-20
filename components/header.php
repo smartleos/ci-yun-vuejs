@@ -82,10 +82,10 @@
                             <a href="/charity">慈善公益</a>
                         </li>
                         <li>
-                            <a href="/service">客服資訊</a>
+                            <a href="/service">常見問題</a>
                         </li>
                         <li>
-                            <a href="/download">常用表單</a>
+                            <a href="/download">下載專區</a>
                         </li>
                     </ul>
                     <div class="header__nav-social container">
