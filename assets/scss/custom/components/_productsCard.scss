@@ -66,6 +66,8 @@
                 border-radius: .4rem;
     
                 @include media-breakpoint-down(medium) {
+                    @include typo('body', 12);
+
                     padding: 0 .8rem;
                     font-weight: bold;
                 }

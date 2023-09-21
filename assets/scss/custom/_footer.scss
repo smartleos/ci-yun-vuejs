@@ -99,6 +99,7 @@
 
             a {
                 text-align: right;
+                word-break: keep-all;
 
                 @include media-breakpoint-down(medium) {
                     &:nth-child(odd) {
