@@ -4,7 +4,7 @@
     </figure>
     <div class="cart-product-complete__information">
         <h4>對年第二、第三年精緻代拜組</h4>
-        <p>規格：品項 A</p>
+        <p>品項：品項 A</p>
         <p>數量：3</p>
         <span>＄5000</span>
     </div>
