@@ -105,6 +105,9 @@
     </div>
     <div class="container grid">
         <div class="page-about__list col-3-11-medium col-1-9-tablet col-1-5-mobile">
+            <div class="page-about__list-video">
+                <div class="plyr__video-embed" id="about-player" data-plyr-provider="youtube" data-plyr-embed-id="pXi2vI-OSow"></div>
+            </div>
             <div class="page-about__list-tab">
                 <span id="scenery_tab">
                     <?php 

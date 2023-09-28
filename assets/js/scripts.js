@@ -265,6 +265,8 @@ $(function() {
                 createPopup(url)
             })
         })
+
+        new Plyr('#about-player')
     }
     // ------------- about -------------
 
