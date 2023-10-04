@@ -10,11 +10,11 @@
     <div class="container grid">
         <div class="page-download__wrapper col-3-11-medium col-1-9-tablet col-1-5-mobile">
             <div class="page-download__content">
-                <div class="page-download__content-title">
-                    <?php 
-                        $title="下載專區";
-                        include ("../components/title.php");
-                    ?>
+                <div class="page-download__select">
+                    <select name="download_categories">
+                        <option value="all">檔案類別</option>
+                    </select>
+                    <?php get_svg('down') ?>
                 </div>
                 <ul class="page-download__content-list">
                     <li>
