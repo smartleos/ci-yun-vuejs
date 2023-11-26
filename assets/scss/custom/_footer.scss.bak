@@ -1,0 +1,228 @@
+.footer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding-top: 5rem;
+    padding-bottom: 3.2rem;
+    color: map-get($colors, white);
+    background-color: map-get($colors, brand-1);
+    overflow: hidden;
+    z-index: 100;
+
+    @include media-breakpoint-down(medium) {
+        align-items: center;
+    }
+
+    &__logo {
+        @include size(100%, 15rem);
+
+        display: flex;
+        justify-content: center;
+        margin-bottom: 3.2rem;
+
+        @include media-breakpoint-down(medium) {
+            @include size(100%, 10.5rem);
+
+            > svg {
+                @include size(100%, auto);
+            }
+        }
+
+        > svg {
+            @include size(auto, 100%);
+        }
+    }
+
+    &__middle {
+        @include size(100%, auto);
+        
+        margin-bottom: 4.5rem;
+
+        @include media-breakpoint-down(medium) {
+            margin-bottom: 0.4rem;
+        }
+
+        &-info {
+            display: flex;
+            flex-direction: column;
+
+            @include media-breakpoint-down(medium) {
+                order: 2;
+                margin-bottom: 3rem;
+            }
+
+            > li {
+                @include typo('body', 16);
+
+                text-align: left;
+            }
+        }
+
+        &-social {
+            display: flex;
+            justify-content: center;
+            gap: 1.6rem;
+
+            @include media-breakpoint-down(medium) {
+                order: 1;
+                margin-bottom: 1.2rem;
+            }
+
+            > a {
+                @include size(3.6rem);
+
+                transition: transform .3s ease-in-out;
+
+                @include media-breakpoint-up(medium) {
+                    &:hover {
+                        transform: scale(1.1);
+                    }
+                }
+
+                > svg {
+                    @include size(100%, auto);
+                }
+            }
+        }
+
+        &-map {
+            display: flex;
+            flex-wrap: wrap;
+
+            @include media-breakpoint-down(medium) {
+                order: 3;
+            }
+
+            > div {
+                gap: .4rem 2.4rem;
+            }
+
+            a {
+                text-align: right;
+
+                @include media-breakpoint-down(medium) {
+                    &:nth-child(odd) {
+                        text-align: left;
+                    }
+                }
+            }
+        }
+    }
+
+    &__bottom {
+        @include media-breakpoint-down(medium) {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        > p {
+            text-align: left;
+        }
+
+        > a {
+            text-align: right;
+        }
+    }
+
+    &__back {
+        @include size(18rem);
+
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, 50%);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        border-radius: 50%;
+        border: 1px solid map-get($colors, white);
+        padding-top: 2.4rem;
+        cursor: pointer;
+        
+        @include media-breakpoint-down(medium) {
+            @include size(6.4rem);
+
+            position: relative;
+            justify-content: center;
+            transform: none;
+            left: auto;
+            bottom: auto;
+            padding-top: 0;
+            margin-bottom: 0.8rem;
+
+            > svg {
+                @include size(2.2rem, auto);
+            }
+
+            > p {
+                display: none;
+            }
+        }
+
+        @include media-breakpoint-up(medium) {
+            &:hover {
+                > svg {
+                    transform: translateY(-.8rem);
+                }
+            }
+        }
+
+        > svg {
+            @include size(1.8rem, auto);
+
+            margin-bottom: 0.2rem;
+            transition: transform .6s cubic-bezier(0.87, 0, 0.13, 1);
+        }
+
+        > p {
+            @include typo('body', 14);
+        }
+
+        > img {
+            display: none;
+
+            @include media-breakpoint-down(medium) {
+                @include size(100%, auto);
+
+                position: absolute;
+                left: 50%;
+                bottom: -1.6rem;
+                transform: translate(-50%, 100%) scale(2.5);
+                display: block;
+                opacity: .6;
+            }
+        }
+    }
+
+    &__deco {
+        @include size(26vw, auto);
+
+        position: absolute;
+        top: -5vw;
+        left: -5vw;
+        z-index: 1;
+        opacity: 0.6;
+
+        @include media-breakpoint-down(medium) {
+            @include size(14rem, auto);
+
+            left: -3rem;
+        }
+
+        > img {
+            @include size(100%, auto);
+        }
+
+        &:last-child {
+            left: auto;
+            right: -5vw;
+            transform: scaleX(-1);
+
+            @include media-breakpoint-down(medium) {
+                top: 15.8rem;
+                right: -3.6rem;
+            }
+        }
+    }
+}

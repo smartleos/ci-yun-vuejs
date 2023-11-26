@@ -284,48 +284,11 @@
 
             @include media-breakpoint-down(medium) {
                 flex-direction: column;
-                align-items: flex-start;
-                padding: 0 2.4rem;
+                align-items: center;
                 flex: 1;
             }
-
-            > li {
-                position: relative;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-
-                @include media-breakpoint-up(medium) {
-                    &:hover {
-                        > a {
-                            > svg {
-                                transform: rotateX(180deg);
-                            }
-                        }
-
-                        > ul {
-                            opacity: 1;
-                            pointer-events: all;
-                        }
-                    }
-                }
-
-                @include media-breakpoint-down(medium) {
-                    align-items: flex-start;
-
-                    &.-active {
-                        > a {
-                            > svg {
-                                transform: rotateX(180deg);
-                            }
-                        }
-                    }
-            }
             
-                > a {
-                    display: flex;
-                    align-items: center;
-                    gap: .6rem;
+            a {
                 color: map-get($colors, brand-1);
                 padding: 0;
                 
@@ -333,61 +296,6 @@
                     @include typo('head', 4);
 
                     color: map-get($colors, white);
-                }
-
-                    > svg {
-                        @include size(1.2rem, auto);
-
-                        transition: transform .3s ease-in-out;
-                    }
-
-                }
-
-                > ul {
-                    @include size(calc(100% + 4.8rem), auto);
-
-                    position: absolute;
-                    bottom: 0;
-                    transform: translateY(100%);
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    gap: 2.4rem;
-                    padding: 2.4rem;
-                    background-color: map-get($colors, white);
-                    opacity: 0;
-                    pointer-events: none;
-                    transition: opacity .3s;
-
-                    @include media-breakpoint-down(medium) {
-                        @include size(auto);
-
-                        position: relative;
-                        align-items: flex-start;
-                        transform: translateY(0);
-                        max-height: 0;
-                        padding: 0;
-                        opacity: 1;
-                        gap: 1.2rem;
-                        margin-top: 1.2rem;
-                        background-color: transparent;
-                        overflow: hidden;
-                        pointer-events: auto;
-                        transition: max-height .3s ease-in-out;
-                    }
-
-                    > li {
-                        > a {
-                            color: map-get($colors, brand-1);
-                            padding: 0;
-                            
-                            @include media-breakpoint-down(medium) {
-                                @include typo('body', 16);
-            
-                                color: map-get($colors, white);
-                            }
-                        }
-                    }
                 }
             }
         }

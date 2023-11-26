@@ -1,11 +1,75 @@
-# 慈雲寶塔專案開發
+# Nuxt 3 Minimal Starter
 
-## 開發
-- 使用 VScode 開需需安裝 [Live Sass Compiler](https://marketplace.visualstudio.com/items?itemName=glenn2223.live-sass)
-- liveSassCompile.settings.formats 設定參數
+Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+
+## Setup
+
+Make sure to install the dependencies:
+
+```bash
+# npm
+npm install
+
+# pnpm
+pnpm install
+
+# yarn
+yarn install
+
+# bun
+bun install
 ```
- "format": "compressed",
- "extensionName": ".min.css",
- "savePath": "/assets/css"
+
+## Development Server
+
+Start the development server on `http://localhost:3000`:
+
+```bash
+# npm
+npm run dev
+
+# pnpm
+pnpm run dev
+
+# yarn
+yarn dev
+
+# bun
+bun run dev
 ```
-- 啟動環境 docker-compose up -d
+
+## Production
+
+Build the application for production:
+
+```bash
+# npm
+npm run build
+
+# pnpm
+pnpm run build
+
+# yarn
+yarn build
+
+# bun
+bun run build
+```
+
+Locally preview production build:
+
+```bash
+# npm
+npm run preview
+
+# pnpm
+pnpm run preview
+
+# yarn
+yarn preview
+
+# bun
+bun run preview
+```
+
+Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.

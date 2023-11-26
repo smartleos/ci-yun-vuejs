@@ -253,35 +253,11 @@
         }
     }
 
-    
-
     &__list {
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: 6rem;
-        
-        &-video {
-            @include size(100%, auto);
-            
-            .plyr {
-                &__control--overlaid {
-                    background: rgba(map-get($colors, white), .6) !important;
-                }
-            
-                &__control {
-                    &:hover {
-                        background: rgba(map-get($colors, white), .6) !important;
-                    }
-                }
-            
-                &--full-ui {
-                    input[type=range] {
-                        color: rgba(map-get($colors, white), .6) !important;
-                    }
-                }
-            }
-        }
         
 
         &-tab {

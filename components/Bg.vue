@@ -1,26 +1,24 @@
 <template>
     <div class="bg">
-      <div class="bg__wrapper">
-        <figure class="bg__top -right">
-          <img :src="imageDir + 'page/deco_cloud.png'" alt="">
-        </figure>
-        <!-- 省略其他部分，以節省空間 -->
-      </div>
+        <div class="bg__wrapper">
+            <figure class="bg__top -right">
+                <img src="/imgs/page/deco_cloud.png" alt="">
+            </figure>
+            <figure class="bg__top -left">
+                <img src="/imgs/page/deco_cloud.png" alt="">
+            </figure>
+            <figure class="bg__bottom -right -desktop">
+                <img src="/imgs/page/deco_bottom_left.png" alt="">
+            </figure>
+            <figure class="bg__bottom -left -desktop">
+                <img src="/imgs/page/deco_bottom_right.png" alt="">
+            </figure>
+            <figure class="bg__bottom -right -mobile">
+                <img src="/imgs/page/deco_bottom_left-mobile.png" alt="">
+            </figure>
+            <figure class="bg__bottom -left -mobile">
+                <img src="/imgs/page/deco_bottom_right-mobile.png" alt="">
+            </figure>
+        </div>
     </div>
-  </template>
-  
-  <script>
-  export default {
-    data() {
-      return {
-        // 假設 imageDir 是一個從後端API獲取的變量
-        imageDir: 'your_image_directory/'
-      };
-    }
-  }
-  </script>
-  
-  <style scoped>
-  /* 這裡放置CSS樣式 */
-  </style>
-  
+</template>
